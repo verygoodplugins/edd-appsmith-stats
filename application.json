@@ -14,6 +14,9 @@
   "unreadCommentThreads": 0,
   "color": "#F4FFDE",
   "unpublishedAppLayout": {
+    "type": "FLUID"
+  },
+  "publishedAppLayout": {
     "type": "DESKTOP"
   },
   "unpublishedCustomJSLibs": [],
