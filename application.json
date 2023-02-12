@@ -1,8 +1,12 @@
 {
   "pages": [
     {
-      "id": "Page1",
+      "id": "EDD Stats",
       "isDefault": true
+    },
+    {
+      "id": "Sites stats",
+      "isDefault": false
     }
   ],
   "viewMode": false,

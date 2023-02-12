@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Page1",
+    "pageId": "EDD Stats",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT \n  x,\n\t(z - LAG(z) OVER (ORDER BY x)) / LAG(z) OVER (ORDER BY x) * 100 AS y,\n  z\nFROM (\n  SELECT \n    DATE_FORMAT(date_created, '%M %Y') AS x, \n    COUNT(*) AS z,\n    MIN(date_created) AS min_date\n  FROM \n    wp_edd_customers\n  GROUP BY \n    MONTH(date_created), \n    YEAR(date_created)\n  ORDER BY \n    date_created\n) subq\nWHERE z IS NOT NULL\nORDER BY min_date;",
+      "body": "SELECT COUNT(site_id) as count FROM wp_wpf_all_sites WHERE check_date >= DATE_SUB(NOW(), INTERVAL 1 YEAR)",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -37,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_ActiveSites12Mos",
+  "id": "EDD Stats_ActiveSites12Mos",
   "deleted": false,
   "gitSyncId": "63e8d02d1e242279f5911ffe_63e8d3f15bf3193e553309cf"
 }

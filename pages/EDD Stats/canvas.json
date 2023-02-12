@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Page1",
-    "slug": "page1",
+    "name": "EDD Stats",
+    "slug": "edd-stats",
     "layouts": [
       {
         "viewMode": false,
@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 2440,
+          "bottomRow": 2520,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -86,11 +86,11 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "",
-              "originalTopRow": 29,
+              "originalTopRow": 83,
               "chartName": "New Customers - Percent Change YoY",
               "borderRadius": "0.375rem",
               "xAxisName": "",
-              "originalBottomRow": 82,
+              "originalBottomRow": 136,
               "chartType": "CUSTOM_FUSION_CHART"
             },
             {
@@ -217,11 +217,11 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "",
-              "originalTopRow": 84,
+              "originalTopRow": 136,
               "chartName": "Revenue, New vs Recurring",
               "borderRadius": "1.5rem",
               "xAxisName": "",
-              "originalBottomRow": 140,
+              "originalBottomRow": 192,
               "chartType": "AREA_CHART"
             },
             {
@@ -231,8 +231,8 @@
               "isCanvas": true,
               "displayName": "Stats Box",
               "iconSVG": "/static/media/icon.382a7c7bc55323fbbd8edd79208c5324.svg",
-              "topRow": 10,
-              "bottomRow": 24,
+              "topRow": 7,
+              "bottomRow": 21,
               "parentRowSpace": 10,
               "type": "STATBOX_WIDGET",
               "hideCard": false,
@@ -324,7 +324,7 @@
                         "label"
                       ],
                       "topRow": 4,
-                      "bottomRow": 8,
+                      "bottomRow": 9,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -433,10 +433,10 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "originalTopRow": 10,
+              "originalTopRow": 7,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 24,
+              "originalBottomRow": 21,
               "minDynamicHeight": 14
             },
             {
@@ -514,8 +514,8 @@
                 "visuals",
                 "visualisations"
               ],
-              "topRow": 192,
-              "bottomRow": 242,
+              "topRow": 194,
+              "bottomRow": 244,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -606,9 +606,11 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "Revenue($)",
+              "originalTopRow": 192,
               "chartName": "Cancellations (by expiration month)",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "xAxisName": "Product Line",
+              "originalBottomRow": 242,
               "chartType": "COLUMN_CHART"
             }
           ]
@@ -616,7 +618,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Page1_ActiveSites12Mos",
+              "id": "EDD Stats_ActiveSites12Mos",
               "name": "ActiveSites12Mos",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -624,7 +626,7 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Page1_NewCustomersbyMonth",
+              "id": "EDD Stats_NewCustomersbyMonth",
               "name": "NewCustomersbyMonth",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -634,7 +636,7 @@
           ],
           [
             {
-              "id": "Page1_AllRevenuebyMonth",
+              "id": "EDD Stats_AllRevenuebyMonth",
               "name": "AllRevenuebyMonth",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -642,7 +644,7 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Page1_NewRevenuebyMonth",
+              "id": "EDD Stats_NewRevenuebyMonth",
               "name": "NewRevenuebyMonth",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -650,7 +652,7 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Page1_RecurringRevenuebyMonth",
+              "id": "EDD Stats_RecurringRevenuebyMonth",
               "name": "RecurringRevenuebyMonth",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -658,7 +660,7 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Page1_RefundedRevenuebyMonth",
+              "id": "EDD Stats_RefundedRevenuebyMonth",
               "name": "RefundedRevenuebyMonth",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -666,7 +668,7 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Page1_SubscriptionCancellations",
+              "id": "EDD Stats_SubscriptionCancellations",
               "name": "SubscriptionCancellations",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -676,7 +678,7 @@
           ],
           [
             {
-              "id": "Page1_NewCustomersChangeYoY",
+              "id": "EDD Stats_NewCustomersChangeYoY",
               "name": "NewCustomersChangeYoY",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -687,14 +689,15 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Page1",
+        "id": "EDD Stats",
         "deleted": false,
         "policies": [],
         "userPermissions": []
       }
     ],
     "userPermissions": [],
-    "policies": []
+    "policies": [],
+    "isHidden": false
   },
   "deleted": false,
   "gitSyncId": "63e8d02d1e242279f5911ffe_63e8d02d1e242279f5912000"
