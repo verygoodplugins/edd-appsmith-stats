@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Color",
+    "pageId": "EDD Stats",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "EDD Stats_Color",
+  "deleted": false,
+  "gitSyncId": "63e8d02d1e242279f5911ffe_63ebdb9fc06b5b5299c31bc2"
+}

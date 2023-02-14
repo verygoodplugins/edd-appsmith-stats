@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mysql-plugin",
   "unpublishedAction": {
-    "name": "ActiveSites12Mos",
+    "name": "PluginVersionsPercent",
     "datasource": {
       "name": "Easy Digital Downloads",
       "pluginId": "mysql-plugin",
@@ -18,11 +18,11 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT COUNT(site_id) as count\nFROM wp_wpf_all_sites\nWHERE check_date >= DATE_SUB(NOW(), INTERVAL 1 YEAR)\nAND crm NOT IN ('', '0')",
+      "body": "SELECT IF(RANK <= 20, version, 'Other') AS version_group,\n       SUM(site_count) * 100.0 / total_count AS percentage\nFROM (\n  SELECT version, COUNT(site_id) AS site_count,\n         ROW_NUMBER() OVER (ORDER BY COUNT(site_id) DESC) AS RANK\n  FROM wp_wpf_all_sites\n  WHERE check_date >= DATE_SUB(NOW(), INTERVAL 1 YEAR) AND crm NOT IN ('', '0')\n  GROUP BY version\n) grouped_versions\nCROSS JOIN (SELECT COUNT(site_id) AS total_count FROM wp_wpf_all_sites\n            WHERE check_date >= DATE_SUB(NOW(), INTERVAL 1 YEAR) AND crm NOT IN ('', '0')) t\nGROUP BY version_group\nORDER BY percentage DESC;\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
-          "value": false
+          "value": true
         }
       ]
     },
@@ -32,12 +32,12 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Sites stats_ActiveSites12Mos",
+  "id": "Sites stats_PluginVersionsPercent",
   "deleted": false,
-  "gitSyncId": "63e8d02d1e242279f5911ffe_63e8d3f15bf3193e553309cf"
+  "gitSyncId": "63e8d02d1e242279f5911ffe_63eb94868e503f7636516bd0"
 }

@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mysql-plugin",
   "unpublishedAction": {
-    "name": "ActiveSites12Mos",
+    "name": "GetSitesByLicenseID",
     "datasource": {
       "name": "Easy Digital Downloads",
       "pluginId": "mysql-plugin",
@@ -13,31 +13,37 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Sites stats",
+    "pageId": "EDD Stats",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT COUNT(site_id) as count\nFROM wp_wpf_all_sites\nWHERE check_date >= DATE_SUB(NOW(), INTERVAL 1 YEAR)\nAND crm NOT IN ('', '0')",
+      "body": "SELECT site_name\nFROM wp_edd_license_activations\nWHERE license_id = {{ ChartTopUsedLicenses.selectedDataPoint.x }}\nORDER BY site_name ASC;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
-          "value": false
+          "value": true
         }
       ]
     },
     "executeOnLoad": true,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
-    "userSetOnLoad": true,
+    "jsonPathKeys": [
+      " ChartTopUsedLicenses.selectedDataPoint.x "
+    ],
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Sites stats_ActiveSites12Mos",
+  "id": "EDD Stats_GetSitesByLicenseID",
   "deleted": false,
-  "gitSyncId": "63e8d02d1e242279f5911ffe_63e8d3f15bf3193e553309cf"
+  "gitSyncId": "63e8d02d1e242279f5911ffe_63ebdbf4a01b764626f25acd"
 }
