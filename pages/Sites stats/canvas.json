@@ -86,11 +86,11 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "",
-              "originalTopRow": 115,
+              "originalTopRow": 31,
               "chartName": "",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "xAxisName": "",
-              "originalBottomRow": 195,
+              "originalBottomRow": 76,
               "chartType": "CUSTOM_FUSION_CHART"
             },
             {
@@ -168,15 +168,15 @@
               "isCanvas": true,
               "displayName": "Stats Box",
               "iconSVG": "/static/media/icon.382a7c7bc55323fbbd8edd79208c5324.svg",
-              "topRow": 9,
-              "bottomRow": 23,
+              "topRow": 15,
+              "bottomRow": 29,
               "parentRowSpace": 10,
               "type": "STATBOX_WIDGET",
               "hideCard": false,
               "shouldScrollContents": true,
               "animateLoading": true,
               "parentColumnSpace": 18.03125,
-              "leftColumn": 12,
+              "leftColumn": 5,
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
@@ -325,17 +325,17 @@
               "key": "4mpguvsh7y",
               "backgroundColor": "white",
               "isDeprecated": false,
-              "rightColumn": 28,
+              "rightColumn": 21,
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "hslia0nxyd",
               "isVisible": true,
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "originalTopRow": 9,
+              "originalTopRow": 15,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 23,
+              "originalBottomRow": 29,
               "minDynamicHeight": 14
             },
             {
@@ -399,11 +399,11 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "",
-              "originalTopRow": 55,
+              "originalTopRow": 79,
               "chartName": "Top CRMs",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "xAxisName": "",
-              "originalBottomRow": 126,
+              "originalBottomRow": 150,
               "chartType": "CUSTOM_FUSION_CHART"
             }
           ]
