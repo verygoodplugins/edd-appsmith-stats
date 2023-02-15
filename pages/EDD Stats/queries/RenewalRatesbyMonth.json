@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT\nsubquery.month_of_purchase,\nAVG(subquery.renewal_rate) AS average_renewal_rate\nFROM (\nSELECT\nDATE_FORMAT(c.date_created, '%Y-%m') AS month_of_purchase,\n100.0 * COUNT(DISTINCT case when o.status in ('complete', 'edd_subscription')\nAND o.date_created BETWEEN c.date_created + INTERVAL 1 YEAR AND c.date_created + INTERVAL 1 YEAR + INTERVAL 30 DAY then o.customer_id end) / COUNT(DISTINCT c.id) AS renewal_rate\nFROM\nwp_edd_customers c\nLEFT JOIN wp_edd_orders o ON c.id = o.customer_id\nWHERE\nc.date_created >= '2015-01-01'\nAND c.date_created <= '2022-02-28'\nAND (c.purchase_count >= 1 OR (c.purchase_count = 1 AND c.purchase_value < 847))\nGROUP BY\nDATE_FORMAT(c.date_created, '%Y-%m')\n) subquery\nGROUP BY\nsubquery.month_of_purchase;",
+      "body": "SELECT\nsubquery.month_of_purchase,\nAVG(subquery.renewal_rate) AS average_renewal_rate\nFROM (\nSELECT\nDATE_FORMAT(c.date_created, '%Y-%m') AS month_of_purchase,\n100.0 * COUNT(DISTINCT case when o.status in ('complete', 'edd_subscription')\nAND o.date_created BETWEEN c.date_created + INTERVAL 1 YEAR AND c.date_created + INTERVAL 1 YEAR + INTERVAL 30 DAY then o.customer_id end) / COUNT(DISTINCT c.id) AS renewal_rate\nFROM\nwp_edd_customers c\nLEFT JOIN wp_edd_orders o ON c.id = o.customer_id\nWHERE\nc.date_created >= '2017-01-01'\nAND c.date_created <= '2022-02-28'\nAND (c.purchase_count >= 1 OR (c.purchase_count = 1 AND c.purchase_value < 847))\nGROUP BY\nDATE_FORMAT(c.date_created, '%Y-%m')\n) subquery\nGROUP BY\nsubquery.month_of_purchase;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

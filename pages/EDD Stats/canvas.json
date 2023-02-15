@@ -248,7 +248,7 @@
                       "originalTopRow": 1,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 5,
+                      "originalBottomRow": 6,
                       "fontSize": "0.875rem",
                       "minDynamicHeight": 4
                     },
@@ -300,10 +300,10 @@
                       "parentId": "e0f0dvvhdu",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 5,
+                      "originalTopRow": 6,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 10,
+                      "originalBottomRow": 11,
                       "fontSize": "1.875rem",
                       "minDynamicHeight": 4
                     }
@@ -1518,7 +1518,7 @@
                       "originalTopRow": 1,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 5,
+                      "originalBottomRow": 6,
                       "fontSize": "0.875rem",
                       "minDynamicHeight": 4
                     },
@@ -1570,10 +1570,10 @@
                       "parentId": "f1u08lf8lp",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 5,
+                      "originalTopRow": 6,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 10,
+                      "originalBottomRow": 11,
                       "fontSize": "1.875rem",
                       "minDynamicHeight": 4
                     }
@@ -1685,11 +1685,11 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "Revenue($)",
-              "originalTopRow": 408,
+              "originalTopRow": 364,
               "chartName": "",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "xAxisName": "Product Line",
-              "originalBottomRow": 469,
+              "originalBottomRow": 425,
               "chartType": "CUSTOM_FUSION_CHART"
             },
             {

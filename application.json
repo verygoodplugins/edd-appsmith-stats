@@ -7,12 +7,17 @@
     {
       "id": "Sites stats",
       "isDefault": false
+    },
+    {
+      "id": "MRR",
+      "isDefault": false
     }
   ],
   "viewMode": false,
   "appIsExample": false,
   "unreadCommentThreads": 0,
   "color": "#F4FFDE",
+  "icon": "bar-graph",
   "unpublishedAppLayout": {
     "type": "DESKTOP"
   },
