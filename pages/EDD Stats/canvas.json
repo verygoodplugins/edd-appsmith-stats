@@ -1302,7 +1302,7 @@
               "chartData": {
                 "omnlezx0nn": {
                   "seriesName": "Sales",
-                  "data": "{{RenewalRates.data.map( (row) => {\n      return { x: row.customer_year + \"-\" + (row.customer_year+1), y: row.average_renewal_rate }});}}\n                        "
+                  "data": "{{RenewalRates.data.map( (row) => {\n      return { x: row.order_year + \"-\" + (row.order_year+1), y: row.average_renewal_rate }});}}\n                        "
                 }
               },
               "animateLoading": true,
@@ -1645,11 +1645,11 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "Revenue($)",
-              "originalTopRow": 364,
+              "originalTopRow": 366,
               "chartName": "",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "xAxisName": "Product Line",
-              "originalBottomRow": 425,
+              "originalBottomRow": 427,
               "chartType": "CUSTOM_FUSION_CHART"
             },
             {

@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1140,
+          "bottomRow": 2280,
           "containerStyle": "none",
           "snapRows": 114,
           "parentRowSpace": 1,
@@ -27,7 +27,7 @@
           "children": [
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "widgetName": "MRROverview",
+              "widgetName": "GrowthRate",
               "allowScroll": false,
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
@@ -36,8 +36,8 @@
                 "visuals",
                 "visualisations"
               ],
-              "topRow": 16,
-              "bottomRow": 94,
+              "topRow": 156,
+              "bottomRow": 226,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -86,7 +86,165 @@
                   "key": "customFusionChartConfig"
                 }
               ],
-              "customFusionChartConfig": "{\n  \"type\": \"stackedcolumn2d\",\n  \"dataSource\": {\n    \"dataset\": [\n\t\t\t{\n\t\t\t\t\"seriesname\": \"Existing\",\n\t\t\t\t\"color\": \"#5aa4c1\",\n\t\t\t\t\"data\": {{ AltExistingMRR.data.map((row) => { return { value: row.mrr } }); }}\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"seriesname\": \"New\",\n\t\t\t\t\"color\": \"#16b8a0\",\n\t\t\t\t\"data\": {{ NewMRRbyMo.data.map((row) => { return { value: row.mrr } }); }}\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"seriesname\": \"Voluntary Churn\",\n\t\t\t\t\"color\": \"#e65a5b\",\n\t\t\t\t\"data\": {{ VoluntaryChurnbyMo.data.map((row) => { return { value: -row.mrr } }); }}\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"seriesname\": \"Delinquent Churn\",\n\t\t\t\t\"color\": \"#fc9479\",\n\t\t\t\t\"data\": {{ DelinquentChurnbyMo.data.map((row) => { return { value: -row.mrr } }); }}\n\t\t\t}\n\t\t],\n\t\t\"categories\": [\n\t\t\t{\n\t\t\t\t\"category\": {{ ExistingMRRbyMo.data.map((row) => { return { label: row.month } }); }}\n\t\t\t}\n\t\t],\n    \"chart\": {\n        \"caption\": \"MRR Overview\",\n        \"xAxisName\": \"Year\",\n        \"yAxisName\": \"MRR\",\n        \"numberPrefix\": \"$\",\n        \"theme\": \"fusion\",\n        \"paletteColors\": \"#17a2b8\",\n        \"baseFont\": \"Roboto, sans-serif\",\n        \"baseFontSize\": \"14\",\n        \"baseFontColor\": \"#4d4d4d\",\n        \"captionFont\": \"Roboto, sans-serif\",\n        \"captionFontSize\": \"24\",\n        \"subCaptionFont\": \"Roboto, sans-serif\",\n        \"subCaptionFontSize\": \"18\",\n        \"subCaptionFontColor\": \"#868e96\"\n    }\n  }\n}",
+              "customFusionChartConfig": "{\n  \"type\": \"stackedcolumn2dlinedy\",\n  \"dataSource\": {\n    \"dataset\": [\n\t\t\t{\n\t\t\t\t\"seriesname\": \"New\",\n\t\t\t\t\"color\": \"#16b8a0\",\n\t\t\t\t\"data\": {{ NewMRRbyMo.data.map((row) => { return { value: row.mrr } }); }}\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"seriesname\": \"Voluntary Churn\",\n\t\t\t\t\"color\": \"#e65a5b\",\n\t\t\t\t\"data\": {{ VoluntaryChurnbyMo.data.map((row) => { return { value: -row.mrr } }); }}\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"seriesname\": \"Delinquent Churn\",\n\t\t\t\t\"color\": \"#fc9479\",\n\t\t\t\t\"data\": {{ DelinquentChurnbyMo.data.map((row) => { return { value: -row.mrr } }); }}\n\t\t\t},\n\t\t\t{\n      \t\"seriesname\": \"Growth\",\n      \t\"plottooltext\": \"Growth Rate: <b>$dataValue</b>\",\n      \t\"renderAs\": \"line\",\n\t\t\t\t\"color\": \"#1B2E43\",\n\t\t\t\t\"parentyaxis\": \"S\",\n      \t\"data\": {{ CalcGrowthRate.growthRate().map( value => ({ value }))}}\n\t\t\t}\n\t\t],\n\t\t\"categories\": [\n\t\t\t{\n\t\t\t\t\"category\": {{ ExistingMRRbyMo.data.map((row) => { return { label: row.month } }); }}\n\t\t\t}\n\t\t],\n    \"chart\": {\n        \"caption\": \"Growth Rate\",\n        \"xAxisName\": \"Year\",\n        \"yAxisName\": \"Revenue\",\n\t\t\t\t\"numberPrefix\": \"$\",\n        \"theme\": \"fusion\",\n        \"paletteColors\": \"#17a2b8\",\n        \"baseFont\": \"Roboto, sans-serif\",\n        \"baseFontSize\": \"14\",\n        \"baseFontColor\": \"#4d4d4d\",\n        \"captionFont\": \"Roboto, sans-serif\",\n        \"captionFontSize\": \"24\",\n        \"subCaptionFont\": \"Roboto, sans-serif\",\n        \"subCaptionFontSize\": \"18\",\n        \"subCaptionFontColor\": \"#868e96\",\n        \"anchorBgColor\": \"#1B2E43\",\n        \"anchorBgHoverColor\": \"#1B2E43\",\n        \"anchorHoverRadius\": \"7\",\n\t\t\t\t\"snumbersuffix\": \"%\",\n\t\t\t\t\"sYAxisMaxValue\": \"10\",\n\t\t\t\t\"sYAxisMinValue\": \"-10\"\n    }\n  }\n}",
+              "key": "usg3pimfb8",
+              "isDeprecated": false,
+              "rightColumn": 61,
+              "widgetId": "xici7f57w1",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelOrientation": "auto",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "yAxisName": "Revenue($)",
+              "chartName": "Sales Report",
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "xAxisName": "Product Line",
+              "chartType": "CUSTOM_FUSION_CHART"
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "widgetName": "SubscribersOverview",
+              "allowScroll": false,
+              "displayName": "Chart",
+              "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
+              "searchTags": [
+                "graph",
+                "visuals",
+                "visualisations"
+              ],
+              "topRow": 85,
+              "bottomRow": 155,
+              "parentRowSpace": 10,
+              "type": "CHART_WIDGET",
+              "hideCard": false,
+              "chartData": {
+                "awsz0z2ig0": {
+                  "seriesName": "Sales",
+                  "data": [
+                    {
+                      "x": "Product1",
+                      "y": 20000
+                    },
+                    {
+                      "x": "Product2",
+                      "y": 22000
+                    },
+                    {
+                      "x": "Product3",
+                      "y": 32000
+                    }
+                  ]
+                },
+                "r6d7rzgzwp": {
+                  "seriesName": "",
+                  "data": "[{\"x\":\"label\",\"y\":50}]"
+                }
+              },
+              "animateLoading": true,
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 16.921875,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 2,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "customFusionChartConfig"
+                }
+              ],
+              "customFusionChartConfig": "{\n  \"type\": \"stackedcolumn2dline\",\n  \"dataSource\": {\n    \"dataset\": [\n\t\t\t{\n\t\t\t\t\"seriesname\": \"Existing\",\n\t\t\t\t\"color\": \"#5aa4c1\",\n\t\t\t\t\"data\": {{ ExistingMRRbyMo.data.map((row) => { return { value: row.subscriptions } }); }}\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"seriesname\": \"New\",\n\t\t\t\t\"color\": \"#16b8a0\",\n\t\t\t\t\"data\": {{ NewMRRbyMo.data.map((row) => { return { value: row.subscriptions } }); }}\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"seriesname\": \"Voluntary Churn\",\n\t\t\t\t\"color\": \"#e65a5b\",\n\t\t\t\t\"data\": {{ VoluntaryChurnbyMo.data.map((row) => { return { value: -row.subscriptions } }); }}\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"seriesname\": \"Delinquent Churn\",\n\t\t\t\t\"color\": \"#fc9479\",\n\t\t\t\t\"data\": {{ DelinquentChurnbyMo.data.map((row) => { return { value: -row.subscriptions } }); }}\n\t\t\t},\n\t\t\t{\n      \t\"seriesname\": \"Net\",\n      \t\"plottooltext\": \"Net Subscribers: <b>$dataValue</b>\",\n      \t\"renderAs\": \"line\",\n\t\t\t\t\"color\": \"#1B2E43\",\n      \t\"data\": {{ CalcGrowthRate.netSubscribers().map( value => ({ value }))}}\n\t\t\t}\n\t\t],\n\t\t\"categories\": [\n\t\t\t{\n\t\t\t\t\"category\": {{ ExistingMRRbyMo.data.map((row) => { return { label: row.month } }); }}\n\t\t\t}\n\t\t],\n    \"chart\": {\n        \"caption\": \"Subscribers Overview\",\n        \"xAxisName\": \"Year\",\n        \"yAxisName\": \"Subscribers\",\n        \"theme\": \"fusion\",\n        \"paletteColors\": \"#17a2b8\",\n        \"baseFont\": \"Roboto, sans-serif\",\n        \"baseFontSize\": \"14\",\n        \"baseFontColor\": \"#4d4d4d\",\n        \"captionFont\": \"Roboto, sans-serif\",\n        \"captionFontSize\": \"24\",\n        \"subCaptionFont\": \"Roboto, sans-serif\",\n        \"subCaptionFontSize\": \"18\",\n        \"subCaptionFontColor\": \"#868e96\",\n\t\t\t\t\"anchorBgColor\": \"#1B2E43\",\n        \"anchorBgHoverColor\": \"#1B2E43\",\n        \"anchorHoverRadius\": \"7\"\n    }\n  }\n}",
+              "key": "usg3pimfb8",
+              "isDeprecated": false,
+              "rightColumn": 61,
+              "widgetId": "lts216r2dn",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelOrientation": "auto",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "yAxisName": "Revenue($)",
+              "chartName": "Sales Report",
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "xAxisName": "Product Line",
+              "chartType": "CUSTOM_FUSION_CHART"
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "widgetName": "MRROverview",
+              "allowScroll": false,
+              "displayName": "Chart",
+              "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
+              "searchTags": [
+                "graph",
+                "visuals",
+                "visualisations"
+              ],
+              "topRow": 16,
+              "bottomRow": 82,
+              "parentRowSpace": 10,
+              "type": "CHART_WIDGET",
+              "hideCard": false,
+              "chartData": {
+                "awsz0z2ig0": {
+                  "seriesName": "Sales",
+                  "data": [
+                    {
+                      "x": "Product1",
+                      "y": 20000
+                    },
+                    {
+                      "x": "Product2",
+                      "y": 22000
+                    },
+                    {
+                      "x": "Product3",
+                      "y": 32000
+                    }
+                  ]
+                },
+                "r6d7rzgzwp": {
+                  "seriesName": "",
+                  "data": "[{\"x\":\"label\",\"y\":50}]"
+                }
+              },
+              "animateLoading": true,
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 16.921875,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 2,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "customFusionChartConfig"
+                }
+              ],
+              "customFusionChartConfig": "{\n  \"type\": \"stackedcolumn2dline\",\n  \"dataSource\": {\n    \"dataset\": [\n\t\t\t{\n\t\t\t\t\"seriesname\": \"Existing\",\n\t\t\t\t\"color\": \"#5aa4c1\",\n\t\t\t\t\"data\": {{ ExistingMRRbyMo.data.map((row) => { return { value: row.mrr } }); }}\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"seriesname\": \"New\",\n\t\t\t\t\"color\": \"#16b8a0\",\n\t\t\t\t\"data\": {{ NewMRRbyMo.data.map((row) => { return { value: row.mrr } }); }}\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"seriesname\": \"Voluntary Churn\",\n\t\t\t\t\"color\": \"#e65a5b\",\n\t\t\t\t\"data\": {{ VoluntaryChurnbyMo.data.map((row) => { return { value: -row.mrr } }); }}\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"seriesname\": \"Delinquent Churn\",\n\t\t\t\t\"color\": \"#fc9479\",\n\t\t\t\t\"data\": {{ DelinquentChurnbyMo.data.map((row) => { return { value: -row.mrr } }); }}\n\t\t\t},\n\t\t\t{\n      \t\"seriesname\": \"Net\",\n      \t\"plottooltext\": \"Net MRR: <b>$dataValue</b>\",\n      \t\"renderAs\": \"line\",\n\t\t\t\t\"color\": \"#1B2E43\",\n      \t\"data\": {{ CalcGrowthRate.netMRR().map( value => ({ value }))}}\n\t\t\t}\n\t\t],\n\t\t\"categories\": [\n\t\t\t{\n\t\t\t\t\"category\": {{ ExistingMRRbyMo.data.map((row) => { return { label: row.month } }); }}\n\t\t\t}\n\t\t],\n    \"chart\": {\n        \"caption\": \"MRR Overview\",\n        \"xAxisName\": \"Year\",\n        \"yAxisName\": \"MRR\",\n        \"numberPrefix\": \"$\",\n        \"theme\": \"fusion\",\n        \"paletteColors\": \"#17a2b8\",\n        \"baseFont\": \"Roboto, sans-serif\",\n        \"baseFontSize\": \"14\",\n        \"baseFontColor\": \"#4d4d4d\",\n        \"captionFont\": \"Roboto, sans-serif\",\n        \"captionFontSize\": \"24\",\n        \"subCaptionFont\": \"Roboto, sans-serif\",\n        \"subCaptionFontSize\": \"18\",\n        \"subCaptionFontColor\": \"#868e96\",\n\t\t\t\t\"anchorBgColor\": \"#1B2E43\",\n        \"anchorBgHoverColor\": \"#1B2E43\",\n        \"anchorHoverRadius\": \"7\"\n    }\n  }\n}",
               "key": "usg3pimfb8",
               "isDeprecated": false,
               "rightColumn": 61,
@@ -108,14 +266,6 @@
         },
         "layoutOnLoadActions": [
           [
-            {
-              "id": "MRR_AltExistingMRR",
-              "name": "AltExistingMRR",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
             {
               "id": "MRR_DelinquentChurnbyMo",
               "name": "DelinquentChurnbyMo",

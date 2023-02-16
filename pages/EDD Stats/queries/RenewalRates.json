@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT \n  subquery.customer_year, \n  AVG(subquery.renewal_rate) AS average_renewal_rate\nFROM (\n  SELECT \n    YEAR(c.date_created) AS customer_year, \n    100.0 * COUNT(DISTINCT case when o.status in ('complete', 'edd_subscription') \n      AND YEAR(o.date_created) = YEAR(c.date_created) + 1 then o.customer_id end) / COUNT(DISTINCT c.id) AS renewal_rate\n  FROM \n    wp_edd_customers c\n    LEFT JOIN wp_edd_orders o ON c.id = o.customer_id\n  WHERE \n    YEAR(c.date_created) >= 2015\n\t\tAND YEAR(c.date_created) <= 2021\n    AND (c.purchase_count >= 1 OR (c.purchase_count = 1 AND c.purchase_value < 847))\n  GROUP BY \n    YEAR(c.date_created)\n) subquery\nGROUP BY \n  subquery.customer_year;",
+      "body": "SELECT \n  subquery.order_year, \n  AVG(subquery.renewal_rate) AS average_renewal_rate\nFROM (\n  SELECT \n    YEAR(o.date_created) AS order_year,\n    100.0 * COUNT(DISTINCT CASE WHEN o1.id IS NOT NULL THEN o.customer_id END) / COUNT(DISTINCT o.customer_id) AS renewal_rate\n  FROM \n    wp_edd_orders o\n    LEFT JOIN wp_edd_orders o1 ON o.customer_id = o1.customer_id\n      AND o1.date_created BETWEEN o.date_created + INTERVAL 1 YEAR AND o.date_created + INTERVAL 1 YEAR + INTERVAL 90 DAY\n\t AND o1.status IN ('complete', 'edd_subscription')\n  WHERE \n    YEAR(o.date_created) >= 2015\n    AND YEAR(o.date_created) <= 2021\n    AND o.status IN ('complete', 'edd_subscription')\n\t  AND o.total < 849\n  GROUP BY \n    YEAR(o.date_created)\n) subquery\nGROUP BY \n  subquery.order_year;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
