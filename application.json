@@ -1,7 +1,7 @@
 {
   "pages": [
     {
-      "id": "EDD Stats",
+      "id": "Customers and Revenue",
       "isDefault": true
     },
     {
@@ -9,7 +9,15 @@
       "isDefault": false
     },
     {
-      "id": "MRR",
+      "id": "MRR and Growth",
+      "isDefault": false
+    },
+    {
+      "id": "Renewals and Cancellations",
+      "isDefault": false
+    },
+    {
+      "id": "Software Licensing",
       "isDefault": false
     }
   ],

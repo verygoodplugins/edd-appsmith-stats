@@ -1,0 +1,1209 @@
+{
+  "unpublishedPage": {
+    "name": "Renewals and Cancellations",
+    "slug": "renewals-and-cancellations",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 2060,
+          "containerStyle": "none",
+          "snapRows": 120,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 76,
+          "minHeight": 1210,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "widgetName": "StatEstRecurringNext365",
+              "borderColor": "#E0DEDE",
+              "isCanvas": true,
+              "displayName": "Stats Box",
+              "iconSVG": "/static/media/icon.382a7c7bc55323fbbd8edd79208c5324.svg",
+              "topRow": 13,
+              "bottomRow": 28,
+              "parentRowSpace": 10,
+              "type": "STATBOX_WIDGET",
+              "hideCard": false,
+              "shouldScrollContents": true,
+              "animateLoading": true,
+              "parentColumnSpace": 17.9375,
+              "leftColumn": 32,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                }
+              ],
+              "children": [
+                {
+                  "widgetName": "Canvas1Copy1",
+                  "displayName": "Canvas",
+                  "topRow": 0,
+                  "bottomRow": 150,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": false,
+                  "hideCard": true,
+                  "minHeight": 150,
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [],
+                  "children": [
+                    {
+                      "widgetName": "Text1Copy1",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                      "searchTags": [
+                        "typography",
+                        "paragraph",
+                        "label"
+                      ],
+                      "topRow": 0,
+                      "bottomRow": 4,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "truncateButtonColor"
+                        },
+                        {
+                          "key": "fontFamily"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "text": "Estimated recurring revenue next 365 days",
+                      "key": "h5lycrp6yy",
+                      "isDeprecated": false,
+                      "rightColumn": 50,
+                      "textAlign": "LEFT",
+                      "dynamicHeight": "FIXED",
+                      "widgetId": "a8m5h0957b",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#999999",
+                      "version": 1,
+                      "parentId": "wae3fiph8k",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "maxDynamicHeight": 9000,
+                      "fontSize": "0.875rem",
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "widgetName": "Text2Copy",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                      "searchTags": [
+                        "typography",
+                        "paragraph",
+                        "label"
+                      ],
+                      "topRow": 4,
+                      "bottomRow": 9,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "truncateButtonColor"
+                        },
+                        {
+                          "key": "fontFamily"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "text": "{{ \"$\" + ( UpcomingRenewals1Yr.data[0].total_recurring_amount * ( RenewalRatesAvgLast12.rates() / 100 ) ).toLocaleString(\"en-US\") }}",
+                      "key": "h5lycrp6yy",
+                      "isDeprecated": false,
+                      "rightColumn": 37,
+                      "textAlign": "LEFT",
+                      "dynamicHeight": "AUTO_HEIGHT",
+                      "widgetId": "6hxifcf3jn",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "wae3fiph8k",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "originalTopRow": 4,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "maxDynamicHeight": 9000,
+                      "originalBottomRow": 9,
+                      "fontSize": "1.875rem",
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "widgetName": "Text3Copy",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                      "searchTags": [
+                        "typography",
+                        "paragraph",
+                        "label"
+                      ],
+                      "topRow": 9,
+                      "bottomRow": 13,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "truncateButtonColor"
+                        },
+                        {
+                          "key": "fontFamily"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "text": "(${{ UpcomingRenewals1Yr.data[0].total_recurring_amount.toLocaleString(\"en-US\") }} upcoming at {{ RenewalRatesAvgLast12.rates() }}% avg renewal)",
+                      "key": "h5lycrp6yy",
+                      "isDeprecated": false,
+                      "rightColumn": 55,
+                      "textAlign": "LEFT",
+                      "dynamicHeight": "AUTO_HEIGHT",
+                      "widgetId": "2t2ilzk833",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#6cbf83",
+                      "version": 1,
+                      "parentId": "wae3fiph8k",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "originalTopRow": 9,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "maxDynamicHeight": 9000,
+                      "originalBottomRow": 13,
+                      "fontSize": "0.875rem",
+                      "minDynamicHeight": 4
+                    }
+                  ],
+                  "key": "wp0unyr065",
+                  "isDeprecated": false,
+                  "rightColumn": 394.625,
+                  "detachFromLayout": true,
+                  "widgetId": "wae3fiph8k",
+                  "containerStyle": "none",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "wbexamkx5h",
+                  "renderMode": "CANVAS",
+                  "isLoading": false
+                }
+              ],
+              "borderWidth": "1",
+              "key": "i25ui7l4eg",
+              "backgroundColor": "white",
+              "isDeprecated": false,
+              "rightColumn": 56,
+              "dynamicHeight": "AUTO_HEIGHT",
+              "widgetId": "wbexamkx5h",
+              "isVisible": true,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "originalTopRow": 13,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "maxDynamicHeight": 9000,
+              "originalBottomRow": 28,
+              "minDynamicHeight": 14
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "widgetName": "ChartCancellationsCopy",
+              "allowScroll": false,
+              "displayName": "Chart",
+              "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
+              "searchTags": [
+                "graph",
+                "visuals",
+                "visualisations"
+              ],
+              "topRow": 96,
+              "bottomRow": 146,
+              "parentRowSpace": 10,
+              "type": "CHART_WIDGET",
+              "hideCard": false,
+              "chartData": {
+                "oqga03u554": {
+                  "seriesName": "Cancellations",
+                  "data": "{{SubscriptionCancellations.data}}"
+                }
+              },
+              "animateLoading": true,
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 23.75,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 7,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "chartData.oqga03u554.data"
+                },
+                {
+                  "key": "customFusionChartConfig"
+                }
+              ],
+              "customFusionChartConfig": "{\n  \"type\": \"column2d\",\n  \"dataSource\": {\n    \"data\": {{ RenewalRatesbyMonthofYear.renewalRates().map((row) => {\n      return { label: row.month_of_purchase, value: row.average_renewal_rate, 'color': Color.getRandomColor( '#6cbf83' ) };\n  \t\t});\n\t\t}},\n    \"chart\": {\n      \"caption\": \"Renewal Rates by Month of Year\",\n\t\t\t\"theme\": \"fusion\",\n\t\t\t\"paletteColors\": \"#17a2b8\",\n\t\t\t\"baseFont\": \"Roboto, sans-serif\",\n\t\t\t\"baseFontSize\": \"12\",\n\t\t\t\"baseFontColor\": \"#4d4d4d\",\n\t\t\t\"captionFont\": \"Roboto, sans-serif\",\n\t\t\t\"captionFontSize\": \"24\",\n\t\t\t\"subCaptionFont\": \"Roboto, sans-serif\",\n\t\t\t\"subCaptionFontSize\": \"18\",\n\t\t\t\"subCaptionFontColor\": \"#868e96\",\n\t\t\t\"labelDisplay\": \"rotate\",\n      \"slantLabel\": \"1\",\n\t\t\t\"labelFontSize\": \"12\",\n\t\t\t\"labelFontColor\": \"#888\",\n\t\t\t\"numbersuffix\": \"%\"\n    }\n  }\n}",
+              "key": "bptr9rnum0",
+              "isDeprecated": false,
+              "rightColumn": 56,
+              "widgetId": "8i69y8o86a",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelOrientation": "slant",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "yAxisName": "Revenue($)",
+              "originalTopRow": 96,
+              "chartName": "Cancellations (by expiration month)",
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "xAxisName": "Product Line",
+              "originalBottomRow": 146,
+              "chartType": "CUSTOM_FUSION_CHART"
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "widgetName": "ChartCancellations",
+              "allowScroll": false,
+              "displayName": "Chart",
+              "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
+              "searchTags": [
+                "graph",
+                "visuals",
+                "visualisations"
+              ],
+              "topRow": 148,
+              "bottomRow": 198,
+              "parentRowSpace": 10,
+              "type": "CHART_WIDGET",
+              "hideCard": false,
+              "chartData": {
+                "oqga03u554": {
+                  "seriesName": "Cancellations",
+                  "data": "{{SubscriptionCancellations.data}}"
+                }
+              },
+              "animateLoading": true,
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 23.75,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 7,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "chartData.oqga03u554.data"
+                },
+                {
+                  "key": "customFusionChartConfig"
+                }
+              ],
+              "customFusionChartConfig": "{\n  \"type\": \"column2d\",\n  \"dataSource\": {\n    \"data\": {{SubscriptionCancellations.data.map((row) => {\n      return { label: row.x, value: row.y, 'color': Color.getRandomColor( '#d66360' ) };\n  \t\t});\n\t\t}},\n    \"chart\": {\n      \"caption\": \"Subscription Cancellations by Month\",\n\t\t\t\"theme\": \"fusion\",\n\t\t\t\"paletteColors\": \"#17a2b8\",\n\t\t\t\"baseFont\": \"Roboto, sans-serif\",\n\t\t\t\"baseFontSize\": \"12\",\n\t\t\t\"baseFontColor\": \"#4d4d4d\",\n\t\t\t\"captionFont\": \"Roboto, sans-serif\",\n\t\t\t\"captionFontSize\": \"24\",\n\t\t\t\"subCaptionFont\": \"Roboto, sans-serif\",\n\t\t\t\"subCaptionFontSize\": \"18\",\n\t\t\t\"subCaptionFontColor\": \"#868e96\",\n\t\t\t\"labelDisplay\": \"rotate\",\n      \"slantLabel\": \"1\",\n\t\t\t\"labelFontSize\": \"10\",\n\t\t\t\"labelFontColor\": \"#888\"\n    }\n  }\n}",
+              "key": "bptr9rnum0",
+              "isDeprecated": false,
+              "rightColumn": 56,
+              "widgetId": "4t8ca8njce",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelOrientation": "slant",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "yAxisName": "Revenue($)",
+              "originalTopRow": 148,
+              "chartName": "Cancellations (by expiration month)",
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "xAxisName": "Product Line",
+              "originalBottomRow": 198,
+              "chartType": "CUSTOM_FUSION_CHART"
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "StatRenewalRateLast12",
+              "borderColor": "#E0DEDE",
+              "isCanvas": true,
+              "displayName": "Stats Box",
+              "iconSVG": "/static/media/icon.382a7c7bc55323fbbd8edd79208c5324.svg",
+              "topRow": 1,
+              "bottomRow": 12,
+              "parentRowSpace": 10,
+              "type": "STATBOX_WIDGET",
+              "hideCard": false,
+              "shouldScrollContents": true,
+              "animateLoading": true,
+              "parentColumnSpace": 16.546875,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 7,
+              "dynamicBindingPathList": [],
+              "children": [
+                {
+                  "widgetName": "Canvas1CopyCopy",
+                  "displayName": "Canvas",
+                  "topRow": 0,
+                  "bottomRow": 110,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": false,
+                  "hideCard": true,
+                  "minHeight": 110,
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [],
+                  "children": [
+                    {
+                      "widgetName": "Text1CopyCopy",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                      "searchTags": [
+                        "typography",
+                        "paragraph",
+                        "label"
+                      ],
+                      "topRow": 0,
+                      "bottomRow": 4,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "shouldScrollContents": true,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "truncateButtonColor"
+                        },
+                        {
+                          "key": "fontFamily"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "text": "Renewal Rate Last 12 Months",
+                      "key": "wooneakf4c",
+                      "isDeprecated": false,
+                      "rightColumn": 36,
+                      "textAlign": "LEFT",
+                      "dynamicHeight": "FIXED",
+                      "widgetId": "0j0fz3kuqz",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#999999",
+                      "version": 1,
+                      "parentId": "l96q94hnkj",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "maxDynamicHeight": 6,
+                      "fontSize": "0.875rem",
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "widgetName": "TextRenewalRateLast12",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                      "searchTags": [
+                        "typography",
+                        "paragraph",
+                        "label"
+                      ],
+                      "topRow": 4,
+                      "bottomRow": 9,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "truncateButtonColor"
+                        },
+                        {
+                          "key": "fontFamily"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "text": "{{ RenewalRatesAvgLast12.rates() + \"%\"; }}",
+                      "key": "wooneakf4c",
+                      "isDeprecated": false,
+                      "rightColumn": 36,
+                      "textAlign": "LEFT",
+                      "dynamicHeight": "AUTO_HEIGHT",
+                      "widgetId": "fb7uo1k1up",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "l96q94hnkj",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "originalTopRow": 4,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "maxDynamicHeight": 9000,
+                      "originalBottomRow": 9,
+                      "fontSize": "1.875rem",
+                      "minDynamicHeight": 4
+                    }
+                  ],
+                  "key": "dieduwxvap",
+                  "isDeprecated": false,
+                  "rightColumn": 198.5625,
+                  "detachFromLayout": true,
+                  "widgetId": "l96q94hnkj",
+                  "containerStyle": "none",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "pjnlvgdw6w",
+                  "renderMode": "CANVAS",
+                  "isLoading": false
+                }
+              ],
+              "borderWidth": "1",
+              "key": "gsbsi84itj",
+              "backgroundColor": "white",
+              "isDeprecated": false,
+              "rightColumn": 31,
+              "dynamicHeight": "FIXED",
+              "widgetId": "pjnlvgdw6w",
+              "isVisible": true,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "0.375rem",
+              "maxDynamicHeight": 9000,
+              "minDynamicHeight": 14
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "widgetName": "StatRenewalRateLastMo",
+              "borderColor": "#E0DEDE",
+              "isCanvas": true,
+              "displayName": "Stats Box",
+              "iconSVG": "/static/media/icon.382a7c7bc55323fbbd8edd79208c5324.svg",
+              "topRow": 1,
+              "bottomRow": 12,
+              "parentRowSpace": 10,
+              "type": "STATBOX_WIDGET",
+              "hideCard": false,
+              "shouldScrollContents": true,
+              "animateLoading": true,
+              "parentColumnSpace": 16.546875,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 32,
+              "dynamicBindingPathList": [
+                {
+                  "key": "boxShadow"
+                }
+              ],
+              "children": [
+                {
+                  "widgetName": "Canvas1Copy",
+                  "displayName": "Canvas",
+                  "topRow": 0,
+                  "bottomRow": 110,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": false,
+                  "hideCard": true,
+                  "minHeight": 110,
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [],
+                  "children": [
+                    {
+                      "widgetName": "Text1Copy",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                      "searchTags": [
+                        "typography",
+                        "paragraph",
+                        "label"
+                      ],
+                      "topRow": 0,
+                      "bottomRow": 4,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "shouldScrollContents": true,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "truncateButtonColor"
+                        },
+                        {
+                          "key": "fontFamily"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "text": "Renewal Rate Last Month",
+                      "key": "wooneakf4c",
+                      "isDeprecated": false,
+                      "rightColumn": 36,
+                      "textAlign": "LEFT",
+                      "dynamicHeight": "FIXED",
+                      "widgetId": "ox306bbxjg",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#999999",
+                      "version": 1,
+                      "parentId": "ara6d5pj4b",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "maxDynamicHeight": 6,
+                      "fontSize": "0.875rem",
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "widgetName": "TextRenewalRateLastMo",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                      "searchTags": [
+                        "typography",
+                        "paragraph",
+                        "label"
+                      ],
+                      "topRow": 4,
+                      "bottomRow": 9,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "truncateButtonColor"
+                        },
+                        {
+                          "key": "fontFamily"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "text": "{{\ndata = RenewalRatesbyMonth.data;\ni = data.length;\nreturn data[i-2].average_renewal_rate.toFixed(1) + \"%\";\n\n}}",
+                      "key": "wooneakf4c",
+                      "isDeprecated": false,
+                      "rightColumn": 36,
+                      "textAlign": "LEFT",
+                      "dynamicHeight": "AUTO_HEIGHT",
+                      "widgetId": "gz90ly0o6h",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "ara6d5pj4b",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "originalTopRow": 4,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "maxDynamicHeight": 9000,
+                      "originalBottomRow": 9,
+                      "fontSize": "1.875rem",
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "IconButton1Copy",
+                      "buttonColor": "#6cbf83",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "iconName"
+                        }
+                      ],
+                      "displayName": "Icon Button",
+                      "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
+                      "searchTags": [
+                        "click",
+                        "submit"
+                      ],
+                      "topRow": 0,
+                      "bottomRow": 8,
+                      "type": "ICON_BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 46,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "iconName"
+                        }
+                      ],
+                      "isDisabled": false,
+                      "key": "novfj5qjk3",
+                      "isDeprecated": false,
+                      "rightColumn": 62,
+                      "iconName": "{{ (( parseFloat(TextRenewalRateLast12.text.slice(0, -1)) > parseFloat(TextRenewalRateLastMo.text.slice(0, -1)) ) ? 'circle-arrow-down' : 'circle-arrow-up' );\n}}",
+                      "widgetId": "i8m03btsno",
+                      "buttonStyle": "PRIMARY",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "ara6d5pj4b",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "buttonVariant": "TERTIARY"
+                    }
+                  ],
+                  "key": "dieduwxvap",
+                  "isDeprecated": false,
+                  "rightColumn": 198.5625,
+                  "detachFromLayout": true,
+                  "widgetId": "ara6d5pj4b",
+                  "containerStyle": "none",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "eoikm5cgwr",
+                  "renderMode": "CANVAS",
+                  "isLoading": false
+                }
+              ],
+              "borderWidth": "1",
+              "key": "gsbsi84itj",
+              "backgroundColor": "white",
+              "isDeprecated": false,
+              "rightColumn": 56,
+              "dynamicHeight": "FIXED",
+              "widgetId": "eoikm5cgwr",
+              "isVisible": true,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "0.375rem",
+              "maxDynamicHeight": 9000,
+              "minDynamicHeight": 14
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "setAdaptiveYMin": false,
+              "widgetName": "ChartRenewalRatebyYear",
+              "allowScroll": false,
+              "displayName": "Chart",
+              "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
+              "searchTags": [
+                "graph",
+                "visuals",
+                "visualisations"
+              ],
+              "topRow": 30,
+              "bottomRow": 60,
+              "parentRowSpace": 10,
+              "type": "CHART_WIDGET",
+              "hideCard": false,
+              "chartData": {
+                "omnlezx0nn": {
+                  "seriesName": "Sales",
+                  "data": "{{RenewalRates.data.map( (row) => {\n      return { x: row.year + \"-\" + (row.year+1), y: row.renewal_rate }});}}\n                        ",
+                  "color": "#6cbf83"
+                }
+              },
+              "animateLoading": true,
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 20.484375,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 7,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "chartData.omnlezx0nn.data"
+                },
+                {
+                  "key": "customFusionChartConfig"
+                }
+              ],
+              "customFusionChartConfig": "{\n  \"type\": \"area2d\",\n  \"dataSource\": {\n    \"data\": {{RenewalRates.data.map( (row) => {\n      return { label: row.year, value: row.renewal_rate }});}},\n    \"chart\": {\n      \"caption\": \"First Year Renewal Rates\",\n      \"yAxisName\": \"Renewed(%)\",\n\t\t\t\"theme\": \"fusion\",\n\t\t\t\"paletteColors\": \"#6cbf83\",\n\t\t\t\"baseFont\": \"Roboto, sans-serif\",\n\t\t\t\"baseFontSize\": \"12\",\n\t\t\t\"baseFontColor\": \"#4d4d4d\",\n\t\t\t\"captionFont\": \"Roboto, sans-serif\",\n\t\t\t\"captionFontSize\": \"24\",\n\t\t\t\"subCaptionFont\": \"Roboto, sans-serif\",\n\t\t\t\"subCaptionFontSize\": \"18\",\n\t\t\t\"subCaptionFontColor\": \"#868e96\",\n\t\t\t\"labelDisplay\": \"rotate\",\n      \"slantLabel\": \"1\",\n\t\t\t\"labelFontSize\": \"12\",\n\t\t\t\"labelFontColor\": \"#888\",\n\t\t\t\"numbersuffix\": \"%\",\n\t\t\t\"anchorBgHoverColor\": \"#6cbf83\",\n\t\t\t\"anchorHoverRadius\": \"7\"\n    }\n  }\n}",
+              "key": "h0ttxkeez6",
+              "isDeprecated": false,
+              "rightColumn": 56,
+              "widgetId": "zccf1xtmv6",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelOrientation": "auto",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "yAxisName": "Renewal Percent",
+              "originalTopRow": 30,
+              "chartName": "First Year Renewal Rates",
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "xAxisName": "",
+              "originalBottomRow": 60,
+              "chartType": "CUSTOM_FUSION_CHART"
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "setAdaptiveYMin": true,
+              "widgetName": "ChartRenewalRatebyMonth",
+              "allowScroll": false,
+              "displayName": "Chart",
+              "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
+              "searchTags": [
+                "graph",
+                "visuals",
+                "visualisations"
+              ],
+              "topRow": 63,
+              "bottomRow": 93,
+              "parentRowSpace": 10,
+              "type": "CHART_WIDGET",
+              "hideCard": false,
+              "chartData": {
+                "omnlezx0nn": {
+                  "seriesName": "Sales",
+                  "data": "{{RenewalRatesbyMonth.data.map( (row) => {\n      return { x: row.month_of_purchase, y: row.average_renewal_rate }});}}\n                        ",
+                  "color": "#6cbf83"
+                }
+              },
+              "animateLoading": true,
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 20.484375,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 7,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "chartData.omnlezx0nn.data"
+                },
+                {
+                  "key": "customFusionChartConfig"
+                }
+              ],
+              "customFusionChartConfig": "{\n  \"type\": \"line\",\n  \"dataSource\": {\n    \"data\": {{RenewalRatesbyMonth.data.map( (row) => {\n      return { label: row.month_of_purchase, value: row.average_renewal_rate }});}},\n    \"chart\": {\n      \"caption\": \"Renewal Rate by Month\",\n      \"yAxisName\": \"Renewed(%)\",\n\t\t\t\"theme\": \"fusion\",\n\t\t\t\"paletteColors\": \"#6cbf83\",\n\t\t\t\"baseFont\": \"Roboto, sans-serif\",\n\t\t\t\"baseFontSize\": \"12\",\n\t\t\t\"baseFontColor\": \"#4d4d4d\",\n\t\t\t\"captionFont\": \"Roboto, sans-serif\",\n\t\t\t\"captionFontSize\": \"24\",\n\t\t\t\"subCaptionFont\": \"Roboto, sans-serif\",\n\t\t\t\"subCaptionFontSize\": \"18\",\n\t\t\t\"subCaptionFontColor\": \"#868e96\",\n\t\t\t\"labelDisplay\": \"rotate\",\n      \"slantLabel\": \"1\",\n\t\t\t\"labelFontSize\": \"12\",\n\t\t\t\"labelFontColor\": \"#888\",\n\t\t\t\"numbersuffix\": \"%\",\n\t\t\t\"anchorBgColor\": \"#6cbf83\",\n\t\t\t\"anchorBgHoverColor\": \"#6cbf83\",\n\t\t\t\"anchorHoverRadius\": \"7\"\n    }\n  }\n}",
+              "key": "h0ttxkeez6",
+              "isDeprecated": false,
+              "rightColumn": 56,
+              "widgetId": "nb287dqjar",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelOrientation": "slant",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "yAxisName": "Renewal Percent",
+              "originalTopRow": 63,
+              "chartName": "Renewal Rates by Month",
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "xAxisName": "Month of purchase",
+              "originalBottomRow": 93,
+              "chartType": "CUSTOM_FUSION_CHART"
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "widgetName": "StatEstRecurringNext30",
+              "borderColor": "#E0DEDE",
+              "isCanvas": true,
+              "displayName": "Stats Box",
+              "iconSVG": "/static/media/icon.382a7c7bc55323fbbd8edd79208c5324.svg",
+              "topRow": 13,
+              "bottomRow": 28,
+              "parentRowSpace": 10,
+              "type": "STATBOX_WIDGET",
+              "hideCard": false,
+              "shouldScrollContents": true,
+              "animateLoading": true,
+              "parentColumnSpace": 17.9375,
+              "leftColumn": 7,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                }
+              ],
+              "children": [
+                {
+                  "widgetName": "Canvas1",
+                  "displayName": "Canvas",
+                  "topRow": 0,
+                  "bottomRow": 150,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": false,
+                  "hideCard": true,
+                  "minHeight": 150,
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [],
+                  "children": [
+                    {
+                      "widgetName": "Text1",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                      "searchTags": [
+                        "typography",
+                        "paragraph",
+                        "label"
+                      ],
+                      "topRow": 0,
+                      "bottomRow": 4,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "truncateButtonColor"
+                        },
+                        {
+                          "key": "fontFamily"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "text": "Estimated recurring revenue next 30 days",
+                      "key": "h5lycrp6yy",
+                      "isDeprecated": false,
+                      "rightColumn": 50,
+                      "textAlign": "LEFT",
+                      "dynamicHeight": "FIXED",
+                      "widgetId": "jt93e20sd3",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#999999",
+                      "version": 1,
+                      "parentId": "kymb6dridy",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "maxDynamicHeight": 9000,
+                      "fontSize": "0.875rem",
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "widgetName": "Text2",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                      "searchTags": [
+                        "typography",
+                        "paragraph",
+                        "label"
+                      ],
+                      "topRow": 4,
+                      "bottomRow": 9,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "truncateButtonColor"
+                        },
+                        {
+                          "key": "fontFamily"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "text": "${{ ( UpcomingRenewals30Days.data[0].total_recurring_amount * ( RenewalRatesAvgLast12.rates() / 100 ) ).toLocaleString('en-US') }}",
+                      "key": "h5lycrp6yy",
+                      "isDeprecated": false,
+                      "rightColumn": 37,
+                      "textAlign": "LEFT",
+                      "dynamicHeight": "AUTO_HEIGHT",
+                      "widgetId": "p90u82m1cn",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "kymb6dridy",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "originalTopRow": 4,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "maxDynamicHeight": 9000,
+                      "originalBottomRow": 9,
+                      "fontSize": "1.875rem",
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "widgetName": "Text3",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                      "searchTags": [
+                        "typography",
+                        "paragraph",
+                        "label"
+                      ],
+                      "topRow": 9,
+                      "bottomRow": 13,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "truncateButtonColor"
+                        },
+                        {
+                          "key": "fontFamily"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "text": "( ${{ UpcomingRenewals30Days.data[0].total_recurring_amount.toLocaleString(\"en-US\") }} upcoming at {{ RenewalRatesAvgLast12.rates() }}% avg renewal)",
+                      "key": "h5lycrp6yy",
+                      "isDeprecated": false,
+                      "rightColumn": 55,
+                      "textAlign": "LEFT",
+                      "dynamicHeight": "AUTO_HEIGHT",
+                      "widgetId": "m3cu55dz6h",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#6cbf83",
+                      "version": 1,
+                      "parentId": "kymb6dridy",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "originalTopRow": 9,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "maxDynamicHeight": 9000,
+                      "originalBottomRow": 13,
+                      "fontSize": "0.875rem",
+                      "minDynamicHeight": 4
+                    }
+                  ],
+                  "key": "wp0unyr065",
+                  "isDeprecated": false,
+                  "rightColumn": 394.625,
+                  "detachFromLayout": true,
+                  "widgetId": "kymb6dridy",
+                  "containerStyle": "none",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "nd6dqw7emn",
+                  "renderMode": "CANVAS",
+                  "isLoading": false
+                }
+              ],
+              "borderWidth": "1",
+              "key": "i25ui7l4eg",
+              "backgroundColor": "white",
+              "isDeprecated": false,
+              "rightColumn": 31,
+              "dynamicHeight": "AUTO_HEIGHT",
+              "widgetId": "nd6dqw7emn",
+              "isVisible": true,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "originalTopRow": 13,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "maxDynamicHeight": 9000,
+              "originalBottomRow": 28,
+              "minDynamicHeight": 14
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Renewals and Cancellations_RenewalRatesbyMonth",
+              "name": "RenewalRatesbyMonth",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Renewals and Cancellations_SubscriptionCancellations",
+              "name": "SubscriptionCancellations",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Renewals and Cancellations_RenewalRates",
+              "name": "RenewalRates",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Renewals and Cancellations_UpcomingRenewals1Yr",
+              "name": "UpcomingRenewals1Yr",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Renewals and Cancellations_UpcomingRenewals30Days",
+              "name": "UpcomingRenewals30Days",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Renewals and Cancellations",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "63e8d02d1e242279f5911ffe_63ef6194295431490fd8ad7d"
+}

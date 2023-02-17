@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Color",
+    "pageId": "Renewals and Cancellations",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Renewals and Cancellations_Color",
+  "deleted": false,
+  "gitSyncId": "63e8d02d1e242279f5911ffe_63ef62a0a01b764626f2a911"
+}

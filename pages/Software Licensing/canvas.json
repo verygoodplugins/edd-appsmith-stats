@@ -1,0 +1,194 @@
+{
+  "unpublishedPage": {
+    "name": "Software Licensing",
+    "slug": "software-licensing",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 840,
+          "containerStyle": "none",
+          "snapRows": 120,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 76,
+          "minHeight": 1210,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "setAdaptiveYMin": false,
+              "widgetName": "ChartTopUsedLicenses",
+              "allowScroll": false,
+              "dynamicPropertyPathList": [],
+              "displayName": "Chart",
+              "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
+              "searchTags": [
+                "graph",
+                "visuals",
+                "visualisations"
+              ],
+              "topRow": 15,
+              "bottomRow": 76,
+              "parentRowSpace": 10,
+              "type": "CHART_WIDGET",
+              "hideCard": false,
+              "chartData": {
+                "k19yowdo03": {
+                  "seriesName": "Sales",
+                  "data": [
+                    {
+                      "x": "Product1",
+                      "y": 20000
+                    },
+                    {
+                      "x": "Product2",
+                      "y": 22000
+                    },
+                    {
+                      "x": "Product3",
+                      "y": 32000
+                    }
+                  ]
+                }
+              },
+              "animateLoading": true,
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 20.96875,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onDataPointClick"
+                }
+              ],
+              "leftColumn": 8,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "customFusionChartConfig"
+                }
+              ],
+              "customFusionChartConfig": "{\n  \"type\": \"bar2d\",\n  \"dataSource\": {\n    \"data\": {{TopUsedLicenses.data.map((row) => {\n      return { label: row.license_id + '', value: row.activation_count, 'color': Color.getRandomColor( '#E55B10' ) };\n  \t\t});\n\t\t}},\n    \"chart\": {\n      \"caption\": \"Top 20 License IDs by Number of Activations\",\n      \"xAxisName\": \"License ID\",\n      \"yAxisName\": \"# Activations\",\n      \"theme\": \"fusion\",\n\t\t\t\"showValues\": \"1\"\n    }\n  }\n}",
+              "onDataPointClick": "{{GetSitesByLicenseID.run(() => showModal('ModalLicenseSites'), () => {})}}",
+              "key": "4yqlm7hggu",
+              "isDeprecated": false,
+              "rightColumn": 56,
+              "widgetId": "pxrqtefpp6",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelOrientation": "auto",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "yAxisName": "Revenue($)",
+              "originalTopRow": 15,
+              "chartName": "",
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "xAxisName": "Product Line",
+              "originalBottomRow": 76,
+              "chartType": "CUSTOM_FUSION_CHART"
+            },
+            {
+              "widgetName": "Text1",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+              "searchTags": [
+                "typography",
+                "paragraph",
+                "label"
+              ],
+              "topRow": 5,
+              "bottomRow": 10,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "overflow": "NONE",
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 23,
+              "dynamicBindingPathList": [
+                {
+                  "key": "truncateButtonColor"
+                },
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "text": "EDD Software Licensing",
+              "key": "nwq8gy0ock",
+              "isDeprecated": false,
+              "rightColumn": 43,
+              "textAlign": "CENTER",
+              "dynamicHeight": "AUTO_HEIGHT",
+              "widgetId": "kpfduota51",
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "originalTopRow": 5,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "maxDynamicHeight": 9000,
+              "originalBottomRow": 10,
+              "fontSize": "1.875rem",
+              "minDynamicHeight": 4
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Software Licensing_TopUsedLicenses",
+              "name": "TopUsedLicenses",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Software Licensing",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "63e8d02d1e242279f5911ffe_63ef62273d6355314506391e"
+}
