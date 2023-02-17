@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 2280,
+          "bottomRow": 2300,
           "containerStyle": "none",
           "snapRows": 114,
           "parentRowSpace": 1,
@@ -26,6 +26,60 @@
           "leftColumn": 0,
           "children": [
             {
+              "widgetName": "Text1",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+              "searchTags": [
+                "typography",
+                "paragraph",
+                "label"
+              ],
+              "topRow": 5,
+              "bottomRow": 10,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "overflow": "NONE",
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 2,
+              "dynamicBindingPathList": [
+                {
+                  "key": "truncateButtonColor"
+                },
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "text": "MRR and Growth",
+              "key": "nwq8gy0ock",
+              "isDeprecated": false,
+              "rightColumn": 61,
+              "textAlign": "CENTER",
+              "dynamicHeight": "AUTO_HEIGHT",
+              "widgetId": "5v2hljo3nh",
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "originalTopRow": 5,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "maxDynamicHeight": 9000,
+              "originalBottomRow": 10,
+              "fontSize": "1.875rem",
+              "minDynamicHeight": 4
+            },
+            {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
               "widgetName": "GrowthRate",
               "allowScroll": false,
@@ -36,8 +90,8 @@
                 "visuals",
                 "visualisations"
               ],
-              "topRow": 156,
-              "bottomRow": 226,
+              "topRow": 152,
+              "bottomRow": 222,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -99,9 +153,11 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "Revenue($)",
+              "originalTopRow": 152,
               "chartName": "Sales Report",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "xAxisName": "Product Line",
+              "originalBottomRow": 222,
               "chartType": "CUSTOM_FUSION_CHART"
             },
             {
@@ -115,8 +171,8 @@
                 "visuals",
                 "visualisations"
               ],
-              "topRow": 85,
-              "bottomRow": 155,
+              "topRow": 81,
+              "bottomRow": 151,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -178,9 +234,11 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "Revenue($)",
+              "originalTopRow": 81,
               "chartName": "Sales Report",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "xAxisName": "Product Line",
+              "originalBottomRow": 151,
               "chartType": "CUSTOM_FUSION_CHART"
             },
             {
@@ -194,8 +252,8 @@
                 "visuals",
                 "visualisations"
               ],
-              "topRow": 16,
-              "bottomRow": 82,
+              "topRow": 12,
+              "bottomRow": 78,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -257,9 +315,11 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "Revenue($)",
+              "originalTopRow": 12,
               "chartName": "Sales Report",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "xAxisName": "Product Line",
+              "originalBottomRow": 78,
               "chartType": "CUSTOM_FUSION_CHART"
             }
           ]

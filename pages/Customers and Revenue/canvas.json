@@ -14,7 +14,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 4350,
+          "bottomRow": 4450,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -28,6 +28,60 @@
           "leftColumn": 0,
           "children": [
             {
+              "widgetName": "Text1Copy2",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+              "searchTags": [
+                "typography",
+                "paragraph",
+                "label"
+              ],
+              "topRow": 4,
+              "bottomRow": 9,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "overflow": "NONE",
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 5,
+              "dynamicBindingPathList": [
+                {
+                  "key": "truncateButtonColor"
+                },
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "text": "Customers and Revenue",
+              "key": "nwq8gy0ock",
+              "isDeprecated": false,
+              "rightColumn": 57,
+              "textAlign": "CENTER",
+              "dynamicHeight": "AUTO_HEIGHT",
+              "widgetId": "cbbkq9ay7h",
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "originalTopRow": 4,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "maxDynamicHeight": 9000,
+              "originalBottomRow": 9,
+              "fontSize": "1.875rem",
+              "minDynamicHeight": 4
+            },
+            {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
               "setAdaptiveYMin": true,
               "widgetName": "ChartSalesbyVolumeCopy",
@@ -39,8 +93,8 @@
                 "visuals",
                 "visualisations"
               ],
-              "topRow": 170,
-              "bottomRow": 222,
+              "topRow": 180,
+              "bottomRow": 232,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -88,11 +142,11 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "",
-              "originalTopRow": 115,
+              "originalTopRow": 180,
               "chartName": "Top CRMs",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "xAxisName": "",
-              "originalBottomRow": 195,
+              "originalBottomRow": 232,
               "chartType": "CUSTOM_FUSION_CHART"
             },
             {
@@ -107,8 +161,8 @@
                 "visuals",
                 "visualisations"
               ],
-              "topRow": 170,
-              "bottomRow": 222,
+              "topRow": 180,
+              "bottomRow": 232,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -156,11 +210,11 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "",
-              "originalTopRow": 115,
+              "originalTopRow": 180,
               "chartName": "Top CRMs",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "xAxisName": "",
-              "originalBottomRow": 195,
+              "originalBottomRow": 232,
               "chartType": "CUSTOM_FUSION_CHART"
             },
             {
@@ -170,8 +224,8 @@
               "isCanvas": true,
               "displayName": "Stats Box",
               "iconSVG": "/static/media/icon.382a7c7bc55323fbbd8edd79208c5324.svg",
-              "topRow": 239,
-              "bottomRow": 253,
+              "topRow": 249,
+              "bottomRow": 263,
               "parentRowSpace": 10,
               "type": "STATBOX_WIDGET",
               "hideCard": false,
@@ -262,7 +316,7 @@
                         "label"
                       ],
                       "topRow": 5,
-                      "bottomRow": 10,
+                      "bottomRow": 9,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -332,10 +386,10 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "originalTopRow": 239,
+              "originalTopRow": 249,
               "borderRadius": "0.375rem",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 253,
+              "originalBottomRow": 263,
               "minDynamicHeight": 14
             },
             {
@@ -350,8 +404,8 @@
                 "visuals",
                 "visualisations"
               ],
-              "topRow": 225,
-              "bottomRow": 261,
+              "topRow": 235,
+              "bottomRow": 271,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -442,11 +496,11 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "Percent Refunded",
-              "originalTopRow": 306,
+              "originalTopRow": 235,
               "chartName": "Refund Rates by Month",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "xAxisName": "Month of purchase",
-              "originalBottomRow": 342,
+              "originalBottomRow": 271,
               "chartType": "LINE_CHART"
             },
             {
@@ -462,8 +516,8 @@
                 "visuals",
                 "visualisations"
               ],
-              "topRow": 56,
-              "bottomRow": 109,
+              "topRow": 66,
+              "bottomRow": 119,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -509,11 +563,11 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "",
-              "originalTopRow": 83,
+              "originalTopRow": 66,
               "chartName": "New Customers - Percent Change YoY",
               "borderRadius": "0.375rem",
               "xAxisName": "",
-              "originalBottomRow": 136,
+              "originalBottomRow": 119,
               "chartType": "CUSTOM_FUSION_CHART"
             },
             {
@@ -529,8 +583,8 @@
                 "visuals",
                 "visualisations"
               ],
-              "topRow": 109,
-              "bottomRow": 165,
+              "topRow": 119,
+              "bottomRow": 175,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -640,11 +694,11 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "",
-              "originalTopRow": 136,
+              "originalTopRow": 119,
               "chartName": "Revenue, New vs Recurring",
               "borderRadius": "0.375rem",
               "xAxisName": "",
-              "originalBottomRow": 192,
+              "originalBottomRow": 175,
               "chartType": "AREA_CHART"
             },
             {
@@ -660,8 +714,8 @@
                 "visuals",
                 "visualisations"
               ],
-              "topRow": 2,
-              "bottomRow": 55,
+              "topRow": 12,
+              "bottomRow": 65,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -707,11 +761,11 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "",
-              "originalTopRow": 29,
+              "originalTopRow": 12,
               "chartName": "New Customers by Month",
               "borderRadius": "0.375rem",
               "xAxisName": "",
-              "originalBottomRow": 82,
+              "originalBottomRow": 65,
               "chartType": "CUSTOM_FUSION_CHART"
             },
             {
@@ -721,8 +775,8 @@
               "isCanvas": true,
               "displayName": "Stats Box",
               "iconSVG": "/static/media/icon.382a7c7bc55323fbbd8edd79208c5324.svg",
-              "topRow": 225,
-              "bottomRow": 239,
+              "topRow": 235,
+              "bottomRow": 249,
               "parentRowSpace": 10,
               "type": "STATBOX_WIDGET",
               "hideCard": false,
@@ -883,10 +937,10 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "originalTopRow": 225,
+              "originalTopRow": 235,
               "borderRadius": "0.375rem",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 239,
+              "originalBottomRow": 249,
               "minDynamicHeight": 14
             },
             {
@@ -902,8 +956,8 @@
                 "visuals",
                 "visualisations"
               ],
-              "topRow": 366,
-              "bottomRow": 427,
+              "topRow": 376,
+              "bottomRow": 437,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -966,11 +1020,11 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "Revenue($)",
-              "originalTopRow": 366,
+              "originalTopRow": 376,
               "chartName": "",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "xAxisName": "Product Line",
-              "originalBottomRow": 427,
+              "originalBottomRow": 437,
               "chartType": "CUSTOM_FUSION_CHART"
             },
             {

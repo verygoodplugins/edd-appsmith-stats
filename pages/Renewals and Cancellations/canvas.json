@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 2060,
+          "bottomRow": 2160,
           "containerStyle": "none",
           "snapRows": 120,
           "parentRowSpace": 1,
@@ -26,14 +26,68 @@
           "leftColumn": 0,
           "children": [
             {
+              "widgetName": "Text1Copy2",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+              "searchTags": [
+                "typography",
+                "paragraph",
+                "label"
+              ],
+              "topRow": 3,
+              "bottomRow": 8,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "overflow": "NONE",
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 19,
+              "dynamicBindingPathList": [
+                {
+                  "key": "truncateButtonColor"
+                },
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "text": "Renewals and Cancellations",
+              "key": "nwq8gy0ock",
+              "isDeprecated": false,
+              "rightColumn": 45,
+              "textAlign": "CENTER",
+              "dynamicHeight": "AUTO_HEIGHT",
+              "widgetId": "7jdmhv85pi",
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "originalTopRow": 3,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "maxDynamicHeight": 9000,
+              "originalBottomRow": 8,
+              "fontSize": "1.875rem",
+              "minDynamicHeight": 4
+            },
+            {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
               "widgetName": "StatEstRecurringNext365",
               "borderColor": "#E0DEDE",
               "isCanvas": true,
               "displayName": "Stats Box",
               "iconSVG": "/static/media/icon.382a7c7bc55323fbbd8edd79208c5324.svg",
-              "topRow": 13,
-              "bottomRow": 28,
+              "topRow": 23,
+              "bottomRow": 38,
               "parentRowSpace": 10,
               "type": "STATBOX_WIDGET",
               "hideCard": false,
@@ -249,10 +303,10 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "originalTopRow": 13,
+              "originalTopRow": 23,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 28,
+              "originalBottomRow": 38,
               "minDynamicHeight": 14
             },
             {
@@ -266,8 +320,8 @@
                 "visuals",
                 "visualisations"
               ],
-              "topRow": 96,
-              "bottomRow": 146,
+              "topRow": 106,
+              "bottomRow": 156,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -315,11 +369,11 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "Revenue($)",
-              "originalTopRow": 96,
+              "originalTopRow": 106,
               "chartName": "Cancellations (by expiration month)",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "xAxisName": "Product Line",
-              "originalBottomRow": 146,
+              "originalBottomRow": 156,
               "chartType": "CUSTOM_FUSION_CHART"
             },
             {
@@ -333,8 +387,8 @@
                 "visuals",
                 "visualisations"
               ],
-              "topRow": 148,
-              "bottomRow": 198,
+              "topRow": 158,
+              "bottomRow": 208,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -382,11 +436,11 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "Revenue($)",
-              "originalTopRow": 148,
+              "originalTopRow": 158,
               "chartName": "Cancellations (by expiration month)",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "xAxisName": "Product Line",
-              "originalBottomRow": 198,
+              "originalBottomRow": 208,
               "chartType": "CUSTOM_FUSION_CHART"
             },
             {
@@ -396,8 +450,8 @@
               "isCanvas": true,
               "displayName": "Stats Box",
               "iconSVG": "/static/media/icon.382a7c7bc55323fbbd8edd79208c5324.svg",
-              "topRow": 1,
-              "bottomRow": 12,
+              "topRow": 11,
+              "bottomRow": 22,
               "parentRowSpace": 10,
               "type": "STATBOX_WIDGET",
               "hideCard": false,
@@ -553,8 +607,10 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
+              "originalTopRow": 11,
               "borderRadius": "0.375rem",
               "maxDynamicHeight": 9000,
+              "originalBottomRow": 22,
               "minDynamicHeight": 14
             },
             {
@@ -564,8 +620,8 @@
               "isCanvas": true,
               "displayName": "Stats Box",
               "iconSVG": "/static/media/icon.382a7c7bc55323fbbd8edd79208c5324.svg",
-              "topRow": 1,
-              "bottomRow": 12,
+              "topRow": 11,
+              "bottomRow": 22,
               "parentRowSpace": 10,
               "type": "STATBOX_WIDGET",
               "hideCard": false,
@@ -770,8 +826,10 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
+              "originalTopRow": 11,
               "borderRadius": "0.375rem",
               "maxDynamicHeight": 9000,
+              "originalBottomRow": 22,
               "minDynamicHeight": 14
             },
             {
@@ -786,8 +844,8 @@
                 "visuals",
                 "visualisations"
               ],
-              "topRow": 30,
-              "bottomRow": 60,
+              "topRow": 40,
+              "bottomRow": 70,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -836,11 +894,11 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "Renewal Percent",
-              "originalTopRow": 30,
+              "originalTopRow": 40,
               "chartName": "First Year Renewal Rates",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "xAxisName": "",
-              "originalBottomRow": 60,
+              "originalBottomRow": 70,
               "chartType": "CUSTOM_FUSION_CHART"
             },
             {
@@ -855,8 +913,8 @@
                 "visuals",
                 "visualisations"
               ],
-              "topRow": 63,
-              "bottomRow": 93,
+              "topRow": 73,
+              "bottomRow": 103,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -905,11 +963,11 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "Renewal Percent",
-              "originalTopRow": 63,
+              "originalTopRow": 73,
               "chartName": "Renewal Rates by Month",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "xAxisName": "Month of purchase",
-              "originalBottomRow": 93,
+              "originalBottomRow": 103,
               "chartType": "CUSTOM_FUSION_CHART"
             },
             {
@@ -919,8 +977,8 @@
               "isCanvas": true,
               "displayName": "Stats Box",
               "iconSVG": "/static/media/icon.382a7c7bc55323fbbd8edd79208c5324.svg",
-              "topRow": 13,
-              "bottomRow": 28,
+              "topRow": 23,
+              "bottomRow": 38,
               "parentRowSpace": 10,
               "type": "STATBOX_WIDGET",
               "hideCard": false,
@@ -1136,10 +1194,10 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "originalTopRow": 13,
+              "originalTopRow": 23,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 28,
+              "originalBottomRow": 38,
               "minDynamicHeight": 14
             }
           ]
