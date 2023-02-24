@@ -6,8 +6,8 @@ export default {
 		var hsl = Color.hexToHsl(inputColor);
 
 		// Generate random brightness and saturation factors
-		var brightnessFactor = (Math.random() - 0.5) * 0.9;
-		var saturationFactor = (Math.random() - 0.5) * 0.5;
+		var brightnessFactor = (Math.random() - 0.5) * 0.7;
+		var saturationFactor = (Math.random() - 0.5) * 0.6;
 
 		// Apply brightness and saturation factors to HSL values
 		hsl[2] = Math.min(Math.max(0, hsl[2] * (1 + brightnessFactor)), 1);

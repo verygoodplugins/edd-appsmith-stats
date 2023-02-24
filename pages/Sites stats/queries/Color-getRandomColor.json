@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "(inputColor = '#006bb1') => {\n  var hsl = Color.hexToHsl(inputColor);\n  var brightnessFactor = (Math.random() - 0.5) * 0.9;\n  var saturationFactor = (Math.random() - 0.5) * 0.5;\n  hsl[2] = Math.min(Math.max(0, hsl[2] * (1 + brightnessFactor)), 1);\n  hsl[1] = Math.min(Math.max(0, hsl[1] * (1 + saturationFactor)), 1);\n  var outputColor = Color.hslToHex(hsl);\n  return outputColor;\n}",
+      "body": "(inputColor = '#006bb1') => {\n  var hsl = Color.hexToHsl(inputColor);\n  var brightnessFactor = (Math.random() - 0.5) * 0.7;\n  var saturationFactor = (Math.random() - 0.5) * 0.6;\n  hsl[2] = Math.min(Math.max(0, hsl[2] * (1 + brightnessFactor)), 1);\n  hsl[1] = Math.min(Math.max(0, hsl[1] * (1 + saturationFactor)), 1);\n  var outputColor = Color.hslToHex(hsl);\n  return outputColor;\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [
         {}
@@ -36,7 +36,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "(inputColor = '#006bb1') => {\n  var hsl = Color.hexToHsl(inputColor);\n  var brightnessFactor = (Math.random() - 0.5) * 0.9;\n  var saturationFactor = (Math.random() - 0.5) * 0.5;\n  hsl[2] = Math.min(Math.max(0, hsl[2] * (1 + brightnessFactor)), 1);\n  hsl[1] = Math.min(Math.max(0, hsl[1] * (1 + saturationFactor)), 1);\n  var outputColor = Color.hslToHex(hsl);\n  return outputColor;\n}"
+      "(inputColor = '#006bb1') => {\n  var hsl = Color.hexToHsl(inputColor);\n  var brightnessFactor = (Math.random() - 0.5) * 0.7;\n  var saturationFactor = (Math.random() - 0.5) * 0.6;\n  hsl[2] = Math.min(Math.max(0, hsl[2] * (1 + brightnessFactor)), 1);\n  hsl[1] = Math.min(Math.max(0, hsl[1] * (1 + saturationFactor)), 1);\n  var outputColor = Color.hslToHex(hsl);\n  return outputColor;\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
