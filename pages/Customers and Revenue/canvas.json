@@ -14,13 +14,13 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 4450,
+          "bottomRow": 4370,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 76,
+          "version": 77,
           "minHeight": 1292,
           "dynamicTriggerPathList": [],
           "parentColumnSpace": 1,
@@ -129,7 +129,7 @@
                   "key": "customFusionChartConfig"
                 }
               ],
-              "customFusionChartConfig": "{\n  \"type\": \"pie2d\",\n  \"dataSource\": {\n    \"data\": {{ OrderItemsbyIDandPriceID.data.map((row) => {\n      return { label: row.product_name, value: row.total_sum, 'color': Color.getRandomColor( '#7a3784') };\n  \t\t});\n\t\t}},\n    \"chart\": {\n      \"caption\": \"License Sales by Revenue\",\n      \"theme\": \"fusion\",\n\t\t\t\"numberPrefix\": \"$\",\n\t\t\t\"labelFontSize\": \"10px\",\n\t\t\t\"showLegend\": \"0\",\n\t\t\t\"startingAngle\": 0,\n\t\t\t\"yAxisMinValue\": \"0.2\",\n\t\t\t\"showValues\": \"0\",\n\t\t\t\"labelDisplay\": \"Rotate\",\n      \"useEllipsesWhenOverflow\": \"0\"\n\t\t}\n  }\n}",
+              "customFusionChartConfig": "{\n  \"type\": \"pie2d\",\n  \"dataSource\": {\n    \"data\": {{ OrderItemsbyIDandPriceID.data.map((row) => {\n      return { label: row.product_name, value: row.total_sum, 'color': Color.getRandomColor( '#7a3784') };\n  \t\t});\n\t\t}},\n    \"chart\": {\n      \"caption\": \"Product Sales by Revenue\",\n      \"theme\": \"fusion\",\n\t\t\t\"numberPrefix\": \"$\",\n\t\t\t\"labelFontSize\": \"10px\",\n\t\t\t\"showLegend\": \"0\",\n\t\t\t\"startingAngle\": 0,\n\t\t\t\"yAxisMinValue\": \"0.2\",\n\t\t\t\"showValues\": \"0\",\n\t\t\t\"labelDisplay\": \"Rotate\",\n      \"useEllipsesWhenOverflow\": \"0\"\n\t\t}\n  }\n}",
               "key": "gp5sr0liiy",
               "isDeprecated": false,
               "rightColumn": 57,
@@ -197,7 +197,7 @@
                   "key": "customFusionChartConfig"
                 }
               ],
-              "customFusionChartConfig": "{\n  \"type\": \"pie2d\",\n  \"dataSource\": {\n    \"data\": {{ OrderItemsbyIDandPriceID.data.map((row) => {\n      return { label: row.product_name, value: row.count, 'color': Color.getRandomColor( '#7a3784' ) };\n  \t\t});\n\t\t}},\n    \"chart\": {\n      \"caption\": \"License Sales by Volume\",\n      \"theme\": \"fusion\",\n\t\t\t\"labelFontSize\": \"10px\",\n\t\t\t\"showLegend\": \"0\",\n\t\t\t\"startingAngle\": 0,\n\t\t\t\"yAxisMinValue\": \"0.2\",\n\t\t\t\"showValues\": \"0\",\n\t\t\t\"labelDisplay\": \"Auto\",\n      \"useEllipsesWhenOverflow\": \"0\"\n\t\t}\n  }\n}",
+              "customFusionChartConfig": "{\n  \"type\": \"pie2d\",\n  \"dataSource\": {\n    \"data\": {{ OrderItemsbyIDandPriceID.data.map((row) => {\n      return { label: row.product_name, value: row.count, 'color': Color.getRandomColor( '#7a3784' ) };\n  \t\t});\n\t\t}},\n    \"chart\": {\n      \"caption\": \"Product Sales by Volume\",\n      \"theme\": \"fusion\",\n\t\t\t\"labelFontSize\": \"10px\",\n\t\t\t\"showLegend\": \"0\",\n\t\t\t\"startingAngle\": 0,\n\t\t\t\"yAxisMinValue\": \"0.2\",\n\t\t\t\"showValues\": \"0\",\n\t\t\t\"labelDisplay\": \"Auto\",\n      \"useEllipsesWhenOverflow\": \"0\"\n\t\t}\n  }\n}",
               "key": "gp5sr0liiy",
               "isDeprecated": false,
               "rightColumn": 32,
@@ -216,292 +216,6 @@
               "xAxisName": "",
               "originalBottomRow": 232,
               "chartType": "CUSTOM_FUSION_CHART"
-            },
-            {
-              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "widgetName": "StatRefundLastMonth",
-              "borderColor": "#E0DEDE",
-              "isCanvas": true,
-              "displayName": "Stats Box",
-              "iconSVG": "/static/media/icon.382a7c7bc55323fbbd8edd79208c5324.svg",
-              "topRow": 249,
-              "bottomRow": 263,
-              "parentRowSpace": 10,
-              "type": "STATBOX_WIDGET",
-              "hideCard": false,
-              "shouldScrollContents": true,
-              "animateLoading": true,
-              "parentColumnSpace": 16.546875,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 5,
-              "dynamicBindingPathList": [
-                {
-                  "key": "boxShadow"
-                }
-              ],
-              "children": [
-                {
-                  "widgetName": "Canvas1Copy1",
-                  "displayName": "Canvas",
-                  "topRow": 0,
-                  "bottomRow": 140,
-                  "parentRowSpace": 1,
-                  "type": "CANVAS_WIDGET",
-                  "canExtend": false,
-                  "hideCard": true,
-                  "minHeight": 140,
-                  "parentColumnSpace": 1,
-                  "leftColumn": 0,
-                  "dynamicBindingPathList": [],
-                  "children": [
-                    {
-                      "widgetName": "Text1Copy1",
-                      "displayName": "Text",
-                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
-                      "searchTags": [
-                        "typography",
-                        "paragraph",
-                        "label"
-                      ],
-                      "topRow": 1,
-                      "bottomRow": 5,
-                      "type": "TEXT_WIDGET",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "overflow": "NONE",
-                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-                      "dynamicTriggerPathList": [],
-                      "leftColumn": 0,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "truncateButtonColor"
-                        },
-                        {
-                          "key": "fontFamily"
-                        },
-                        {
-                          "key": "borderRadius"
-                        }
-                      ],
-                      "shouldTruncate": false,
-                      "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "Refund Rate Last Month",
-                      "key": "wooneakf4c",
-                      "isDeprecated": false,
-                      "rightColumn": 60,
-                      "textAlign": "LEFT",
-                      "dynamicHeight": "AUTO_HEIGHT",
-                      "widgetId": "7aazr63dha",
-                      "isVisible": true,
-                      "fontStyle": "BOLD",
-                      "textColor": "#999999",
-                      "version": 1,
-                      "parentId": "e0f0dvvhdu",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "originalTopRow": 1,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "maxDynamicHeight": 9000,
-                      "originalBottomRow": 6,
-                      "fontSize": "0.875rem",
-                      "minDynamicHeight": 4
-                    },
-                    {
-                      "widgetName": "Text2Copy",
-                      "displayName": "Text",
-                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
-                      "searchTags": [
-                        "typography",
-                        "paragraph",
-                        "label"
-                      ],
-                      "topRow": 5,
-                      "bottomRow": 9,
-                      "type": "TEXT_WIDGET",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "overflow": "NONE",
-                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-                      "dynamicTriggerPathList": [],
-                      "leftColumn": 0,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "truncateButtonColor"
-                        },
-                        {
-                          "key": "fontFamily"
-                        },
-                        {
-                          "key": "borderRadius"
-                        },
-                        {
-                          "key": "text"
-                        }
-                      ],
-                      "shouldTruncate": false,
-                      "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "{{\nPercentOrdersRefundedbyMonth.data.at(-2).refund_percentage.toFixed(1) + \"%\";\n}}",
-                      "key": "wooneakf4c",
-                      "isDeprecated": false,
-                      "rightColumn": 36,
-                      "textAlign": "LEFT",
-                      "dynamicHeight": "AUTO_HEIGHT",
-                      "widgetId": "wz0fmg249r",
-                      "isVisible": true,
-                      "fontStyle": "BOLD",
-                      "textColor": "#231F20",
-                      "version": 1,
-                      "parentId": "e0f0dvvhdu",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "originalTopRow": 5,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "maxDynamicHeight": 9000,
-                      "originalBottomRow": 10,
-                      "fontSize": "1.875rem",
-                      "minDynamicHeight": 4
-                    }
-                  ],
-                  "key": "dieduwxvap",
-                  "isDeprecated": false,
-                  "rightColumn": 198.5625,
-                  "detachFromLayout": true,
-                  "widgetId": "e0f0dvvhdu",
-                  "containerStyle": "none",
-                  "isVisible": true,
-                  "version": 1,
-                  "parentId": "fh66is1rfz",
-                  "renderMode": "CANVAS",
-                  "isLoading": false
-                }
-              ],
-              "borderWidth": "1",
-              "key": "gsbsi84itj",
-              "backgroundColor": "white",
-              "isDeprecated": false,
-              "rightColumn": 16,
-              "dynamicHeight": "AUTO_HEIGHT",
-              "widgetId": "fh66is1rfz",
-              "isVisible": true,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "originalTopRow": 249,
-              "borderRadius": "0.375rem",
-              "maxDynamicHeight": 9000,
-              "originalBottomRow": 263,
-              "minDynamicHeight": 14
-            },
-            {
-              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "setAdaptiveYMin": true,
-              "widgetName": "ChartRenewalRatebyMonthCopy",
-              "allowScroll": false,
-              "displayName": "Chart",
-              "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
-              "searchTags": [
-                "graph",
-                "visuals",
-                "visualisations"
-              ],
-              "topRow": 235,
-              "bottomRow": 271,
-              "parentRowSpace": 10,
-              "type": "CHART_WIDGET",
-              "hideCard": false,
-              "chartData": {
-                "omnlezx0nn": {
-                  "seriesName": "Sales",
-                  "data": "{{PercentOrdersRefundedbyMonth.data.map( (row) => {\n      return { x: row.month, y: row.refund_percentage }\n});\n}}\n                        "
-                }
-              },
-              "animateLoading": true,
-              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-              "parentColumnSpace": 20.484375,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 17,
-              "dynamicBindingPathList": [
-                {
-                  "key": "borderRadius"
-                },
-                {
-                  "key": "boxShadow"
-                },
-                {
-                  "key": "accentColor"
-                },
-                {
-                  "key": "fontFamily"
-                },
-                {
-                  "key": "chartData.omnlezx0nn.data"
-                }
-              ],
-              "customFusionChartConfig": {
-                "type": "column2d",
-                "dataSource": {
-                  "data": [
-                    {
-                      "label": "Product1",
-                      "value": 20000
-                    },
-                    {
-                      "label": "Product2",
-                      "value": 22000
-                    },
-                    {
-                      "label": "Product3",
-                      "value": 32000
-                    }
-                  ],
-                  "chart": {
-                    "caption": "Sales Report",
-                    "xAxisName": "Product Line",
-                    "yAxisName": "Revenue($)",
-                    "theme": "fusion",
-                    "alignCaptionWithCanvas": 1,
-                    "captionFontSize": "24",
-                    "captionAlignment": "center",
-                    "captionPadding": "20",
-                    "captionFontColor": "#231F20",
-                    "legendIconSides": "4",
-                    "legendIconBgAlpha": "100",
-                    "legendIconAlpha": "100",
-                    "legendPosition": "top",
-                    "canvasPadding": "0",
-                    "chartLeftMargin": "20",
-                    "chartTopMargin": "10",
-                    "chartRightMargin": "40",
-                    "chartBottomMargin": "10",
-                    "xAxisNameFontSize": "14",
-                    "labelFontSize": "12",
-                    "labelFontColor": "#716e6e",
-                    "xAxisNameFontColor": "#716e6e",
-                    "yAxisNameFontSize": "14",
-                    "yAxisValueFontSize": "12",
-                    "yAxisValueFontColor": "#716e6e",
-                    "yAxisNameFontColor": "#716e6e"
-                  }
-                }
-              },
-              "key": "h0ttxkeez6",
-              "isDeprecated": false,
-              "rightColumn": 57,
-              "widgetId": "bip9c61lz7",
-              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "isVisible": true,
-              "version": 1,
-              "parentId": "0",
-              "labelOrientation": "slant",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "yAxisName": "Percent Refunded",
-              "originalTopRow": 235,
-              "chartName": "Refund Rates by Month",
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "xAxisName": "Month of purchase",
-              "originalBottomRow": 271,
-              "chartType": "LINE_CHART"
             },
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
@@ -770,181 +484,6 @@
             },
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "widgetName": "StatRefundPercent",
-              "borderColor": "#E0DEDE",
-              "isCanvas": true,
-              "displayName": "Stats Box",
-              "iconSVG": "/static/media/icon.382a7c7bc55323fbbd8edd79208c5324.svg",
-              "topRow": 235,
-              "bottomRow": 249,
-              "parentRowSpace": 10,
-              "type": "STATBOX_WIDGET",
-              "hideCard": false,
-              "shouldScrollContents": true,
-              "animateLoading": true,
-              "parentColumnSpace": 16.546875,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 5,
-              "dynamicBindingPathList": [
-                {
-                  "key": "boxShadow"
-                }
-              ],
-              "children": [
-                {
-                  "widgetName": "Canvas1",
-                  "displayName": "Canvas",
-                  "topRow": 0,
-                  "bottomRow": 140,
-                  "parentRowSpace": 1,
-                  "type": "CANVAS_WIDGET",
-                  "canExtend": false,
-                  "hideCard": true,
-                  "minHeight": 140,
-                  "parentColumnSpace": 1,
-                  "leftColumn": 0,
-                  "dynamicBindingPathList": [],
-                  "children": [
-                    {
-                      "widgetName": "Text1",
-                      "displayName": "Text",
-                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
-                      "searchTags": [
-                        "typography",
-                        "paragraph",
-                        "label"
-                      ],
-                      "topRow": 1,
-                      "bottomRow": 5,
-                      "type": "TEXT_WIDGET",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "overflow": "NONE",
-                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-                      "dynamicTriggerPathList": [],
-                      "leftColumn": 0,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "truncateButtonColor"
-                        },
-                        {
-                          "key": "fontFamily"
-                        },
-                        {
-                          "key": "borderRadius"
-                        }
-                      ],
-                      "shouldTruncate": false,
-                      "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "Refund Rate Avg. 12 mo.",
-                      "key": "wooneakf4c",
-                      "isDeprecated": false,
-                      "rightColumn": 60,
-                      "textAlign": "LEFT",
-                      "dynamicHeight": "AUTO_HEIGHT",
-                      "widgetId": "2sar8cltjw",
-                      "isVisible": true,
-                      "fontStyle": "BOLD",
-                      "textColor": "#999999",
-                      "version": 1,
-                      "parentId": "f1u08lf8lp",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "originalTopRow": 1,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "maxDynamicHeight": 9000,
-                      "originalBottomRow": 6,
-                      "fontSize": "0.875rem",
-                      "minDynamicHeight": 4
-                    },
-                    {
-                      "widgetName": "Text2",
-                      "displayName": "Text",
-                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
-                      "searchTags": [
-                        "typography",
-                        "paragraph",
-                        "label"
-                      ],
-                      "topRow": 5,
-                      "bottomRow": 10,
-                      "type": "TEXT_WIDGET",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "overflow": "NONE",
-                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-                      "dynamicTriggerPathList": [],
-                      "leftColumn": 0,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "truncateButtonColor"
-                        },
-                        {
-                          "key": "fontFamily"
-                        },
-                        {
-                          "key": "borderRadius"
-                        },
-                        {
-                          "key": "text"
-                        }
-                      ],
-                      "shouldTruncate": false,
-                      "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "{{\ndata = PercentOrdersRefundedbyMonth.data;\ntotal = 0;\nfor (let i = data.length - 13; i < data.length - 1; i++) {\n  total += data[i].refund_percentage;\n}\n\nreturn ( total / 12).toFixed(1) + \"%\";\n\n}}",
-                      "key": "wooneakf4c",
-                      "isDeprecated": false,
-                      "rightColumn": 36,
-                      "textAlign": "LEFT",
-                      "dynamicHeight": "AUTO_HEIGHT",
-                      "widgetId": "kzeu4m7ksm",
-                      "isVisible": true,
-                      "fontStyle": "BOLD",
-                      "textColor": "#231F20",
-                      "version": 1,
-                      "parentId": "f1u08lf8lp",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "originalTopRow": 5,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "maxDynamicHeight": 9000,
-                      "originalBottomRow": 10,
-                      "fontSize": "1.875rem",
-                      "minDynamicHeight": 4
-                    }
-                  ],
-                  "key": "dieduwxvap",
-                  "isDeprecated": false,
-                  "rightColumn": 198.5625,
-                  "detachFromLayout": true,
-                  "widgetId": "f1u08lf8lp",
-                  "containerStyle": "none",
-                  "isVisible": true,
-                  "version": 1,
-                  "parentId": "50rxyw7fzt",
-                  "renderMode": "CANVAS",
-                  "isLoading": false
-                }
-              ],
-              "borderWidth": "1",
-              "key": "gsbsi84itj",
-              "backgroundColor": "white",
-              "isDeprecated": false,
-              "rightColumn": 16,
-              "dynamicHeight": "AUTO_HEIGHT",
-              "widgetId": "50rxyw7fzt",
-              "isVisible": true,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "originalTopRow": 235,
-              "borderRadius": "0.375rem",
-              "maxDynamicHeight": 9000,
-              "originalBottomRow": 249,
-              "minDynamicHeight": 14
-            },
-            {
-              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
               "setAdaptiveYMin": false,
               "widgetName": "ChartTopUsedLicenses",
               "allowScroll": false,
@@ -1059,7 +598,7 @@
                   "widgetName": "Canvas2",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 450,
+                  "bottomRow": 440,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -1225,6 +764,7 @@
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "originalBottomRow": 33,
+                      "columnUpdatedAt": 1677347548987,
                       "defaultSelectedRowIndices": [
                         0
                       ],
@@ -1273,10 +813,12 @@
                           "isDiscardVisible": true,
                           "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"site_name\"]))}}",
                           "validation": {},
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "sticky": ""
                         }
                       },
                       "key": "ihhyfrn9vb",
+                      "canFreezeColumn": false,
                       "isDeprecated": false,
                       "rightColumn": 63,
                       "textSize": "0.875rem",
@@ -1349,14 +891,6 @@
             {
               "id": "Customers and Revenue_NewRevenuebyMonth",
               "name": "NewRevenuebyMonth",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Customers and Revenue_PercentOrdersRefundedbyMonth",
-              "name": "PercentOrdersRefundedbyMonth",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],

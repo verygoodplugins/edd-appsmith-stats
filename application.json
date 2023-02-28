@@ -13,11 +13,19 @@
       "isDefault": false
     },
     {
+      "id": "Refunds",
+      "isDefault": false
+    },
+    {
       "id": "Software Licensing",
       "isDefault": false
     },
     {
       "id": "Sites stats",
+      "isDefault": false
+    },
+    {
+      "id": "Support",
       "isDefault": false
     }
   ],
@@ -27,7 +35,7 @@
   "color": "#F4FFDE",
   "icon": "bar-graph",
   "unpublishedAppLayout": {
-    "type": "DESKTOP"
+    "type": "FLUID"
   },
   "publishedAppLayout": {
     "type": "DESKTOP"

@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Color",
+    "pageId": "Support",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Support_Color",
+  "deleted": false,
+  "gitSyncId": "63e8d02d1e242279f5911ffe_63fa5e5a52683f5077111a01"
+}
