@@ -1,5 +1,6 @@
 export default {
 	renewalRates: () => {
+
 		// Create an object to store the monthly renewal rates
 		const monthlyRates = {};
 
@@ -24,6 +25,11 @@ export default {
 			};
 		});
 		
+		result[12] = result[0]; // fixes December coming out first.
+		result.splice(0, 1);
+		
 		return result;
+		
+		
 	},
 }

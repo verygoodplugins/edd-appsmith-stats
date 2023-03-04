@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "currentDate",
+    "pageId": "MRR and Growth",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "MRR and Growth_currentDate",
+  "deleted": false,
+  "gitSyncId": "63e8d02d1e242279f5911ffe_64032b768a12fa7e07deb556"
+}

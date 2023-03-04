@@ -1,4 +1,24 @@
 export default {
+	
+	netNewMRR: () => {
+		
+		const i = NewMRRbyMo.data.length - 1;
+		const newSubs = NewMRRbyMo.data[i].mrr;
+		const voluntaryChurn = VoluntaryChurnbyMo.data[i].mrr;
+		const delinquentChurn = DelinquentChurnbyMo.data[i].mrr;
+		const netNew = newSubs - voluntaryChurn - delinquentChurn;
+		
+		var color = '#e65a5b';
+		var prefix = '';
+		
+		if ( netNew > 0 ) {
+			color = '#16b8a0';
+			prefix = '+ ';
+		}
+		
+		return { 'val' : prefix + Numbers.formatCurrency( netNew ), 'color' : color };
+		
+	},
 	netMRR: () => {
 		
 		const netRevenueChanges = [];
