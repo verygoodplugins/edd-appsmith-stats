@@ -153,11 +153,11 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "Revenue($)",
-              "originalTopRow": 189,
+              "originalTopRow": 181,
               "chartName": "Sales Report",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "xAxisName": "Product Line",
-              "originalBottomRow": 259,
+              "originalBottomRow": 251,
               "chartType": "CUSTOM_FUSION_CHART"
             },
             {
@@ -234,11 +234,11 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "Revenue($)",
-              "originalTopRow": 119,
+              "originalTopRow": 108,
               "chartName": "Sales Report",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "xAxisName": "Product Line",
-              "originalBottomRow": 189,
+              "originalBottomRow": 178,
               "chartType": "CUSTOM_FUSION_CHART"
             },
             {
@@ -315,11 +315,11 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "Revenue($)",
-              "originalTopRow": 53,
+              "originalTopRow": 39,
               "chartName": "Sales Report",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "xAxisName": "Product Line",
-              "originalBottomRow": 119,
+              "originalBottomRow": 105,
               "chartType": "CUSTOM_FUSION_CHART"
             },
             {
@@ -601,7 +601,7 @@
                               "key": "hk3x07axl4",
                               "isDeprecated": false,
                               "rightColumn": 63,
-                              "textAlign": "LEFT",
+                              "textAlign": "RIGHT",
                               "dynamicHeight": "FIXED",
                               "widgetId": "rgv5tnz6ty",
                               "isVisible": true,
@@ -671,7 +671,7 @@
               "mainCanvasId": "zusjdk4qkl",
               "originalTopRow": 12,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "originalBottomRow": 46,
+              "originalBottomRow": 37,
               "additionalStaticProps": [
                 "level",
                 "levelData",
