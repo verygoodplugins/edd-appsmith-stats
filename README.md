@@ -20,7 +20,7 @@
   <p align="center">
     Better reporting for Easy Digital Downloads
     <br />
-    <a href="https://drunk.support/creating-an-analytics-dashboard-for-easy-digital-downloads-using-appsmith-and-chatgpt/"><strong>Read the blog post »</strong></a>
+    <a href="https://drunk.support/edd-analytics-chatgpt-dashboard/"><strong>Read the blog post »</strong></a>
   </p>
 </div>
 
