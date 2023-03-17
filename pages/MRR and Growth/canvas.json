@@ -531,13 +531,13 @@
                                   "key": "borderRadius"
                                 }
                               ],
-                              "leftColumn": 4,
+                              "leftColumn": 2,
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "text": "{{currentItem.name}}",
                               "key": "hk3x07axl4",
                               "isDeprecated": false,
-                              "rightColumn": 38,
+                              "rightColumn": 36,
                               "textAlign": "LEFT",
                               "dynamicHeight": "FIXED",
                               "widgetId": "dr46i598py",
@@ -594,7 +594,7 @@
                                   "key": "textColor"
                                 }
                               ],
-                              "leftColumn": 40,
+                              "leftColumn": 36,
                               "shouldTruncate": false,
                               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "text": "{{currentItem.val}}",

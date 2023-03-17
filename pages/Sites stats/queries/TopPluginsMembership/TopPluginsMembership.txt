@@ -1,0 +1,14 @@
+SELECT
+    SUM(CASE WHEN integrations LIKE '%\"woo-memberships\"%' THEN 1 ELSE 0 END) AS "WooCommerce Memberships",
+    SUM(CASE WHEN integrations LIKE '%\"memberpress\"%' THEN 1 ELSE 0 END) AS "MemberPress",
+    SUM(CASE WHEN integrations LIKE '%\"pmpro\"%' THEN 1 ELSE 0 END) AS "Paid Memberships Pro",
+    SUM(CASE WHEN integrations LIKE '%\"lifterlms\"%' THEN 1 ELSE 0 END) AS "LifterLMS",
+    SUM(CASE WHEN integrations LIKE '%\"ultimate-member\"%' THEN 1 ELSE 0 END) AS "Ultimate Member",
+    SUM(CASE WHEN integrations LIKE '%\"members\"%' THEN 1 ELSE 0 END) AS "Members",
+    SUM(CASE WHEN integrations LIKE '%\"wishlist-member\"%' THEN 1 ELSE 0 END) AS "WishList Member",
+		SUM(CASE WHEN integrations LIKE '%\"profile-builder\"%' THEN 1 ELSE 0 END) AS "Profile Builder Pro",
+		SUM(CASE WHEN integrations LIKE '%\"restrict-content-pro\"%' THEN 1 ELSE 0 END) AS "Restrict Content Pro"
+FROM wp_wpf_all_sites
+WHERE crm NOT IN ('', '0')
+    AND check_date >= DATE_SUB(NOW(), INTERVAL 1 YEAR)
+    AND integrations != 'a:0:{}'

@@ -1,0 +1,19 @@
+SELECT 
+  x,
+	(z - LAG(z) OVER (ORDER BY x)) / LAG(z) OVER (ORDER BY x) * 100 AS y,
+  z
+FROM (
+  SELECT 
+    DATE_FORMAT(date_created, '%M %Y') AS x, 
+    COUNT(*) AS z,
+    MIN(date_created) AS min_date
+  FROM 
+    wp_edd_customers
+  GROUP BY 
+    MONTH(date_created), 
+    YEAR(date_created)
+  ORDER BY 
+    date_created
+) subq
+WHERE z IS NOT NULL
+ORDER BY min_date;

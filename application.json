@@ -35,7 +35,7 @@
   "color": "#F4FFDE",
   "icon": "bar-graph",
   "unpublishedAppLayout": {
-    "type": "DESKTOP"
+    "type": "FLUID"
   },
   "publishedAppLayout": {
     "type": "DESKTOP"

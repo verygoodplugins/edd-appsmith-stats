@@ -1,0 +1,11 @@
+SELECT YEAR(l.date_created) AS year,
+       COUNT(DISTINCT l.license_key) AS total_customers,
+       COUNT(DISTINCT IF(DATEDIFF(s.date_created, l.date_created) <= 30, l.license_key, NULL)) AS customers_30_days,
+       COUNT(DISTINCT IF(DATEDIFF(s.date_created, l.date_created) <= 365, l.license_key, NULL)) AS customers_1_year,
+       ROUND(COUNT(DISTINCT IF(DATEDIFF(s.date_created, l.date_created) <= 30, l.license_key, NULL)) / COUNT(DISTINCT l.license_key) * 100, 2) AS percent_30_days,
+       ROUND(COUNT(DISTINCT IF(DATEDIFF(s.date_created, l.date_created) <= 365, l.license_key, NULL)) / COUNT(DISTINCT l.license_key) * 100, 2) AS percent_1_year
+FROM wp_edd_licenses l
+LEFT JOIN wp_gf_entry_meta m ON m.meta_value = l.license_key AND m.meta_key = 4
+LEFT JOIN wp_gf_entry s ON s.id = m.entry_id
+WHERE l.date_created BETWEEN '2018-01-01' AND '2022-12-31' -- replace with the appropriate date range
+GROUP BY YEAR(l.date_created)

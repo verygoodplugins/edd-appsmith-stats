@@ -1,0 +1,16 @@
+SELECT
+    SUM(CASE WHEN integrations LIKE '%\"woo-bookings\"%' THEN 1 ELSE 0 END) AS "WooCommerce Bookings",
+    SUM(CASE WHEN integrations LIKE '%\"fooevents\"%' THEN 1 ELSE 0 END) AS "FooEvents",
+    SUM(CASE WHEN integrations LIKE '%\"modern-events-calendar\"%' THEN 1 ELSE 0 END) AS "Modern Events Calendar",
+    SUM(CASE WHEN integrations LIKE '%\"tribe-tickets\"%' THEN 1 ELSE 0 END) AS "The Events Calendar & Event Tickets",
+    SUM(CASE WHEN integrations LIKE '%\"simply-schedule-appointments\"%' THEN 1 ELSE 0 END) AS "Simply Schedule Appointments",
+    SUM(CASE WHEN integrations LIKE '%\"woo-appointments\"%' THEN 1 ELSE 0 END) AS "WooCommerce Appointments (BookingWP)",
+    SUM(CASE WHEN integrations LIKE '%\"events-manager\"%' THEN 1 ELSE 0 END) AS "Events Manager",
+		SUM(CASE WHEN integrations LIKE '%\"event-espresso\"%' THEN 1 ELSE 0 END) AS "Event Espresso",
+		SUM(CASE WHEN integrations LIKE '%\"wp-event-manager\"%' THEN 1 ELSE 0 END) AS "WP Event Manager",
+		SUM(CASE WHEN integrations LIKE '%\"eventon\"%' THEN 1 ELSE 0 END) AS "EventON",
+		SUM(CASE WHEN integrations LIKE '%\"tickera\"%' THEN 1 ELSE 0 END) AS "Tickera"
+FROM wp_wpf_all_sites
+WHERE crm NOT IN ('', '0')
+    AND check_date >= DATE_SUB(NOW(), INTERVAL 1 YEAR)
+    AND integrations != 'a:0:{}'

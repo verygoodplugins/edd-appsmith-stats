@@ -1,0 +1,14 @@
+SELECT 
+  DATE_FORMAT(expiration, '%M %Y') AS x, 
+  COUNT(*) AS y
+FROM 
+  wp_edd_subscriptions
+WHERE
+	expiration >= DATE_SUB(NOW(), INTERVAL 4 YEAR)
+	AND expiration <= NOW()
+	AND status IN ( 'cancelled', 'failing' )
+GROUP BY 
+  MONTH(expiration), 
+  YEAR(expiration)
+ORDER BY 
+  MIN(expiration)

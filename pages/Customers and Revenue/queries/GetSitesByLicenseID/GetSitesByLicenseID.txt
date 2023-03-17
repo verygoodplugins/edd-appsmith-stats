@@ -1,0 +1,4 @@
+SELECT site_name
+FROM wp_edd_license_activations
+WHERE license_id = {{ ChartTopUsedLicenses.selectedDataPoint.x }}
+ORDER BY site_name ASC;

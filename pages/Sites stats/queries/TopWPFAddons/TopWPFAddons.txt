@@ -1,0 +1,12 @@
+SELECT
+    ROUND((SUM(CASE WHEN integrations LIKE '%\"logins\"%' THEN 1 ELSE 0 END) / COUNT(*)) * 100, 2) AS "Logins Addon",
+    ROUND((SUM(CASE WHEN integrations LIKE '%\"ecommerce\"%' THEN 1 ELSE 0 END) / COUNT(*)) * 100, 2) AS "Enhanced Ecommerce",
+    ROUND((SUM(CASE WHEN integrations LIKE '%\"abandoned-cart\"%' THEN 1 ELSE 0 END) / COUNT(*)) * 100, 2) AS "Abandoned Cart Addon",
+    ROUND((SUM(CASE WHEN integrations LIKE '%\"media-tools\"%' THEN 1 ELSE 0 END) / COUNT(*)) * 100, 2) AS "Media Tools",
+    ROUND((SUM(CASE WHEN integrations LIKE '%\"webhooks\"%' THEN 1 ELSE 0 END) / COUNT(*)) * 100, 2) AS "Webhooks Addon",
+    ROUND((SUM(CASE WHEN integrations LIKE '%\"event-tracking\"%' THEN 1 ELSE 0 END) / COUNT(*)) * 100, 2) AS "Event Tracking Addon",
+    ROUND((SUM(CASE WHEN integrations LIKE '%\"downloads\"%' THEN 1 ELSE 0 END) / COUNT(*)) * 100, 2) AS "Downloads Addon"
+FROM wp_wpf_all_sites
+WHERE crm NOT IN ('', '0')
+	AND check_date >= DATE_SUB(NOW(), INTERVAL 1 YEAR)
+	AND integrations != 'a:0:{}'

@@ -1,0 +1,29 @@
+SELECT
+  m.month,
+  COUNT(DISTINCT s.id) AS subscriptions,
+  COALESCE(ROUND( SUM(
+    CASE
+      WHEN s.created >= DATE_SUB(s.created, INTERVAL 12 MONTH) THEN
+        s.initial_amount / 12
+      ELSE
+        s.recurring_amount / 12
+    END
+  ), 2 ), 0) AS mrr
+  -- GROUP_CONCAT(DISTINCT s.id SEPARATOR ',') as subscription_ids
+FROM (
+  SELECT DATE_FORMAT(DATE_SUB(NOW(), INTERVAL n MONTH), '%Y-%m') AS month
+  FROM (
+    SELECT 0 n UNION SELECT 1 UNION SELECT 2 UNION SELECT 3 UNION SELECT 4
+    UNION SELECT 5 UNION SELECT 6 UNION SELECT 7 UNION SELECT 8 UNION SELECT 9
+    UNION SELECT 10 UNION SELECT 11 UNION SELECT 12 UNION SELECT 13 UNION SELECT 14
+    UNION SELECT 15 UNION SELECT 16 UNION SELECT 17 UNION SELECT 18 UNION SELECT 19
+    UNION SELECT 20 UNION SELECT 21 UNION SELECT 22 UNION SELECT 23
+  ) numbers -- This ensures we get a month in the output even if there are 0 results --
+) m
+LEFT JOIN wp_edd_subscriptions s ON DATE_FORMAT(s.expiration, '%Y-%m') = m.month
+  AND s.expiration > DATE_SUB(DATE_ADD(LAST_DAY(NOW()), INTERVAL 1 DAY), INTERVAL 2 YEAR)
+  AND status = 'cancelled'
+  AND notes NOT LIKE '%cancelled by gateway%'
+	AND notes NOT LIKE '%cancelled for license upgrade%'
+  AND s.expiration < NOW()
+GROUP BY m.month;

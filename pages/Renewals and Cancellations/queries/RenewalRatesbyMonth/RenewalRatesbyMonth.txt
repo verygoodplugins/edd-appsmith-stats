@@ -1,0 +1,23 @@
+SELECT
+  subquery.month_of_purchase,
+  AVG(subquery.renewal_rate) AS average_renewal_rate
+FROM (
+  SELECT
+    DATE_FORMAT(c.date_created, '%Y-%m') AS month_of_purchase,
+    100.0 * COUNT(DISTINCT CASE WHEN o.status IN ('complete', 'edd_subscription')
+			AND o.type = 'sale'
+      AND o.date_created >= DATE_ADD(c.date_created, INTERVAL 1 YEAR)
+  		AND o.date_created <= DATE_ADD(c.date_created, INTERVAL 13 MONTH)
+      THEN o.customer_id END) / COUNT(DISTINCT c.id) AS renewal_rate
+  FROM
+    wp_edd_customers c
+    LEFT JOIN wp_edd_orders o ON c.id = o.customer_id
+  WHERE
+    c.date_created >= '2017-01-01'
+    AND c.date_created <= DATE_SUB(NOW(), INTERVAL 1 YEAR )
+    AND (c.purchase_count >= 1 OR (c.purchase_count = 1 AND c.purchase_value < 847))
+  GROUP BY
+    DATE_FORMAT(c.date_created, '%Y-%m')
+) subquery
+GROUP BY
+  subquery.month_of_purchase;

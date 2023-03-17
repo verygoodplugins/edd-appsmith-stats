@@ -1,0 +1,4 @@
+SELECT COUNT(site_id) as count
+FROM wp_wpf_all_sites
+WHERE check_date >= DATE_SUB(NOW(), INTERVAL 1 YEAR)
+AND crm NOT IN ('', '0')

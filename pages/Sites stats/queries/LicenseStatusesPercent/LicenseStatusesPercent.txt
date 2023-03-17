@@ -1,0 +1,7 @@
+SELECT status,
+COUNT(site_id) * 100.0 / (SELECT COUNT(site_id) FROM wp_wpf_all_sites WHERE check_date >= DATE_SUB(NOW(), INTERVAL 1 YEAR) AND crm NOT IN ('', '0')) as percentage
+FROM wp_wpf_all_sites
+WHERE check_date >= DATE_SUB(NOW(), INTERVAL 1 YEAR)
+AND crm NOT IN ('', '0')
+GROUP BY status
+ORDER BY percentage DESC;

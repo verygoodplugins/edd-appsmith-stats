@@ -1,0 +1,13 @@
+SELECT
+    SUM(CASE WHEN integrations LIKE '%\"gravity-forms\"%' THEN 1 ELSE 0 END) AS "Gravity Forms",
+    SUM(CASE WHEN integrations LIKE '%\"ws-form\"%' THEN 1 ELSE 0 END) AS "WSForm",
+    SUM(CASE WHEN integrations LIKE '%\"ninja-forms\"%' THEN 1 ELSE 0 END) AS "Ninja Forms",
+    SUM(CASE WHEN integrations LIKE '%\"cf7\"%' THEN 1 ELSE 0 END) AS "Contact Form 7",
+    SUM(CASE WHEN integrations LIKE '%\"wpforms\"%' THEN 1 ELSE 0 END) AS "WPForms",
+		SUM(CASE WHEN integrations LIKE '%\"fluent-forms\"%' THEN 1 ELSE 0 END) AS "Fluent Forms",
+		SUM(CASE WHEN integrations LIKE '%\"formidable-forms\"%' THEN 1 ELSE 0 END) AS "Formidable Forms",
+		SUM(CASE WHEN integrations LIKE '%\"pionet-forms\"%' THEN 1 ELSE 0 END) AS "Pionet Forms"
+FROM wp_wpf_all_sites
+WHERE crm NOT IN ('', '0')
+    AND check_date >= DATE_SUB(NOW(), INTERVAL 1 YEAR)
+    AND integrations != 'a:0:{}'

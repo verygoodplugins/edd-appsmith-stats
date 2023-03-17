@@ -1,0 +1,14 @@
+SELECT 
+  YEAR(c.date_created) AS year, 
+  COUNT(DISTINCT c.id) AS total_customers,
+  SUM(CASE WHEN o.id IS NOT NULL THEN 1 ELSE 0 END) AS renewal_customers,
+  SUM(CASE WHEN o.id IS NOT NULL THEN 1 ELSE 0 END) / COUNT(DISTINCT c.id) * 100 AS renewal_rate
+FROM wp_edd_customers c
+LEFT JOIN wp_edd_orders o 
+  ON c.id = o.customer_id 
+  AND o.date_created >= DATE_ADD(c.date_created, INTERVAL 1 YEAR)
+  AND o.date_created <= DATE_ADD(c.date_created, INTERVAL 13 MONTH)
+WHERE c.purchase_value > 0
+	AND NOT (c.purchase_count = 1 AND c.purchase_value >= 847)
+	AND YEAR(c.date_created) <= YEAR(DATE_SUB(NOW(), INTERVAL 2 YEAR))
+GROUP BY YEAR(c.date_created)

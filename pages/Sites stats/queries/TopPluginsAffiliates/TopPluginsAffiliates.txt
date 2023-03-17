@@ -1,0 +1,9 @@
+SELECT
+    SUM(CASE WHEN integrations LIKE '%\"affiliate-wp\"%' THEN 1 ELSE 0 END) AS "AffiliateWP",
+    SUM(CASE WHEN integrations LIKE '%\"slice-wp\"%' THEN 1 ELSE 0 END) AS "SliceWP",
+    SUM(CASE WHEN integrations LIKE '%\"solid-affiliate\"%' THEN 1 ELSE 0 END) AS "Solid Affiliate",
+    SUM(CASE WHEN integrations LIKE '%\"wp-affiliate-manager\"%' THEN 1 ELSE 0 END) AS "WP Affiliate Manager"
+FROM wp_wpf_all_sites
+WHERE crm NOT IN ('', '0')
+    AND check_date >= DATE_SUB(NOW(), INTERVAL 1 YEAR)
+    AND integrations != 'a:0:{}'

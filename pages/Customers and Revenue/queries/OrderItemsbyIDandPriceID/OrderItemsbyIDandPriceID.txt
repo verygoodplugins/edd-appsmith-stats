@@ -1,0 +1,5 @@
+SELECT product_name, COUNT(*) AS count, SUM(total) AS total_sum
+FROM wp_edd_order_items
+WHERE date_created >= DATE_SUB(NOW(), INTERVAL 1 YEAR)
+GROUP BY product_id, price_id
+ORDER BY count DESC;

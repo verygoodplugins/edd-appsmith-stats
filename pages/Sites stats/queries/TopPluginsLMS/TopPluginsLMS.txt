@@ -1,0 +1,14 @@
+SELECT
+    SUM(CASE WHEN integrations LIKE '%\"learndash\"%' THEN 1 ELSE 0 END) AS "LearnDash",
+    SUM(CASE WHEN integrations LIKE '%\"lifterlms\"%' THEN 1 ELSE 0 END) AS "LifterLMS",
+    SUM(CASE WHEN integrations LIKE '%\"tutor-lms\"%' THEN 1 ELSE 0 END) AS "Tutor LMS",
+    SUM(CASE WHEN integrations LIKE '%\"sensei\"%' THEN 1 ELSE 0 END) AS "Sensei",
+    SUM(CASE WHEN integrations LIKE '%\"thrive-apprentice\"%' THEN 1 ELSE 0 END) AS "Thrive Apprentice",
+		SUM(CASE WHEN integrations LIKE '%\"learnpress\"%' THEN 1 ELSE 0 END) AS "LearnPress",
+		SUM(CASE WHEN integrations LIKE '%\"coursepress\"%' THEN 1 ELSE 0 END) AS "CoursePress",
+		SUM(CASE WHEN integrations LIKE '%\"wp-complete\"%' THEN 1 ELSE 0 END) AS "WPComplete",
+		SUM(CASE WHEN integrations LIKE '%\"courseware\"%' THEN 1 ELSE 0 END) AS "WP Courseware"
+FROM wp_wpf_all_sites
+WHERE crm NOT IN ('', '0')
+    AND check_date >= DATE_SUB(NOW(), INTERVAL 1 YEAR)
+    AND integrations != 'a:0:{}'

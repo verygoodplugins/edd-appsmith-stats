@@ -1,0 +1,12 @@
+SELECT 
+  DATE_FORMAT(date_created, '%M %Y') AS x, 
+  SUM(total) AS y
+FROM 
+  wp_edd_orders
+WHERE
+	date_created >= DATE_SUB(NOW(), INTERVAL 4 YEAR) AND status = 'complete'
+GROUP BY 
+  MONTH(date_created), 
+  YEAR(date_created)
+ORDER BY 
+  MIN(date_created)

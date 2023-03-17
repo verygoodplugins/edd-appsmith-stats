@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 5260,
+          "bottomRow": 5240,
           "containerStyle": "none",
           "snapRows": 120,
           "parentRowSpace": 1,
@@ -37,8 +37,8 @@
                 "visuals",
                 "visualisations"
               ],
-              "topRow": 469,
-              "bottomRow": 526,
+              "topRow": 467,
+              "bottomRow": 524,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -105,8 +105,8 @@
                 "visuals",
                 "visualisations"
               ],
-              "topRow": 412,
-              "bottomRow": 466,
+              "topRow": 410,
+              "bottomRow": 464,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -173,8 +173,8 @@
                 "visuals",
                 "visualisations"
               ],
-              "topRow": 358,
-              "bottomRow": 409,
+              "topRow": 356,
+              "bottomRow": 407,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -241,8 +241,8 @@
                 "visuals",
                 "visualisations"
               ],
-              "topRow": 301,
-              "bottomRow": 355,
+              "topRow": 299,
+              "bottomRow": 353,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -309,8 +309,8 @@
                 "visuals",
                 "visualisations"
               ],
-              "topRow": 245,
-              "bottomRow": 299,
+              "topRow": 243,
+              "bottomRow": 297,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -377,8 +377,8 @@
                 "visuals",
                 "visualisations"
               ],
-              "topRow": 188,
-              "bottomRow": 242,
+              "topRow": 186,
+              "bottomRow": 240,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -513,8 +513,8 @@
                 "visuals",
                 "visualisations"
               ],
-              "topRow": 22,
-              "bottomRow": 67,
+              "topRow": 20,
+              "bottomRow": 65,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -562,11 +562,11 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "yAxisName": "",
-              "originalTopRow": 20,
+              "originalTopRow": 22,
               "chartName": "Top CRMs",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "xAxisName": "",
-              "originalBottomRow": 65,
+              "originalBottomRow": 67,
               "chartType": "CUSTOM_FUSION_CHART"
             },
             {
@@ -670,7 +670,7 @@
                         "label"
                       ],
                       "topRow": 4,
-                      "bottomRow": 8,
+                      "bottomRow": 11,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -711,7 +711,7 @@
                       "originalTopRow": 4,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 11,
+                      "originalBottomRow": 8,
                       "fontSize": "3rem",
                       "minDynamicHeight": 4
                     }
@@ -758,8 +758,8 @@
                 "visuals",
                 "visualisations"
               ],
-              "topRow": 69,
-              "bottomRow": 140,
+              "topRow": 67,
+              "bottomRow": 138,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -824,7 +824,7 @@
                 "label"
               ],
               "topRow": 7,
-              "bottomRow": 15,
+              "bottomRow": 13,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -864,7 +864,7 @@
               "originalTopRow": 7,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 13,
+              "originalBottomRow": 15,
               "fontSize": "1.25rem",
               "minDynamicHeight": 4
             },
@@ -879,8 +879,8 @@
                 "visuals",
                 "visualisations"
               ],
-              "topRow": 143,
-              "bottomRow": 185,
+              "topRow": 141,
+              "bottomRow": 183,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,

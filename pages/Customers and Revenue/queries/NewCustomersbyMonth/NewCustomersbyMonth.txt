@@ -1,0 +1,12 @@
+SELECT 
+  DATE_FORMAT(date_created, '%M %Y') AS x, 
+  COUNT(*) AS y
+FROM 
+  wp_edd_customers
+WHERE
+	date_created >= DATE_SUB(NOW(), INTERVAL 5 YEAR)
+GROUP BY 
+  MONTH(date_created), 
+  YEAR(date_created)
+ORDER BY 
+  MIN(date_created)

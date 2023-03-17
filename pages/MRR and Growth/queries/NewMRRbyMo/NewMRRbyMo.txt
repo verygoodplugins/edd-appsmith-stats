@@ -1,0 +1,15 @@
+SELECT
+  DATE_FORMAT(s.created, '%Y-%m') AS month,
+  COUNT(DISTINCT s.id) AS subscriptions,
+  ROUND(SUM(s.initial_amount / 12), 2) AS mrr
+	-- GROUP_CONCAT(DISTINCT s.id SEPARATOR ',') as subscription_ids
+FROM wp_edd_subscriptions s
+WHERE s.created > DATE_SUB(DATE_ADD(LAST_DAY(NOW()), INTERVAL 1 DAY), INTERVAL 2 YEAR)
+AND s.status != 'pending'
+AND NOT EXISTS (
+  SELECT 1
+  FROM wp_edd_orders o
+  WHERE ( o.parent = s.parent_payment_id OR o.id = s.parent_payment_id )
+  AND o.status = 'refunded'
+)
+GROUP BY month;

@@ -1,0 +1,12 @@
+SELECT 
+  DATE_FORMAT(date_created, '%Y-%m') AS month, 
+  COUNT(CASE WHEN status = 'refunded' THEN 1 END) / COUNT(*) * 100 AS refund_percentage
+FROM 
+  wp_edd_orders
+WHERE 
+  date_created >= DATE_SUB(NOW(), INTERVAL 5 YEAR)
+	AND status NOT IN ( 'abandoned', 'failed', 'pending' )
+GROUP BY 
+  month
+ORDER BY 
+  month ASC;

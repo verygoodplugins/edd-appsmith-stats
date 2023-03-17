@@ -1,0 +1,12 @@
+SELECT a.license_id, u.user_email, a.activation_count
+FROM (
+  SELECT license_id, COUNT(site_id) AS activation_count
+  FROM wp_edd_license_activations
+  WHERE activated = 1
+  GROUP BY license_id
+  ORDER BY activation_count DESC
+  LIMIT 20
+) a
+JOIN wp_edd_licenses l ON a.license_id = l.id
+JOIN wp_users u ON l.user_id = u.ID
+ORDER BY a.activation_count DESC;
