@@ -3,5 +3,5 @@ SELECT YEAR(date_created) AS year,
        COUNT(CASE WHEN parent = 0 AND status = 'refunded' THEN 1 ELSE NULL END) AS refunded_orders,
        ROUND(COUNT(CASE WHEN parent = 0 AND status = 'refunded' THEN 1 ELSE NULL END) / COUNT(CASE WHEN parent = 0 THEN 1 ELSE NULL END) * 100, 2) AS refund_rate
 FROM wp_edd_orders
-WHERE date_created < DATE(CONCAT(YEAR(CURRENT_DATE), '-01-01'))
+WHERE date_created < DATE_SUB(CURRENT_DATE, INTERVAL 30 DAY)
 GROUP BY YEAR(date_created)

@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT \n  x,\n\t(z - LAG(z) OVER (ORDER BY x)) / LAG(z) OVER (ORDER BY x) * 100 AS y,\n  z\nFROM (\n  SELECT \n    DATE_FORMAT(date_created, '%M %Y') AS x, \n    COUNT(*) AS z,\n    MIN(date_created) AS min_date\n  FROM \n    wp_edd_customers\n  GROUP BY \n    MONTH(date_created), \n    YEAR(date_created)\n  ORDER BY \n    date_created\n) subq\nWHERE z IS NOT NULL\nORDER BY min_date;",
+      "body": "SELECT \n  x,\n  (z - LAG(z) OVER (ORDER BY x)) / LAG(z) OVER (ORDER BY x) * 100 AS y,\n  z\nFROM (\n  SELECT \n    DATE_FORMAT(date_created, '%M %Y') AS x, \n    COUNT(CASE \n            WHEN YEAR(date_created) = YEAR(CURRENT_DATE - INTERVAL 1 YEAR) AND MONTH(date_created) = MONTH(CURRENT_DATE) AND DAY(date_created) <= DAY(CURRENT_DATE) THEN 1\n            WHEN YEAR(date_created) <> YEAR(CURRENT_DATE - INTERVAL 1 YEAR) OR MONTH(date_created) <> MONTH(CURRENT_DATE) THEN 1\n            ELSE NULL\n          END) AS z,\n    MIN(date_created) AS min_date\n  FROM \n    wp_edd_customers\n  GROUP BY \n    MONTH(date_created), \n    YEAR(date_created)\n  ORDER BY \n    date_created\n) subq\nWHERE z IS NOT NULL\nORDER BY min_date;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT YEAR(date_created) AS year,\n       COUNT(CASE WHEN parent = 0 THEN 1 ELSE NULL END) AS new_orders,\n       COUNT(CASE WHEN parent = 0 AND status = 'refunded' THEN 1 ELSE NULL END) AS refunded_orders,\n       ROUND(COUNT(CASE WHEN parent = 0 AND status = 'refunded' THEN 1 ELSE NULL END) / COUNT(CASE WHEN parent = 0 THEN 1 ELSE NULL END) * 100, 2) AS refund_rate\nFROM wp_edd_orders\nWHERE date_created < DATE(CONCAT(YEAR(CURRENT_DATE), '-01-01'))\nGROUP BY YEAR(date_created)\n",
+      "body": "SELECT YEAR(date_created) AS year,\n       COUNT(CASE WHEN parent = 0 THEN 1 ELSE NULL END) AS new_orders,\n       COUNT(CASE WHEN parent = 0 AND status = 'refunded' THEN 1 ELSE NULL END) AS refunded_orders,\n       ROUND(COUNT(CASE WHEN parent = 0 AND status = 'refunded' THEN 1 ELSE NULL END) / COUNT(CASE WHEN parent = 0 THEN 1 ELSE NULL END) * 100, 2) AS refund_rate\nFROM wp_edd_orders\nWHERE date_created < DATE_SUB(CURRENT_DATE, INTERVAL 30 DAY)\nGROUP BY YEAR(date_created)\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

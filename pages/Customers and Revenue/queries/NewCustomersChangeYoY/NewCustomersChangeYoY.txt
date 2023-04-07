@@ -1,11 +1,15 @@
 SELECT 
   x,
-	(z - LAG(z) OVER (ORDER BY x)) / LAG(z) OVER (ORDER BY x) * 100 AS y,
+  (z - LAG(z) OVER (ORDER BY x)) / LAG(z) OVER (ORDER BY x) * 100 AS y,
   z
 FROM (
   SELECT 
     DATE_FORMAT(date_created, '%M %Y') AS x, 
-    COUNT(*) AS z,
+    COUNT(CASE 
+            WHEN YEAR(date_created) = YEAR(CURRENT_DATE - INTERVAL 1 YEAR) AND MONTH(date_created) = MONTH(CURRENT_DATE) AND DAY(date_created) <= DAY(CURRENT_DATE) THEN 1
+            WHEN YEAR(date_created) <> YEAR(CURRENT_DATE - INTERVAL 1 YEAR) OR MONTH(date_created) <> MONTH(CURRENT_DATE) THEN 1
+            ELSE NULL
+          END) AS z,
     MIN(date_created) AS min_date
   FROM 
     wp_edd_customers
