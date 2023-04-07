@@ -1,102 +1,25 @@
 SELECT
-  DATE_FORMAT(first_day, '%Y-%m') AS month,
-  COUNT(DISTINCT subscriptions.id) AS subscriptions,
+  DATE_FORMAT(months.first_day, '%Y-%m') AS month,
+  COUNT(DISTINCT s.id) AS subscriptions,
   ROUND( SUM(
     CASE
-      WHEN subscriptions.created >= DATE_SUB(subscriptions.created, INTERVAL 12 MONTH) THEN
-        subscriptions.initial_amount / 12
+      WHEN s.created >= DATE_SUB(s.created, INTERVAL 12 MONTH) THEN
+        s.initial_amount / 12
       ELSE
-        subscriptions.recurring_amount / 12
+        s.recurring_amount / 12
     END
   ), 2 ) AS mrr
 FROM
-  (
-    SELECT
-      DISTINCT id,
-      created,
-      expiration,
-			initial_amount,
-			recurring_amount,
-			parent_payment_id
-    FROM
-      wp_edd_subscriptions
-  ) AS subscriptions
+  wp_edd_subscriptions AS s
   JOIN (
     SELECT
-      DATE_FORMAT(NOW(), '%Y-%m-01') AS first_day
-    UNION ALL
-    SELECT
-      DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 1 MONTH), '%Y-%m-01')
-    UNION ALL
-    SELECT
-      DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 2 MONTH), '%Y-%m-01')
-    UNION ALL
-    SELECT
-      DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 3 MONTH), '%Y-%m-01')
-    UNION ALL
-    SELECT
-      DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 4 MONTH), '%Y-%m-01')
-    UNION ALL
-    SELECT
-      DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 5 MONTH), '%Y-%m-01')
-    UNION ALL
-    SELECT
-      DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 6 MONTH), '%Y-%m-01')
-    UNION ALL
-    SELECT
-      DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 7 MONTH), '%Y-%m-01')
-    UNION ALL
-    SELECT
-      DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 8 MONTH), '%Y-%m-01')
-    UNION ALL
-    SELECT
-      DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 9 MONTH), '%Y-%m-01')
-    UNION ALL
-    SELECT
-      DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 10 MONTH), '%Y-%m-01')
-    UNION ALL
-    SELECT
-      DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 11 MONTH), '%Y-%m-01')
-    UNION ALL
-    SELECT
-      DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 12 MONTH), '%Y-%m-01')
-    UNION ALL
-    SELECT
-      DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 13 MONTH), '%Y-%m-01')
-    UNION ALL
-    SELECT
-      DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 14 MONTH), '%Y-%m-01')
-    UNION ALL
-    SELECT
-      DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 15 MONTH), '%Y-%m-01')
-    UNION ALL
-    SELECT
-      DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 16 MONTH), '%Y-%m-01')
-    UNION ALL
-    SELECT
-      DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 17 MONTH), '%Y-%m-01')
-    UNION ALL
-    SELECT
-      DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 18 MONTH), '%Y-%m-01')
-    UNION ALL
-    SELECT
-      DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 19 MONTH), '%Y-%m-01')
-    UNION ALL
-    SELECT
-      DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 20 MONTH), '%Y-%m-01')
-    UNION ALL
-    SELECT
-      DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 21 MONTH), '%Y-%m-01')
-		UNION ALL
-    SELECT
-      DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 22 MONTH), '%Y-%m-01')
-    UNION ALL
-    SELECT
-      DATE_FORMAT(DATE_SUB(NOW(), INTERVAL 23 MONTH), '%Y-%m-01')
+      DATE_FORMAT(DATE_SUB(NOW(), INTERVAL n MONTH), '%Y-%m-01') AS first_day
+    FROM
+      (SELECT 0 AS n UNION ALL SELECT 1 UNION ALL SELECT 2 UNION ALL SELECT 3 UNION ALL SELECT 4 UNION ALL SELECT 5 UNION ALL SELECT 6 UNION ALL SELECT 7 UNION ALL SELECT 8 UNION ALL SELECT 9 UNION ALL SELECT 10 UNION ALL SELECT 11 UNION ALL SELECT 12 UNION ALL SELECT 13 UNION ALL SELECT 14 UNION ALL SELECT 15 UNION ALL SELECT 16 UNION ALL SELECT 17 UNION ALL SELECT 18 UNION ALL SELECT 19 UNION ALL SELECT 20 UNION ALL SELECT 21 UNION ALL SELECT 22 UNION ALL SELECT 23) AS n
   ) AS months
 	ON
-  (subscriptions.created < months.first_day AND
-  (subscriptions.expiration >= months.first_day))
+  (s.created < months.first_day AND
+  (s.expiration >= months.first_day))
 WHERE
   NOT EXISTS (
     SELECT
@@ -104,7 +27,7 @@ WHERE
     FROM
       wp_edd_orders
     WHERE
-      ( parent = subscriptions.parent_payment_id OR id = subscriptions.parent_payment_id )
+      ( parent = s.parent_payment_id OR id = s.parent_payment_id )
 			AND status = 'refunded'
   )
 GROUP BY
