@@ -20,7 +20,7 @@
   <p align="center">
     Better reporting for Easy Digital Downloads
     <br />
-    <a href="https://drunk.support/creating-an-analytics-dashboard-for-easy-digital-downloads-using-appsmith-and-chatgpt/"><strong>Read the blog post »</strong></a>
+    <a href="https://drunk.support/edd-analytics-chatgpt-dashboard/"><strong>Read the blog post »</strong></a>
   </p>
 </div>
 
@@ -44,7 +44,7 @@ It can be [imported into Appsmith](https://docs.appsmith.com/advanced-concepts/v
 1. Either sign up for [a free Appsmith account](https://www.appsmith.com/) or install the package on your own server. 
 2. [Fork this repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
 3. Follow [this guide](https://docs.appsmith.com/advanced-concepts/version-control-with-git/import-from-repository) to import your repository to your Appsmith workspace.
-4. Head to Datasources &raquo; Easy Digital Downloads and enter the connection information to your database. You will probably need to white-list Appsmith's IP addresses. ![Database connection](https://drunk.support/wp-content/uploads/2023/03/appsmith-database-setup.jpg)
+4. Head to Datasources &raquo; Easy Digital Downloads and enter the connection information to your database. You will probably need to allow-list Appsmith's IP addresses. ![Database connection](https://drunk.support/wp-content/uploads/2023/03/appsmith-database-setup.jpg)
 
 5. Choose a page under Pages and you should see your data populated. If not, check the status bar for errors (for example custom table prefixes will need to be updated in the SQL queries)
 6. Have fun! 📈🥳
