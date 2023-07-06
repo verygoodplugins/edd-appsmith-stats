@@ -20,7 +20,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 77,
+          "version": 80,
           "minHeight": 1292,
           "dynamicTriggerPathList": [],
           "parentColumnSpace": 1,
@@ -264,7 +264,7 @@
                   "key": "customFusionChartConfig"
                 }
               ],
-              "customFusionChartConfig": "{\n  \"type\": \"column2d\",\n  \"dataSource\": {\n    \"data\": {{NewCustomersChangeYoY.data.filter(item => {\n  let date = new Date( item.x );\n  let cutoff = new Date().setFullYear( new Date().getFullYear() - 5 );\n  return date >= cutoff;\n}).map( (row) => {\n      return { label: row.x, value: row.y, color: ( row.y < 0 ? Color.getRandomColor( '#d66360' ) : Color.getRandomColor( '#6ca2be' )) };\n  });}},\n    \"chart\": {\n      \"caption\": \"New Customers Percent Change YoY\",\n\t\t\t\"numberSuffix\": \"%\",\n\t\t\t\"theme\": \"fusion\",\n\t\t\t\"paletteColors\": \"#17a2b8\",\n\t\t\t\"baseFont\": \"Roboto, sans-serif\",\n\t\t\t\"baseFontSize\": \"12\",\n\t\t\t\"baseFontColor\": \"#4d4d4d\",\n\t\t\t\"captionFont\": \"Roboto, sans-serif\",\n\t\t\t\"captionFontSize\": \"24\",\n\t\t\t\"subCaptionFont\": \"Roboto, sans-serif\",\n\t\t\t\"subCaptionFontSize\": \"18\",\n\t\t\t\"subCaptionFontColor\": \"#868e96\",\n\t\t\t\"labelDisplay\": \"rotate\",\n      \"slantLabel\": \"1\",\n\t\t\t\"labelFontSize\": \"10\",\n\t\t\t\"labelFontColor\": \"#888\"\n    }\n  }\n}",
+              "customFusionChartConfig": "{\n  \"type\": \"column2d\",\n  \"dataSource\": {\n    \"data\": {{NewCustomersChangeYoY.data.filter(item => {\n  let date = new Date( item.x );\n  let cutoff = new Date().setFullYear( new Date().getFullYear() - 5 );\n  return date >= cutoff;\n}).map( (row) => {\n      return { label: row.label, value: row.y, color: ( row.y < 0 ? Color.getRandomColor( '#d66360' ) : Color.getRandomColor( '#6ca2be' )) };\n  });}},\n    \"chart\": {\n      \"caption\": \"New Customers Percent Change YoY\",\n\t\t\t\"numberSuffix\": \"%\",\n\t\t\t\"theme\": \"fusion\",\n\t\t\t\"paletteColors\": \"#17a2b8\",\n\t\t\t\"baseFont\": \"Roboto, sans-serif\",\n\t\t\t\"baseFontSize\": \"12\",\n\t\t\t\"baseFontColor\": \"#4d4d4d\",\n\t\t\t\"captionFont\": \"Roboto, sans-serif\",\n\t\t\t\"captionFontSize\": \"24\",\n\t\t\t\"subCaptionFont\": \"Roboto, sans-serif\",\n\t\t\t\"subCaptionFontSize\": \"18\",\n\t\t\t\"subCaptionFontColor\": \"#868e96\",\n\t\t\t\"labelDisplay\": \"rotate\",\n      \"slantLabel\": \"1\",\n\t\t\t\"labelFontSize\": \"10\",\n\t\t\t\"labelFontColor\": \"#888\"\n    }\n  }\n}",
               "key": "avlh3a5scw",
               "isDeprecated": false,
               "rightColumn": 57,
@@ -773,7 +773,11 @@
                       "columnOrder": [
                         "site_name"
                       ],
-                      "dynamicPropertyPathList": [],
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "tableData"
+                        }
+                      ],
                       "displayName": "Table",
                       "bottomRow": 43,
                       "columnWidthMap": {

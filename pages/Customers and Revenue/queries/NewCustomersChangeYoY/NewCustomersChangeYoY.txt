@@ -1,23 +1,16 @@
 SELECT 
   x,
-  (z - LAG(z) OVER (ORDER BY x)) / LAG(z) OVER (ORDER BY x) * 100 AS y,
-  z
+	( z / LAG(z) OVER (ORDER BY x) - 1 ) * 100 as y,
+	z
 FROM (
   SELECT 
     DATE_FORMAT(date_created, '%M %Y') AS x, 
-    COUNT(CASE 
-            WHEN YEAR(date_created) = YEAR(CURRENT_DATE - INTERVAL 1 YEAR) AND MONTH(date_created) = MONTH(CURRENT_DATE) AND DAY(date_created) <= DAY(CURRENT_DATE) THEN 1
-            WHEN YEAR(date_created) <> YEAR(CURRENT_DATE - INTERVAL 1 YEAR) OR MONTH(date_created) <> MONTH(CURRENT_DATE) THEN 1
-            ELSE NULL
-          END) AS z,
-    MIN(date_created) AS min_date
+    COUNT(*) AS z
   FROM 
     wp_edd_customers
+	WHERE date_created > '1970-01-01'
   GROUP BY 
-    MONTH(date_created), 
-    YEAR(date_created)
-  ORDER BY 
-    date_created
+    DATE_FORMAT(date_created, '%M %Y')
 ) subq
-WHERE z IS NOT NULL
-ORDER BY min_date;
+ORDER BY 
+  STR_TO_DATE(x, '%M %Y');
