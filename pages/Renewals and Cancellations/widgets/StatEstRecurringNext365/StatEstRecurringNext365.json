@@ -1,0 +1,82 @@
+{
+    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+    "widgetName": "StatEstRecurringNext365",
+    "borderColor": "#E0DEDE",
+    "isCanvas": true,
+    "displayName": "Stats Box",
+    "iconSVG": "/static/media/icon.382a7c7bc55323fbbd8edd79208c5324.svg",
+    "topRow": 21.599999999999998,
+    "bottomRow": 38,
+    "parentRowSpace": 10,
+    "type": "STATBOX_WIDGET",
+    "hideCard": false,
+    "shouldScrollContents": true,
+    "animateLoading": true,
+    "parentColumnSpace": 17.9375,
+    "leftColumn": 32,
+    "dynamicBindingPathList": [
+        {"key": "borderRadius"},
+        {"key": "boxShadow"}
+    ],
+    "children": [{
+        "widgetName": "Canvas1Copy1",
+        "displayName": "Canvas",
+        "topRow": 0,
+        "bottomRow": 164.00000000000003,
+        "parentRowSpace": 1,
+        "type": "CANVAS_WIDGET",
+        "canExtend": false,
+        "hideCard": true,
+        "minHeight": 150,
+        "useAutoLayout": true,
+        "parentColumnSpace": 1,
+        "leftColumn": 0,
+        "dynamicBindingPathList": [],
+        "positioning": "vertical",
+        "key": "wp0unyr065",
+        "isDeprecated": false,
+        "rightColumn": 394.625,
+        "detachFromLayout": true,
+        "widgetId": "wae3fiph8k",
+        "containerStyle": "none",
+        "isVisible": true,
+        "version": 1,
+        "parentId": "wbexamkx5h",
+        "renderMode": "CANVAS",
+        "isLoading": false,
+        "responsiveBehavior": "fill",
+        "flexLayers": [
+            {"children": [{
+                "id": "a8m5h0957b",
+                "align": "start"
+            }]},
+            {"children": [{
+                "id": "6hxifcf3jn",
+                "align": "start"
+            }]},
+            {"children": [{
+                "id": "2t2ilzk833",
+                "align": "start"
+            }]}
+        ]
+    }],
+    "borderWidth": "1",
+    "key": "i25ui7l4eg",
+    "flexVerticalAlignment": "end",
+    "backgroundColor": "white",
+    "isDeprecated": false,
+    "rightColumn": 64,
+    "dynamicHeight": "AUTO_HEIGHT",
+    "widgetId": "wbexamkx5h",
+    "isVisible": true,
+    "parentId": "0",
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "originalTopRow": 26,
+    "responsiveBehavior": "fill",
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "maxDynamicHeight": 9000,
+    "originalBottomRow": 42,
+    "alignment": "center",
+    "minDynamicHeight": 14
+}

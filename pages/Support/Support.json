@@ -1,0 +1,67 @@
+{
+  "unpublishedPage": {
+    "name": "Support",
+    "slug": "support",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 880,
+          "containerStyle": "none",
+          "snapRows": 86,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 85,
+          "minHeight": 880,
+          "useAutoLayout": true,
+          "parentColumnSpace": 1,
+          "responsiveBehavior": "fill",
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "positioning": "vertical",
+          "flexLayers": [
+            {
+              "children": [
+                {
+                  "id": "fxfhuzpoq2",
+                  "align": "center"
+                }
+              ]
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Support_CustomerSupportRequestRates",
+              "name": "CustomerSupportRequestRates",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Support",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "63e8d02d1e242279f5911ffe_63fa5aa402d27175e02b6f9e"
+}

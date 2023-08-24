@@ -1,0 +1,75 @@
+{
+  "unpublishedPage": {
+    "name": "Software Licensing",
+    "slug": "software-licensing",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1210,
+          "containerStyle": "none",
+          "snapRows": 120,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 85,
+          "minHeight": 1210,
+          "useAutoLayout": true,
+          "parentColumnSpace": 1,
+          "responsiveBehavior": "fill",
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "positioning": "vertical",
+          "flexLayers": [
+            {
+              "children": [
+                {
+                  "id": "kpfduota51",
+                  "align": "center"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "id": "pxrqtefpp6",
+                  "align": "center"
+                }
+              ]
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Software Licensing_TopUsedLicenses",
+              "name": "TopUsedLicenses",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Software Licensing",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "63e8d02d1e242279f5911ffe_63ef62273d6355314506391e"
+}

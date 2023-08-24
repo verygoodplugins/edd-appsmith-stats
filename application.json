@@ -32,6 +32,11 @@
   "viewMode": false,
   "appIsExample": false,
   "unreadCommentThreads": 0,
+  "unpublishedApplicationDetail": {
+    "appPositioning": {
+      "type": "AUTO"
+    }
+  },
   "color": "#F4FFDE",
   "icon": "bar-graph",
   "unpublishedAppLayout": {

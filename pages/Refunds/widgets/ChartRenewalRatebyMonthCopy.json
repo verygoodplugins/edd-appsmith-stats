@@ -1,0 +1,104 @@
+{
+    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+    "setAdaptiveYMin": true,
+    "widgetName": "ChartRenewalRatebyMonthCopy",
+    "allowScroll": false,
+    "displayName": "Chart",
+    "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
+    "searchTags": [
+        "graph",
+        "visuals",
+        "visualisations"
+    ],
+    "topRow": 5.2,
+    "bottomRow": 41.2,
+    "parentRowSpace": 10,
+    "type": "CHART_WIDGET",
+    "hideCard": false,
+    "chartData": {"omnlezx0nn": {
+        "data": "{{PercentOrdersRefundedbyMonth.data.map( (row) => {\n      return { x: row.month, y: row.refund_percentage }\n});\n}}\n                        ",
+        "seriesName": "Sales"
+    }},
+    "animateLoading": true,
+    "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+    "parentColumnSpace": 20.484375,
+    "dynamicTriggerPathList": [],
+    "leftColumn": 32,
+    "dynamicBindingPathList": [
+        {"key": "borderRadius"},
+        {"key": "boxShadow"},
+        {"key": "accentColor"},
+        {"key": "fontFamily"},
+        {"key": "chartData.omnlezx0nn.data"}
+    ],
+    "customFusionChartConfig": {
+        "type": "column2d",
+        "dataSource": {
+            "data": [
+                {
+                    "label": "Product1",
+                    "value": 20000
+                },
+                {
+                    "label": "Product2",
+                    "value": 22000
+                },
+                {
+                    "label": "Product3",
+                    "value": 32000
+                }
+            ],
+            "chart": {
+                "legendIconSides": "4",
+                "canvasPadding": "0",
+                "captionAlignment": "center",
+                "yAxisNameFontSize": "14",
+                "caption": "Sales Report",
+                "labelFontColor": "#716e6e",
+                "chartLeftMargin": "20",
+                "captionFontSize": "24",
+                "chartTopMargin": "10",
+                "theme": "fusion",
+                "legendIconAlpha": "100",
+                "chartBottomMargin": "10",
+                "labelFontSize": "12",
+                "xAxisNameFontColor": "#716e6e",
+                "yAxisNameFontColor": "#716e6e",
+                "captionFontColor": "#231F20",
+                "yAxisValueFontColor": "#716e6e",
+                "captionPadding": "20",
+                "yAxisName": "Revenue($)",
+                "legendIconBgAlpha": "100",
+                "xAxisName": "Product Line",
+                "alignCaptionWithCanvas": 1,
+                "chartRightMargin": "40",
+                "legendPosition": "top",
+                "xAxisNameFontSize": "14",
+                "yAxisValueFontSize": "12"
+            }
+        }
+    },
+    "key": "h0ttxkeez6",
+    "showDataPointLabel": false,
+    "flexVerticalAlignment": "end",
+    "isDeprecated": false,
+    "rightColumn": 64,
+    "widgetId": "rhvf749fht",
+    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+    "minWidth": 450,
+    "isVisible": true,
+    "version": 1,
+    "parentId": "0",
+    "labelOrientation": "slant",
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "yAxisName": "Percent Refunded",
+    "originalTopRow": 10,
+    "responsiveBehavior": "fill",
+    "chartName": "Refund Rates by Month",
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "xAxisName": "Month of purchase",
+    "originalBottomRow": 46,
+    "chartType": "LINE_CHART",
+    "alignment": "center"
+}

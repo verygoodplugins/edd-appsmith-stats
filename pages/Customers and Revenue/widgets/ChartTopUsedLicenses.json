@@ -1,0 +1,77 @@
+{
+    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+    "setAdaptiveYMin": false,
+    "allowScroll": false,
+    "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
+    "topRow": 224.39999999999998,
+    "type": "CHART_WIDGET",
+    "chartData": {"k19yowdo03": {
+        "data": [
+            {
+                "x": "Product1",
+                "y": 20000
+            },
+            {
+                "x": "Product2",
+                "y": 22000
+            },
+            {
+                "x": "Product3",
+                "y": 32000
+            }
+        ],
+        "seriesName": "Sales"
+    }},
+    "animateLoading": true,
+    "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+    "leftColumn": 0,
+    "dynamicBindingPathList": [
+        {"key": "borderRadius"},
+        {"key": "boxShadow"},
+        {"key": "accentColor"},
+        {"key": "fontFamily"},
+        {"key": "customFusionChartConfig"}
+    ],
+    "onDataPointClick": "{{GetSitesByLicenseID.run(() => showModal('ModalLicenseSites'), () => {})}}",
+    "flexVerticalAlignment": "end",
+    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+    "isVisible": true,
+    "version": 1,
+    "isLoading": false,
+    "chartName": "",
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "xAxisName": "Product Line",
+    "originalBottomRow": 437,
+    "alignment": "start",
+    "mobileBottomRow": 336.20000000000005,
+    "widgetName": "ChartTopUsedLicenses",
+    "dynamicPropertyPathList": [],
+    "displayName": "Chart",
+    "searchTags": [
+        "graph",
+        "visuals",
+        "visualisations"
+    ],
+    "bottomRow": 285.4,
+    "parentRowSpace": 10,
+    "hideCard": false,
+    "mobileRightColumn": 64,
+    "parentColumnSpace": 20.96875,
+    "dynamicTriggerPathList": [{"key": "onDataPointClick"}],
+    "customFusionChartConfig": "{\n  \"type\": \"bar2d\",\n  \"dataSource\": {\n    \"data\": {{TopUsedLicenses.data.map((row) => {\n      return { label: row.license_id + '', value: row.activation_count, 'color': Color.getRandomColor( '#E55B10' ) };\n  \t\t});\n\t\t}},\n    \"chart\": {\n      \"caption\": \"Top 20 License IDs by Number of Activations\",\n      \"xAxisName\": \"License ID\",\n      \"yAxisName\": \"# Activations\",\n      \"theme\": \"fusion\",\n\t\t\t\"showValues\": \"1\"\n    }\n  }\n}",
+    "key": "4yqlm7hggu",
+    "showDataPointLabel": false,
+    "isDeprecated": false,
+    "rightColumn": 64,
+    "widgetId": "rv8f0le8hn",
+    "minWidth": 450,
+    "parentId": "0",
+    "labelOrientation": "auto",
+    "renderMode": "CANVAS",
+    "mobileTopRow": 275.20000000000005,
+    "yAxisName": "Revenue($)",
+    "originalTopRow": 376,
+    "responsiveBehavior": "fill",
+    "mobileLeftColumn": 0,
+    "chartType": "CUSTOM_FUSION_CHART"
+}

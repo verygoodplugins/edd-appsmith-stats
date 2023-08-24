@@ -1,0 +1,187 @@
+{
+  "unpublishedPage": {
+    "name": "Customers and Revenue",
+    "slug": "customers-and-revenue",
+    "customSlug": "",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "mobileBottomRow": 3946.000000000001,
+          "widgetName": "MainContainer",
+          "topRow": 0,
+          "bottomRow": 2854,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "minHeight": 2820,
+          "useAutoLayout": true,
+          "dynamicTriggerPathList": [],
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "positioning": "vertical",
+          "backgroundColor": "none",
+          "rightColumn": 4896,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "containerStyle": "none",
+          "snapRows": 125,
+          "version": 85,
+          "mobileTopRow": 0,
+          "responsiveBehavior": "fill",
+          "flexLayers": [
+            {
+              "children": [
+                {
+                  "id": "cbbkq9ay7h",
+                  "align": "center"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "id": "xtkadyw3u8",
+                  "align": "center"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "id": "dkqn3usxpx",
+                  "align": "center"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "id": "p5u0pshdf8",
+                  "align": "center"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "id": "oynse02f4d",
+                  "align": "center"
+                },
+                {
+                  "id": "05nlm8h935",
+                  "align": "center"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "id": "rv8f0le8hn",
+                  "align": "start"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "id": "1wf8autlzn",
+                  "align": "center"
+                }
+              ]
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Customers and Revenue_NewCustomersbyMonth",
+              "name": "NewCustomersbyMonth",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Customers and Revenue_AllRevenuebyMonth",
+              "name": "AllRevenuebyMonth",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Customers and Revenue_NewRevenuebyMonth",
+              "name": "NewRevenuebyMonth",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Customers and Revenue_RecurringRevenuebyMonth",
+              "name": "RecurringRevenuebyMonth",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Customers and Revenue_RefundedRevenuebyMonth",
+              "name": "RefundedRevenuebyMonth",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Customers and Revenue_NewCustomersChangeYoY",
+              "name": "NewCustomersChangeYoY",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Customers and Revenue_OrderItemsbyIDandPriceID",
+              "name": "OrderItemsbyIDandPriceID",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Customers and Revenue_GetSitesByLicenseID",
+              "name": "GetSitesByLicenseID",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                " ChartTopUsedLicenses.selectedDataPoint.x "
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Customers and Revenue",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "63e8d02d1e242279f5911ffe_63e8d02d1e242279f5912000"
+}

@@ -1,0 +1,76 @@
+{
+    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+    "widgetName": "MRROverview",
+    "allowScroll": false,
+    "displayName": "Chart",
+    "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
+    "searchTags": [
+        "graph",
+        "visuals",
+        "visualisations"
+    ],
+    "topRow": 36.4,
+    "bottomRow": 102.4,
+    "parentRowSpace": 10,
+    "type": "CHART_WIDGET",
+    "hideCard": false,
+    "chartData": {
+        "r6d7rzgzwp": {
+            "data": "[{\"x\":\"label\",\"y\":50}]",
+            "seriesName": ""
+        },
+        "awsz0z2ig0": {
+            "data": [
+                {
+                    "x": "Product1",
+                    "y": 20000
+                },
+                {
+                    "x": "Product2",
+                    "y": 22000
+                },
+                {
+                    "x": "Product3",
+                    "y": 32000
+                }
+            ],
+            "seriesName": "Sales"
+        }
+    },
+    "animateLoading": true,
+    "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+    "parentColumnSpace": 16.921875,
+    "dynamicTriggerPathList": [],
+    "leftColumn": 0,
+    "dynamicBindingPathList": [
+        {"key": "borderRadius"},
+        {"key": "boxShadow"},
+        {"key": "accentColor"},
+        {"key": "fontFamily"},
+        {"key": "customFusionChartConfig"}
+    ],
+    "customFusionChartConfig": "{\n  \"type\": \"stackedcolumn2dline\",\n  \"dataSource\": {\n    \"dataset\": [\n\t\t\t{\n\t\t\t\t\"seriesname\": \"Existing\",\n\t\t\t\t\"data\": {{ ExistingMRRbyMo.data.map((row) => { return { value: row.mrr, color: Color.getRandomColor( '#5aa4c1' ) } }); }}\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"seriesname\": \"New\",\n\t\t\t\t\"color\": \"#16b8a0\",\n\t\t\t\t\"data\": {{ NewMRRbyMo.data.map((row) => { return { value: row.mrr } }); }}\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"seriesname\": \"Voluntary Churn\",\n\t\t\t\t\"color\": \"#e65a5b\",\n\t\t\t\t\"data\": {{ VoluntaryChurnbyMo.data.map((row) => { return { value: -row.mrr } }); }}\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"seriesname\": \"Delinquent Churn\",\n\t\t\t\t\"color\": \"#fc9479\",\n\t\t\t\t\"data\": {{ DelinquentChurnbyMo.data.map((row) => { return { value: -row.mrr } }); }}\n\t\t\t},\n\t\t\t{\n      \t\"seriesname\": \"Net\",\n      \t\"plottooltext\": \"Net MRR: <b>$dataValue<\/b>\",\n      \t\"renderAs\": \"line\",\n\t\t\t\t\"color\": \"#1B2E43\",\n      \t\"data\": {{ CalcGrowthRate.netMRR().map( value => ({ value }))}}\n\t\t\t}\n\t\t],\n\t\t\"categories\": [\n\t\t\t{\n\t\t\t\t\"category\": {{ ExistingMRRbyMo.data.map((row) => { return { label:  row.month } }); }}\n\t\t\t}\n\t\t],\n    \"chart\": {\n        \"caption\": \"MRR Overview\",\n        \"yAxisName\": \"MRR\",\n        \"numberPrefix\": \"$\",\n        \"theme\": \"fusion\",\n        \"paletteColors\": \"#17a2b8\",\n        \"baseFont\": \"Roboto, sans-serif\",\n        \"baseFontSize\": \"12\",\n        \"baseFontColor\": \"#4d4d4d\",\n        \"captionFont\": \"Roboto, sans-serif\",\n        \"captionFontSize\": \"24\",\n        \"subCaptionFont\": \"Roboto, sans-serif\",\n        \"subCaptionFontSize\": \"18\",\n        \"subCaptionFontColor\": \"#868e96\",\n\t\t\t\t\"anchorBgColor\": \"#1B2E43\",\n        \"anchorBgHoverColor\": \"#1B2E43\",\n        \"anchorHoverRadius\": \"7\",\n\t\t\t\t\"labelFontColor\": \"#888\"\n    }\n  }\n}",
+    "key": "usg3pimfb8",
+    "showDataPointLabel": false,
+    "flexVerticalAlignment": "end",
+    "isDeprecated": false,
+    "rightColumn": 64,
+    "widgetId": "zn3x5p3v2z",
+    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+    "minWidth": 450,
+    "isVisible": true,
+    "version": 1,
+    "parentId": "0",
+    "labelOrientation": "auto",
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "yAxisName": "Revenue($)",
+    "originalTopRow": 39,
+    "responsiveBehavior": "fill",
+    "chartName": "Sales Report",
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "xAxisName": "Product Line",
+    "originalBottomRow": 105,
+    "chartType": "CUSTOM_FUSION_CHART",
+    "alignment": "center"
+}

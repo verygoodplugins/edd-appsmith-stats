@@ -1,0 +1,159 @@
+{
+  "unpublishedPage": {
+    "name": "Renewals and Cancellations",
+    "slug": "renewals-and-cancellations",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 2108,
+          "containerStyle": "none",
+          "snapRows": 120,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 85,
+          "minHeight": 1930,
+          "useAutoLayout": true,
+          "parentColumnSpace": 1,
+          "responsiveBehavior": "fill",
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "positioning": "vertical",
+          "flexLayers": [
+            {
+              "children": [
+                {
+                  "id": "7jdmhv85pi",
+                  "align": "center"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "id": "pjnlvgdw6w",
+                  "align": "center"
+                },
+                {
+                  "id": "eoikm5cgwr",
+                  "align": "center"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "id": "nd6dqw7emn",
+                  "align": "center"
+                },
+                {
+                  "id": "wbexamkx5h",
+                  "align": "center"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "id": "zccf1xtmv6",
+                  "align": "center"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "id": "nb287dqjar",
+                  "align": "center"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "id": "8i69y8o86a",
+                  "align": "center"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "id": "4t8ca8njce",
+                  "align": "center"
+                }
+              ]
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Renewals and Cancellations_RenewalRatesbyMonth",
+              "name": "RenewalRatesbyMonth",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Renewals and Cancellations_SubscriptionCancellations",
+              "name": "SubscriptionCancellations",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Renewals and Cancellations_RenewalRates",
+              "name": "RenewalRates",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Renewals and Cancellations_UpcomingRenewals1Yr",
+              "name": "UpcomingRenewals1Yr",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Renewals and Cancellations_UpcomingRenewals30Days",
+              "name": "UpcomingRenewals30Days",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Renewals and Cancellations",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "63e8d02d1e242279f5911ffe_63ef6194295431490fd8ad7d"
+}

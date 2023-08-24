@@ -1,0 +1,128 @@
+{
+    "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+    "setAdaptiveYMin": false,
+    "mobileBottomRow": 168.8,
+    "widgetName": "ChartRecurringRevenue",
+    "allowScroll": false,
+    "dynamicPropertyPathList": [],
+    "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
+    "displayName": "Chart",
+    "topRow": 114.00000000000001,
+    "searchTags": [
+        "graph",
+        "visuals",
+        "visualisations"
+    ],
+    "bottomRow": 170,
+    "parentRowSpace": 10,
+    "type": "CHART_WIDGET",
+    "hideCard": false,
+    "mobileRightColumn": 64,
+    "chartData": {
+        "myfuw8ndzk": {
+            "data": "{{NewRevenuebyMonth.data}}",
+            "color": "#60a5fa",
+            "seriesName": "New Revenue"
+        },
+        "jo3czp93ca": {
+            "data": "{{RecurringRevenuebyMonth.data}}",
+            "color": "#c084fc",
+            "seriesName": "Recurring Revenue"
+        },
+        "hm3wobo04i": {
+            "data": "{{AllRevenuebyMonth.data}}",
+            "color": "#bfdbfe",
+            "seriesName": "All Revenue"
+        },
+        "j2mnyp4u3n": {
+            "data": "{{RefundedRevenuebyMonth.data}}",
+            "color": "#dc2626",
+            "seriesName": "Refunds"
+        }
+    },
+    "animateLoading": true,
+    "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+    "parentColumnSpace": 18.03125,
+    "dynamicTriggerPathList": [],
+    "leftColumn": 0,
+    "dynamicBindingPathList": [
+        {"key": "accentColor"},
+        {"key": "fontFamily"},
+        {"key": "chartData.myfuw8ndzk.data"},
+        {"key": "chartData.hm3wobo04i.data"},
+        {"key": "chartData.jo3czp93ca.data"},
+        {"key": "chartData.j2mnyp4u3n.data"}
+    ],
+    "customFusionChartConfig": {
+        "type": "column2d",
+        "dataSource": {
+            "data": [
+                {
+                    "label": "Product1",
+                    "value": 20000
+                },
+                {
+                    "label": "Product2",
+                    "value": 22000
+                },
+                {
+                    "label": "Product3",
+                    "value": 32000
+                }
+            ],
+            "chart": {
+                "legendIconSides": "4",
+                "canvasPadding": "0",
+                "captionAlignment": "center",
+                "yAxisNameFontSize": "14",
+                "caption": "Sales Report",
+                "labelFontColor": "#716e6e",
+                "chartLeftMargin": "20",
+                "captionFontSize": "24",
+                "chartTopMargin": "10",
+                "theme": "fusion",
+                "legendIconAlpha": "100",
+                "chartBottomMargin": "10",
+                "labelFontSize": "12",
+                "xAxisNameFontColor": "#716e6e",
+                "yAxisNameFontColor": "#716e6e",
+                "captionFontColor": "#231F20",
+                "yAxisValueFontColor": "#716e6e",
+                "captionPadding": "20",
+                "yAxisName": "Revenue($)",
+                "legendIconBgAlpha": "100",
+                "xAxisName": "Product Line",
+                "alignCaptionWithCanvas": 1,
+                "chartRightMargin": "40",
+                "legendPosition": "top",
+                "xAxisNameFontSize": "14",
+                "yAxisValueFontSize": "12"
+            }
+        }
+    },
+    "flexVerticalAlignment": "end",
+    "key": "avlh3a5scw",
+    "showDataPointLabel": false,
+    "isDeprecated": false,
+    "rightColumn": 64,
+    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+    "widgetId": "p5u0pshdf8",
+    "minWidth": 450,
+    "isVisible": true,
+    "version": 1,
+    "parentId": "0",
+    "labelOrientation": "slant",
+    "isLoading": false,
+    "renderMode": "CANVAS",
+    "mobileTopRow": 112.8,
+    "yAxisName": "",
+    "originalTopRow": 119,
+    "responsiveBehavior": "fill",
+    "chartName": "Revenue, New vs Recurring",
+    "borderRadius": "0.375rem",
+    "mobileLeftColumn": 0,
+    "xAxisName": "",
+    "originalBottomRow": 175,
+    "chartType": "AREA_CHART",
+    "alignment": "center"
+}
