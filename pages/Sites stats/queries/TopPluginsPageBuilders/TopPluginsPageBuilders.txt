@@ -5,7 +5,8 @@ SELECT
     SUM(CASE WHEN integrations LIKE '%\"breakdance\"%' THEN 1 ELSE 0 END) AS "Breakdance",
     SUM(CASE WHEN integrations LIKE '%\"bricks\"%' THEN 1 ELSE 0 END) AS "Bricks",
     SUM(CASE WHEN integrations LIKE '%\"thrive-leads\"%' THEN 1 ELSE 0 END) AS "Thrive Architect",
-    SUM(CASE WHEN integrations LIKE '%\"wpbakery\"%' THEN 1 ELSE 0 END) AS "WPBakery"
+    SUM(CASE WHEN integrations LIKE '%\"wpbakery\"%' THEN 1 ELSE 0 END) AS "WPBakery",
+		SUM(CASE WHEN integrations LIKE '%\"oxygen\"%' THEN 1 ELSE 0 END) AS "Oxygen"
 FROM wp_wpf_all_sites
 WHERE crm NOT IN ('', '0')
     AND check_date >= DATE_SUB(NOW(), INTERVAL 1 YEAR)

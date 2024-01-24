@@ -16,14 +16,15 @@
     "pageId": "Sites stats",
     "collectionId": "Sites stats_Color",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 0,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
       "jsArguments": [
-        {}
-      ],
-      "isAsync": false
+        {
+          "name": "hexColor"
+        }
+      ]
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -37,9 +38,10 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2024-01-24T14:24:26Z"
   },
   "id": "Sites stats_Color.hexToHsl",
   "deleted": false,
-  "gitSyncId": "63e8d02d1e242279f5911ffe_63eb90c88e503f7636516b72"
+  "gitSyncId": "63e8d02d1e242279f5911ffe_65b11d9a0fef16301094618d"
 }

@@ -35,7 +35,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-02-28T13:17:11Z"
   },
   "id": "Refunds_NewCustomerRefundRates",
   "deleted": false,

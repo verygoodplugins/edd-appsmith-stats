@@ -35,7 +35,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-02-17T11:08:47Z"
   },
   "id": "MRR and Growth_Color.hslToHex",
   "deleted": false,

@@ -36,7 +36,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-02-17T13:51:17Z"
   },
   "id": "Renewals and Cancellations_RenewalRatesAvgLast12.rates",
   "deleted": false,

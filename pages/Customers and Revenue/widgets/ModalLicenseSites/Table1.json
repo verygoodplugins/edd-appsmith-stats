@@ -108,6 +108,7 @@
     "rightColumn": 64,
     "textSize": "0.875rem",
     "widgetId": "vivx3pfy8p",
+    "enableServerSideFiltering": false,
     "tableData": "{{GetSitesByLicenseID.data}}",
     "minWidth": 450,
     "label": "Data",

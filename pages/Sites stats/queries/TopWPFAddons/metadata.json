@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT\n    ROUND((SUM(CASE WHEN integrations LIKE '%\\\"logins\\\"%' THEN 1 ELSE 0 END) / COUNT(*)) * 100, 2) AS \"Logins Addon\",\n    ROUND((SUM(CASE WHEN integrations LIKE '%\\\"ecommerce\\\"%' THEN 1 ELSE 0 END) / COUNT(*)) * 100, 2) AS \"Enhanced Ecommerce\",\n    ROUND((SUM(CASE WHEN integrations LIKE '%\\\"abandoned-cart\\\"%' THEN 1 ELSE 0 END) / COUNT(*)) * 100, 2) AS \"Abandoned Cart Addon\",\n    ROUND((SUM(CASE WHEN integrations LIKE '%\\\"media-tools\\\"%' THEN 1 ELSE 0 END) / COUNT(*)) * 100, 2) AS \"Media Tools\",\n    ROUND((SUM(CASE WHEN integrations LIKE '%\\\"webhooks\\\"%' THEN 1 ELSE 0 END) / COUNT(*)) * 100, 2) AS \"Webhooks Addon\",\n    ROUND((SUM(CASE WHEN integrations LIKE '%\\\"event-tracking\\\"%' THEN 1 ELSE 0 END) / COUNT(*)) * 100, 2) AS \"Event Tracking Addon\",\n    ROUND((SUM(CASE WHEN integrations LIKE '%\\\"downloads\\\"%' THEN 1 ELSE 0 END) / COUNT(*)) * 100, 2) AS \"Downloads Addon\"\nFROM wp_wpf_all_sites\nWHERE crm NOT IN ('', '0')\n\tAND check_date >= DATE_SUB(NOW(), INTERVAL 1 YEAR)\n\tAND integrations != 'a:0:{}'",
+      "body": "SELECT\n    ROUND((SUM(CASE WHEN integrations LIKE '%\\\"logins\\\"%' THEN 1 ELSE 0 END) / COUNT(*)) * 100, 2) AS \"Logins Addon\",\n    ROUND((SUM(CASE WHEN integrations LIKE '%\\\"ecommerce\\\"%' THEN 1 ELSE 0 END) / COUNT(*)) * 100, 2) AS \"Enhanced Ecommerce\",\n    ROUND((SUM(CASE WHEN integrations LIKE '%\\\"abandoned-cart\\\"%' THEN 1 ELSE 0 END) / COUNT(*)) * 100, 2) AS \"Abandoned Cart Addon\",\n    ROUND((SUM(CASE WHEN integrations LIKE '%\\\"media-tools\\\"%' THEN 1 ELSE 0 END) / COUNT(*)) * 100, 2) AS \"Media Tools\",\n    ROUND((SUM(CASE WHEN integrations LIKE '%\\\"webhooks\\\"%' THEN 1 ELSE 0 END) / COUNT(*)) * 100, 2) AS \"Webhooks Addon\",\n    ROUND((SUM(CASE WHEN integrations LIKE '%\\\"event-tracking\\\"%' THEN 1 ELSE 0 END) / COUNT(*)) * 100, 2) AS \"Event Tracking Addon\",\n    ROUND((SUM(CASE WHEN integrations LIKE '%\\\"downloads\\\"%' THEN 1 ELSE 0 END) / COUNT(*)) * 100, 2) AS \"Downloads Addon\",\n\t\tROUND((SUM(CASE WHEN integrations LIKE '%\\\"user-roles\\\"%' THEN 1 ELSE 0 END) / COUNT(*)) * 100, 2) AS \"User Roles Addon\"\nFROM wp_wpf_all_sites\nWHERE crm NOT IN ('', '0')\n\tAND check_date >= DATE_SUB(NOW(), INTERVAL 1 YEAR)\n\tAND integrations != 'a:0:{}'",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -35,7 +35,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-02-20T15:53:01Z"
   },
   "id": "Sites stats_TopWPFAddons",
   "deleted": false,

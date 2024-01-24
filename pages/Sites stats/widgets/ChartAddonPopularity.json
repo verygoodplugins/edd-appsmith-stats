@@ -9,8 +9,8 @@
         "visuals",
         "visualisations"
     ],
-    "topRow": 130.8,
-    "bottomRow": 172.8,
+    "topRow": 133.359375,
+    "bottomRow": 175.359375,
     "parentRowSpace": 10,
     "type": "CHART_WIDGET",
     "hideCard": false,
@@ -31,6 +31,97 @@
         {"key": "customFusionChartConfig"}
     ],
     "customFusionChartConfig": "{\n  \"type\": \"column2d\",\n  \"dataSource\": {\n    \"data\": {{ Object.keys(TopWPFAddons.data[0]).map(key => ({\n      label: key,\n      value: TopWPFAddons.data[0][key],\n\t\t\tcolor: Color.getRandomColor( '#9262BF' )\n    }));\n\t\t}},\n    \"chart\": {\n      \"caption\": \"Most Popular Plus Addons\",\n      \"yAxisName\": \"% of Sites Active On\",\n      \"theme\": \"fusion\",\n\t\t\t\"showValues\": \"1\",\n\t\t\t\"paletteColors\": \"#17a2b8\",\n\t\t\t\"baseFont\": \"Roboto, sans-serif\",\n\t\t\t\"baseFontSize\": \"14\",\n\t\t\t\"baseFontColor\": \"#4d4d4d\",\n\t\t\t\"captionFont\": \"Roboto, sans-serif\",\n\t\t\t\"captionFontSize\": \"24\",\n\t\t\t\"subCaptionFont\": \"Roboto, sans-serif\",\n\t\t\t\"subCaptionFontSize\": \"12\",\n\t\t\t\"subCaptionFontColor\": \"#868e96\", \t\t\n\t\t\t\"startingAngle\": -40,\n\t\t\t\"legendItemFontSize\": \"14px\",\n\t\t\t\"numberSuffix\": \"%\"\n    }\n  }\n}",
+    "customEChartConfig": {
+        "yAxis": [{"type": "value"}],
+        "xAxis": [{"type": "category"}],
+        "legend": {
+            "top": 40,
+            "type": "scroll"
+        },
+        "grid": {
+            "top": 100,
+            "left": 15,
+            "bottom": 30,
+            "right": 15,
+            "containLabel": true
+        },
+        "series": [
+            {
+                "stack": "Search Engine",
+                "type": "bar"
+            },
+            {
+                "stack": "Search Engine",
+                "type": "bar"
+            },
+            {
+                "stack": "Search Engine",
+                "type": "bar"
+            }
+        ],
+        "tooltip": {
+            "axisPointer": {"type": "shadow"},
+            "trigger": "axis"
+        },
+        "title": {
+            "left": "center",
+            "text": "Search Engine Usage",
+            "textStyle": {
+                "overflow": "truncate",
+                "width": 200
+            }
+        },
+        "dataset": {"source": [
+            [
+                "Day",
+                "Baidu",
+                "Google",
+                "Bing"
+            ],
+            [
+                "Mon",
+                620,
+                120,
+                60
+            ],
+            [
+                "Tue",
+                732,
+                132,
+                72
+            ],
+            [
+                "Wed",
+                701,
+                101,
+                71
+            ],
+            [
+                "Thu",
+                734,
+                134,
+                74
+            ],
+            [
+                "Fri",
+                1090,
+                290,
+                190
+            ],
+            [
+                "Sat",
+                1130,
+                230,
+                130
+            ],
+            [
+                "Sun",
+                1120,
+                220,
+                110
+            ]
+        ]}
+    },
     "key": "d89gdn7bni",
     "showDataPointLabel": false,
     "flexVerticalAlignment": "end",

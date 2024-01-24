@@ -21,7 +21,9 @@
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
       "jsArguments": [
-        {}
+        {
+          "name": "hexColor"
+        }
       ],
       "isAsync": false
     },
@@ -37,7 +39,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-02-28T13:13:38Z"
   },
   "id": "Refunds_Color.hexToHsl",
   "deleted": false,

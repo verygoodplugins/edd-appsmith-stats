@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT \n  CASE \n    WHEN crm_group_rank <= 19 THEN crm_group\n    ELSE 'Other Platforms'\n  END AS crm_group_combined,\n  SUM(site_count) * 100 / SUM(SUM(site_count)) OVER() as percentage\nFROM (\n  SELECT \n    CASE \n      WHEN crm IN ('Infusionsoft', 'Infusionsoft / Keap') THEN 'Infusionsoft / Keap'\n\t    WHEN crm IN ('FluentCRM', 'FluentCRM (This Site)') THEN 'FluentCRM (This Site)'\n\t\t\tWHEN crm IN ('Groundhogg', 'Groundhogg (This Site)') THEN 'Groundhogg (This Site)'\n      ELSE crm\n    END AS crm_group,\n    COUNT(site_id) AS site_count,\n    RANK() OVER (ORDER BY COUNT(site_id) DESC) AS crm_group_rank\n  FROM wp_wpf_all_sites \n  WHERE check_date >= DATE_SUB(NOW(), INTERVAL 1 YEAR) \n  AND crm NOT IN ('', '0', 'Høyre CRM', 'Spreadmind E-Mail Marketing', 'CRM App', 'Finansforbundet CRM' )\n  GROUP BY crm_group\n  ORDER BY COUNT(site_id) DESC\n) subquery\nGROUP BY crm_group_combined\nORDER BY percentage DESC\n",
+      "body": "SELECT \n  CASE \n    WHEN crm_group_rank <= 24 THEN crm_group\n    ELSE 'Other Platforms'\n  END AS crm_group_combined,\n  SUM(site_count) as total_count\nFROM (\n  SELECT \n    CASE \n      WHEN crm IN ('Infusionsoft', 'Infusionsoft / Keap') THEN 'Infusionsoft / Keap'\n      WHEN crm IN ('FluentCRM', 'FluentCRM (This Site)') THEN 'FluentCRM (This Site)'\n      WHEN crm IN ('Groundhogg', 'Groundhogg (This Site)') THEN 'Groundhogg (This Site)'\n      ELSE crm\n    END AS crm_group,\n    COUNT(site_id) AS site_count,\n    RANK() OVER (ORDER BY COUNT(site_id) DESC) AS crm_group_rank\n  FROM wp_wpf_all_sites \n  WHERE check_date >= DATE_SUB(NOW(), INTERVAL 1 YEAR) \n  AND crm NOT IN ('', '0', 'Høyre CRM', 'Spreadmind E-Mail Marketing', 'CRM App', 'Finansforbundet CRM')\n  GROUP BY crm_group\n) subquery\nGROUP BY crm_group_combined\nORDER BY total_count DESC\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -35,7 +35,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-02-14T12:00:25Z"
   },
   "id": "Sites stats_TopCRMs12Mos",
   "deleted": false,

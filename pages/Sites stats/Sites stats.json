@@ -13,13 +13,13 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 5119.999999999999,
+          "bottomRow": 5647.593749999998,
           "containerStyle": "none",
           "snapRows": 120,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 85,
+          "version": 87,
           "minHeight": 4980,
           "useAutoLayout": true,
           "parentColumnSpace": 1,
@@ -115,6 +115,14 @@
                   "align": "center"
                 }
               ]
+            },
+            {
+              "children": [
+                {
+                  "id": "ronyms1h1p",
+                  "align": "center"
+                }
+              ]
             }
           ]
         },
@@ -157,6 +165,14 @@
             {
               "id": "Sites stats_TopPluginsAffiliates",
               "name": "TopPluginsAffiliates",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Sites stats_TopPluginsEcommerce",
+              "name": "TopPluginsEcommerce",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],

@@ -30,7 +30,7 @@
         "widgetName": "Canvas2",
         "displayName": "Canvas",
         "topRow": 0,
-        "bottomRow": 450,
+        "bottomRow": 452,
         "parentRowSpace": 1,
         "type": "CANVAS_WIDGET",
         "canExtend": true,

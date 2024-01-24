@@ -1,23 +1,10 @@
 {
     "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
     "setAdaptiveYMin": false,
-    "mobileBottomRow": 168.8,
-    "widgetName": "ChartRecurringRevenue",
     "allowScroll": false,
-    "dynamicPropertyPathList": [],
     "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
-    "displayName": "Chart",
     "topRow": 114.00000000000001,
-    "searchTags": [
-        "graph",
-        "visuals",
-        "visualisations"
-    ],
-    "bottomRow": 170,
-    "parentRowSpace": 10,
     "type": "CHART_WIDGET",
-    "hideCard": false,
-    "mobileRightColumn": 64,
     "chartData": {
         "myfuw8ndzk": {
             "data": "{{NewRevenuebyMonth.data}}",
@@ -42,8 +29,6 @@
     },
     "animateLoading": true,
     "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-    "parentColumnSpace": 18.03125,
-    "dynamicTriggerPathList": [],
     "leftColumn": 0,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
@@ -53,6 +38,122 @@
         {"key": "chartData.jo3czp93ca.data"},
         {"key": "chartData.j2mnyp4u3n.data"}
     ],
+    "customEChartConfig": {
+        "yAxis": [{"type": "value"}],
+        "xAxis": [{"type": "category"}],
+        "legend": {
+            "top": 40,
+            "type": "scroll"
+        },
+        "grid": {
+            "top": 100,
+            "left": 15,
+            "bottom": 30,
+            "right": 15,
+            "containLabel": true
+        },
+        "series": [
+            {
+                "stack": "Search Engine",
+                "type": "bar"
+            },
+            {
+                "stack": "Search Engine",
+                "type": "bar"
+            },
+            {
+                "stack": "Search Engine",
+                "type": "bar"
+            }
+        ],
+        "tooltip": {
+            "axisPointer": {"type": "shadow"},
+            "trigger": "axis"
+        },
+        "title": {
+            "left": "center",
+            "text": "Search Engine Usage",
+            "textStyle": {
+                "overflow": "truncate",
+                "width": 200
+            }
+        },
+        "dataset": {"source": [
+            [
+                "Day",
+                "Baidu",
+                "Google",
+                "Bing"
+            ],
+            [
+                "Mon",
+                620,
+                120,
+                60
+            ],
+            [
+                "Tue",
+                732,
+                132,
+                72
+            ],
+            [
+                "Wed",
+                701,
+                101,
+                71
+            ],
+            [
+                "Thu",
+                734,
+                134,
+                74
+            ],
+            [
+                "Fri",
+                1090,
+                290,
+                190
+            ],
+            [
+                "Sat",
+                1130,
+                230,
+                130
+            ],
+            [
+                "Sun",
+                1120,
+                220,
+                110
+            ]
+        ]}
+    },
+    "flexVerticalAlignment": "end",
+    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+    "isVisible": true,
+    "version": 1,
+    "isLoading": false,
+    "chartName": "Revenue, New vs Recurring",
+    "borderRadius": "0.375rem",
+    "xAxisName": "",
+    "originalBottomRow": 175,
+    "alignment": "center",
+    "mobileBottomRow": 168.8,
+    "widgetName": "ChartRecurringRevenue",
+    "dynamicPropertyPathList": [],
+    "displayName": "Chart",
+    "searchTags": [
+        "graph",
+        "visuals",
+        "visualisations"
+    ],
+    "bottomRow": 170,
+    "parentRowSpace": 10,
+    "hideCard": false,
+    "mobileRightColumn": 64,
+    "parentColumnSpace": 18.03125,
+    "dynamicTriggerPathList": [],
     "customFusionChartConfig": {
         "type": "column2d",
         "dataSource": {
@@ -100,29 +201,19 @@
             }
         }
     },
-    "flexVerticalAlignment": "end",
     "key": "avlh3a5scw",
     "showDataPointLabel": false,
     "isDeprecated": false,
     "rightColumn": 64,
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
     "widgetId": "p5u0pshdf8",
     "minWidth": 450,
-    "isVisible": true,
-    "version": 1,
     "parentId": "0",
     "labelOrientation": "slant",
-    "isLoading": false,
     "renderMode": "CANVAS",
     "mobileTopRow": 112.8,
     "yAxisName": "",
     "originalTopRow": 119,
     "responsiveBehavior": "fill",
-    "chartName": "Revenue, New vs Recurring",
-    "borderRadius": "0.375rem",
     "mobileLeftColumn": 0,
-    "xAxisName": "",
-    "originalBottomRow": 175,
-    "chartType": "AREA_CHART",
-    "alignment": "center"
+    "chartType": "AREA_CHART"
 }

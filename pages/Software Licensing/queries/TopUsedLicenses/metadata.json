@@ -35,7 +35,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-02-14T18:55:52Z"
   },
   "id": "Software Licensing_TopUsedLicenses",
   "deleted": false,

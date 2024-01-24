@@ -1,24 +1,23 @@
 SELECT 
   CASE 
-    WHEN crm_group_rank <= 19 THEN crm_group
+    WHEN crm_group_rank <= 24 THEN crm_group
     ELSE 'Other Platforms'
   END AS crm_group_combined,
-  SUM(site_count) * 100 / SUM(SUM(site_count)) OVER() as percentage
+  SUM(site_count) as total_count
 FROM (
   SELECT 
     CASE 
       WHEN crm IN ('Infusionsoft', 'Infusionsoft / Keap') THEN 'Infusionsoft / Keap'
-	    WHEN crm IN ('FluentCRM', 'FluentCRM (This Site)') THEN 'FluentCRM (This Site)'
-			WHEN crm IN ('Groundhogg', 'Groundhogg (This Site)') THEN 'Groundhogg (This Site)'
+      WHEN crm IN ('FluentCRM', 'FluentCRM (This Site)') THEN 'FluentCRM (This Site)'
+      WHEN crm IN ('Groundhogg', 'Groundhogg (This Site)') THEN 'Groundhogg (This Site)'
       ELSE crm
     END AS crm_group,
     COUNT(site_id) AS site_count,
     RANK() OVER (ORDER BY COUNT(site_id) DESC) AS crm_group_rank
   FROM wp_wpf_all_sites 
   WHERE check_date >= DATE_SUB(NOW(), INTERVAL 1 YEAR) 
-  AND crm NOT IN ('', '0', 'Høyre CRM', 'Spreadmind E-Mail Marketing', 'CRM App', 'Finansforbundet CRM' )
+  AND crm NOT IN ('', '0', 'Høyre CRM', 'Spreadmind E-Mail Marketing', 'CRM App', 'Finansforbundet CRM')
   GROUP BY crm_group
-  ORDER BY COUNT(site_id) DESC
 ) subquery
 GROUP BY crm_group_combined
-ORDER BY percentage DESC
+ORDER BY total_count DESC

@@ -35,7 +35,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-02-15T11:21:59Z"
   },
   "id": "MRR and Growth_ExistingMRRbyMo",
   "deleted": false,

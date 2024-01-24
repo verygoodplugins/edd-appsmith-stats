@@ -35,7 +35,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-02-28T13:15:19Z"
   },
   "id": "Customers and Revenue_RefundedRevenuebyMonth",
   "deleted": false,

@@ -1,0 +1,16 @@
+SELECT
+    SUM(CASE WHEN integrations LIKE '%\"woocommerce\"%' THEN 1 ELSE 0 END) AS "WooCommerce",
+		SUM(CASE WHEN integrations LIKE '%\"edd\"%' THEN 1 ELSE 0 END) AS "Easy Digital Downloads",
+		SUM(CASE WHEN integrations LIKE '%\"surecart\"%' THEN 1 ELSE 0 END) AS "SureCart",
+		SUM(CASE WHEN integrations LIKE '%\"simple-pay\"%' THEN 1 ELSE 0 END) AS "WP Simple Pay",
+		SUM(CASE WHEN integrations LIKE '%\"give\"%' THEN 1 ELSE 0 END) AS "GiveWP",
+		SUM(CASE WHEN integrations LIKE '%\"paymattic\"%' THEN 1 ELSE 0 END) AS "Paymattic",
+		SUM(CASE WHEN integrations LIKE '%\"upsell\"%' THEN 1 ELSE 0 END) AS "Upsell Plugin",
+		SUM(CASE WHEN integrations LIKE '%\"memberpress\"%' AND integrations NOT LIKE '%\"woocommerce\"%' THEN 1 ELSE 0 END) AS "MemberPress",
+		SUM(CASE WHEN integrations LIKE '%\"pmpro\"%' AND integrations NOT LIKE '%\"woocommerce\"%' THEN 1 ELSE 0 END) AS "Paid Memberships Pro",
+		SUM(CASE WHEN integrations LIKE '%\"lifterlms\"%' AND integrations NOT LIKE '%\"woocommerce\"%' THEN 1 ELSE 0 END) AS "LifterLMS"
+
+FROM wp_wpf_all_sites
+WHERE crm NOT IN ('', '0')
+    AND check_date >= DATE_SUB(NOW(), INTERVAL 1 YEAR)
+    AND integrations != 'a:0:{}'

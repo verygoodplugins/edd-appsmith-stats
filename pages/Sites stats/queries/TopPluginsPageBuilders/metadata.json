@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT\n    SUM(CASE WHEN integrations LIKE '%\\\"elementor\\\"%' THEN 1 ELSE 0 END) AS \"Elementor\",\n    SUM(CASE WHEN integrations LIKE '%\\\"beaver-builder\\\"%' THEN 1 ELSE 0 END) AS \"Beaver Builder\",\n    SUM(CASE WHEN integrations LIKE '%\\\"divi\\\"%' THEN 1 ELSE 0 END) AS \"Divi\",\n    SUM(CASE WHEN integrations LIKE '%\\\"breakdance\\\"%' THEN 1 ELSE 0 END) AS \"Breakdance\",\n    SUM(CASE WHEN integrations LIKE '%\\\"bricks\\\"%' THEN 1 ELSE 0 END) AS \"Bricks\",\n    SUM(CASE WHEN integrations LIKE '%\\\"thrive-leads\\\"%' THEN 1 ELSE 0 END) AS \"Thrive Architect\",\n    SUM(CASE WHEN integrations LIKE '%\\\"wpbakery\\\"%' THEN 1 ELSE 0 END) AS \"WPBakery\"\nFROM wp_wpf_all_sites\nWHERE crm NOT IN ('', '0')\n    AND check_date >= DATE_SUB(NOW(), INTERVAL 1 YEAR)\n    AND integrations != 'a:0:{}'\n",
+      "body": "SELECT\n    SUM(CASE WHEN integrations LIKE '%\\\"elementor\\\"%' THEN 1 ELSE 0 END) AS \"Elementor\",\n    SUM(CASE WHEN integrations LIKE '%\\\"beaver-builder\\\"%' THEN 1 ELSE 0 END) AS \"Beaver Builder\",\n    SUM(CASE WHEN integrations LIKE '%\\\"divi\\\"%' THEN 1 ELSE 0 END) AS \"Divi\",\n    SUM(CASE WHEN integrations LIKE '%\\\"breakdance\\\"%' THEN 1 ELSE 0 END) AS \"Breakdance\",\n    SUM(CASE WHEN integrations LIKE '%\\\"bricks\\\"%' THEN 1 ELSE 0 END) AS \"Bricks\",\n    SUM(CASE WHEN integrations LIKE '%\\\"thrive-leads\\\"%' THEN 1 ELSE 0 END) AS \"Thrive Architect\",\n    SUM(CASE WHEN integrations LIKE '%\\\"wpbakery\\\"%' THEN 1 ELSE 0 END) AS \"WPBakery\",\n\t\tSUM(CASE WHEN integrations LIKE '%\\\"oxygen\\\"%' THEN 1 ELSE 0 END) AS \"Oxygen\"\nFROM wp_wpf_all_sites\nWHERE crm NOT IN ('', '0')\n    AND check_date >= DATE_SUB(NOW(), INTERVAL 1 YEAR)\n    AND integrations != 'a:0:{}'\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -35,7 +35,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-02-22T17:41:20Z"
   },
   "id": "Sites stats_TopPluginsPageBuilders",
   "deleted": false,

@@ -35,7 +35,8 @@
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-02-12T11:56:33Z"
   },
   "id": "Sites stats_ActiveSites12Mos",
   "deleted": false,

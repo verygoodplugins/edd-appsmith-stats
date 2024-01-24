@@ -35,7 +35,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-02-12T18:45:04Z"
   },
   "id": "Refunds_PercentOrdersRefundedbyMonth",
   "deleted": false,

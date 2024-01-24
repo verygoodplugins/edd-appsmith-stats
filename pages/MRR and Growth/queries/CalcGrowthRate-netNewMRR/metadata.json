@@ -35,7 +35,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-03-04T11:59:33Z"
   },
   "id": "MRR and Growth_CalcGrowthRate.netNewMRR",
   "deleted": false,

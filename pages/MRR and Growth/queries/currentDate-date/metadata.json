@@ -36,7 +36,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-03-04T11:28:54Z"
   },
   "id": "MRR and Growth_currentDate.date",
   "deleted": false,

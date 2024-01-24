@@ -37,7 +37,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-03-04T12:02:24Z"
   },
   "id": "MRR and Growth_Numbers.formatCurrency",
   "deleted": false,

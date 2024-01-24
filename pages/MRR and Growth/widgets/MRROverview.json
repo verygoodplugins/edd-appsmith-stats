@@ -50,6 +50,97 @@
         {"key": "customFusionChartConfig"}
     ],
     "customFusionChartConfig": "{\n  \"type\": \"stackedcolumn2dline\",\n  \"dataSource\": {\n    \"dataset\": [\n\t\t\t{\n\t\t\t\t\"seriesname\": \"Existing\",\n\t\t\t\t\"data\": {{ ExistingMRRbyMo.data.map((row) => { return { value: row.mrr, color: Color.getRandomColor( '#5aa4c1' ) } }); }}\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"seriesname\": \"New\",\n\t\t\t\t\"color\": \"#16b8a0\",\n\t\t\t\t\"data\": {{ NewMRRbyMo.data.map((row) => { return { value: row.mrr } }); }}\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"seriesname\": \"Voluntary Churn\",\n\t\t\t\t\"color\": \"#e65a5b\",\n\t\t\t\t\"data\": {{ VoluntaryChurnbyMo.data.map((row) => { return { value: -row.mrr } }); }}\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"seriesname\": \"Delinquent Churn\",\n\t\t\t\t\"color\": \"#fc9479\",\n\t\t\t\t\"data\": {{ DelinquentChurnbyMo.data.map((row) => { return { value: -row.mrr } }); }}\n\t\t\t},\n\t\t\t{\n      \t\"seriesname\": \"Net\",\n      \t\"plottooltext\": \"Net MRR: <b>$dataValue<\/b>\",\n      \t\"renderAs\": \"line\",\n\t\t\t\t\"color\": \"#1B2E43\",\n      \t\"data\": {{ CalcGrowthRate.netMRR().map( value => ({ value }))}}\n\t\t\t}\n\t\t],\n\t\t\"categories\": [\n\t\t\t{\n\t\t\t\t\"category\": {{ ExistingMRRbyMo.data.map((row) => { return { label:  row.month } }); }}\n\t\t\t}\n\t\t],\n    \"chart\": {\n        \"caption\": \"MRR Overview\",\n        \"yAxisName\": \"MRR\",\n        \"numberPrefix\": \"$\",\n        \"theme\": \"fusion\",\n        \"paletteColors\": \"#17a2b8\",\n        \"baseFont\": \"Roboto, sans-serif\",\n        \"baseFontSize\": \"12\",\n        \"baseFontColor\": \"#4d4d4d\",\n        \"captionFont\": \"Roboto, sans-serif\",\n        \"captionFontSize\": \"24\",\n        \"subCaptionFont\": \"Roboto, sans-serif\",\n        \"subCaptionFontSize\": \"18\",\n        \"subCaptionFontColor\": \"#868e96\",\n\t\t\t\t\"anchorBgColor\": \"#1B2E43\",\n        \"anchorBgHoverColor\": \"#1B2E43\",\n        \"anchorHoverRadius\": \"7\",\n\t\t\t\t\"labelFontColor\": \"#888\"\n    }\n  }\n}",
+    "customEChartConfig": {
+        "yAxis": [{"type": "value"}],
+        "xAxis": [{"type": "category"}],
+        "legend": {
+            "top": 40,
+            "type": "scroll"
+        },
+        "grid": {
+            "top": 100,
+            "left": 15,
+            "bottom": 30,
+            "right": 15,
+            "containLabel": true
+        },
+        "series": [
+            {
+                "stack": "Search Engine",
+                "type": "bar"
+            },
+            {
+                "stack": "Search Engine",
+                "type": "bar"
+            },
+            {
+                "stack": "Search Engine",
+                "type": "bar"
+            }
+        ],
+        "tooltip": {
+            "axisPointer": {"type": "shadow"},
+            "trigger": "axis"
+        },
+        "title": {
+            "left": "center",
+            "text": "Search Engine Usage",
+            "textStyle": {
+                "overflow": "truncate",
+                "width": 200
+            }
+        },
+        "dataset": {"source": [
+            [
+                "Day",
+                "Baidu",
+                "Google",
+                "Bing"
+            ],
+            [
+                "Mon",
+                620,
+                120,
+                60
+            ],
+            [
+                "Tue",
+                732,
+                132,
+                72
+            ],
+            [
+                "Wed",
+                701,
+                101,
+                71
+            ],
+            [
+                "Thu",
+                734,
+                134,
+                74
+            ],
+            [
+                "Fri",
+                1090,
+                290,
+                190
+            ],
+            [
+                "Sat",
+                1130,
+                230,
+                130
+            ],
+            [
+                "Sun",
+                1120,
+                220,
+                110
+            ]
+        ]}
+    },
     "key": "usg3pimfb8",
     "showDataPointLabel": false,
     "flexVerticalAlignment": "end",

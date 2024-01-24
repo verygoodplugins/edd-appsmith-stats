@@ -44,6 +44,97 @@
         {"key": "customFusionChartConfig"}
     ],
     "customFusionChartConfig": "{\n  \"type\": \"overlappedcolumn2d\",\n  \"dataSource\": {\n    \"dataset\": [\n\t\t\t{\n\t\t\t\t\"seriesname\": \"First 30 Days\",\n\t\t\t\t\"color\": \"#ffbc42\",\n\t\t\t\t\"data\": {{ CustomerSupportRequestRates.data.map((row) => { return { value: row.percent_30_days, color: Color.getRandomColor( '#ffbc42' ) } }); }}\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"seriesname\": \"First Year\",\n\t\t\t\t\"color\": \"#f09838\",\n\t\t\t\t\"data\": {{ CustomerSupportRequestRates.data.map((row) => { return { value: row.percent_1_year, color: Color.getRandomColor( '#f09838' ) } }); }}\n\t\t\t}\n\t\t],\n\t\t\"categories\": [\n\t\t\t{\n\t\t\t\t\"category\": {{ CustomerSupportRequestRates.data.map((row) => { return { label: row.year + '' } }); }}\n\t\t\t}\n\t\t],\n    \"chart\": {\n        \"caption\": \"New Customer Support Rates\",\n        \"xAxisName\": \"Year\",\n\t\t\t\t\"numberSuffix\": \"%\",\n        \"theme\": \"fusion\",\n        \"paletteColors\": \"#17a2b8\",\n        \"baseFont\": \"Roboto, sans-serif\",\n        \"baseFontSize\": \"14\",\n        \"baseFontColor\": \"#4d4d4d\",\n        \"captionFont\": \"Roboto, sans-serif\",\n        \"captionFontSize\": \"24\",\n        \"subCaptionFont\": \"Roboto, sans-serif\",\n        \"subCaptionFontSize\": \"18\",\n        \"subCaptionFontColor\": \"#868e96\",\n        \"anchorBgColor\": \"#1B2E43\",\n        \"anchorBgHoverColor\": \"#1B2E43\",\n        \"anchorHoverRadius\": \"7\",\n\t\t\t\t\"snumbersuffix\": \"%\"\n    }\n  }\n}",
+    "customEChartConfig": {
+        "yAxis": [{"type": "value"}],
+        "xAxis": [{"type": "category"}],
+        "legend": {
+            "top": 40,
+            "type": "scroll"
+        },
+        "grid": {
+            "top": 100,
+            "left": 15,
+            "bottom": 30,
+            "right": 15,
+            "containLabel": true
+        },
+        "series": [
+            {
+                "stack": "Search Engine",
+                "type": "bar"
+            },
+            {
+                "stack": "Search Engine",
+                "type": "bar"
+            },
+            {
+                "stack": "Search Engine",
+                "type": "bar"
+            }
+        ],
+        "tooltip": {
+            "axisPointer": {"type": "shadow"},
+            "trigger": "axis"
+        },
+        "title": {
+            "left": "center",
+            "text": "Search Engine Usage",
+            "textStyle": {
+                "overflow": "truncate",
+                "width": 200
+            }
+        },
+        "dataset": {"source": [
+            [
+                "Day",
+                "Baidu",
+                "Google",
+                "Bing"
+            ],
+            [
+                "Mon",
+                620,
+                120,
+                60
+            ],
+            [
+                "Tue",
+                732,
+                132,
+                72
+            ],
+            [
+                "Wed",
+                701,
+                101,
+                71
+            ],
+            [
+                "Thu",
+                734,
+                134,
+                74
+            ],
+            [
+                "Fri",
+                1090,
+                290,
+                190
+            ],
+            [
+                "Sat",
+                1130,
+                230,
+                130
+            ],
+            [
+                "Sun",
+                1120,
+                220,
+                110
+            ]
+        ]}
+    },
     "key": "erojcv0dmb",
     "showDataPointLabel": false,
     "flexVerticalAlignment": "end",

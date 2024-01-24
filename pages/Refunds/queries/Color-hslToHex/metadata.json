@@ -20,7 +20,11 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
-      "jsArguments": [],
+      "jsArguments": [
+        {
+          "name": "hslColor"
+        }
+      ],
       "isAsync": false
     },
     "executeOnLoad": false,
@@ -35,7 +39,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-02-28T13:13:38Z"
   },
   "id": "Refunds_Color.hslToHex",
   "deleted": false,

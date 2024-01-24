@@ -37,7 +37,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-02-17T11:18:56Z"
   },
   "id": "Renewals and Cancellations_Color.hexToHsl",
   "deleted": false,
