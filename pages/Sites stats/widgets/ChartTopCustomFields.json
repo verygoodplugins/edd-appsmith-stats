@@ -1,6 +1,7 @@
 {
     "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-    "widgetName": "Chart1",
+    "setAdaptiveYMin": true,
+    "widgetName": "ChartTopCustomFields",
     "allowScroll": false,
     "displayName": "Chart",
     "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
@@ -9,31 +10,18 @@
         "visuals",
         "visualisations"
     ],
-    "topRow": 0,
-    "bottomRow": 39,
+    "topRow": 565.9593749999999,
+    "bottomRow": 622.9593749999999,
     "parentRowSpace": 10,
     "type": "CHART_WIDGET",
     "hideCard": false,
-    "chartData": {"aacknmpw0r": {
-        "data": [
-            {
-                "x": "Product1",
-                "y": 20000
-            },
-            {
-                "x": "Product2",
-                "y": 22000
-            },
-            {
-                "x": "Product3",
-                "y": 32000
-            }
-        ],
+    "chartData": {"n3fuot1hwl": {
+        "data": "{{TopCRMs12Mos.data.map((row) => {\n      return { x: row.x, y: row.y, 'color': '#ff0000' };\n  });\n}}",
         "seriesName": "Sales"
     }},
     "animateLoading": true,
     "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-    "parentColumnSpace": 13.453125,
+    "parentColumnSpace": 19.015625,
     "dynamicTriggerPathList": [],
     "leftColumn": 0,
     "dynamicBindingPathList": [
@@ -41,9 +29,10 @@
         {"key": "boxShadow"},
         {"key": "accentColor"},
         {"key": "fontFamily"},
+        {"key": "chartData.n3fuot1hwl.data"},
         {"key": "customFusionChartConfig"}
     ],
-    "customFusionChartConfig": "{\n  \"type\": \"overlappedcolumn2d\",\n  \"dataSource\": {\n    \"dataset\": [\n\t\t\t{\n\t\t\t\t\"seriesname\": \"First 30 Days\",\n\t\t\t\t\"color\": \"#ffbc42\",\n\t\t\t\t\"data\": {{ CustomerSupportRequestRates.data.map((row) => { return { value: row.percent_30_days, color: Color.getRandomColor( '#ffbc42' ) } }); }}\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"seriesname\": \"First Year\",\n\t\t\t\t\"color\": \"#f09838\",\n\t\t\t\t\"data\": {{ CustomerSupportRequestRates.data.map((row) => { return { value: row.percent_1_year, color: Color.getRandomColor( '#f09838' ) } }); }}\n\t\t\t}\n\t\t],\n\t\t\"categories\": [\n\t\t\t{\n\t\t\t\t\"category\": {{ CustomerSupportRequestRates.data.map((row) => { return { label: row.year + '' } }); }}\n\t\t\t}\n\t\t],\n    \"chart\": {\n        \"caption\": \"New Customer Support Rates\",\n        \"xAxisName\": \"Year\",\n\t\t\t\t\"numberSuffix\": \"%\",\n        \"theme\": \"fusion\",\n        \"paletteColors\": \"#17a2b8\",\n        \"baseFont\": \"Roboto, sans-serif\",\n        \"baseFontSize\": \"14\",\n        \"baseFontColor\": \"#4d4d4d\",\n        \"captionFont\": \"Roboto, sans-serif\",\n        \"captionFontSize\": \"24\",\n        \"subCaptionFont\": \"Roboto, sans-serif\",\n        \"subCaptionFontSize\": \"18\",\n        \"subCaptionFontColor\": \"#868e96\",\n        \"anchorBgColor\": \"#1B2E43\",\n        \"anchorBgHoverColor\": \"#1B2E43\",\n        \"anchorHoverRadius\": \"7\",\n\t\t\t\t\"snumbersuffix\": \"%\"\n    }\n  }\n}",
+    "customFusionChartConfig": "{\n  \"type\": \"pie2d\",\n  \"dataSource\": {\n    \"data\": {{ Object.keys(TopPluginsCustomFields.data[0]).map(key => ({\n      label: key,\n      value: TopPluginsCustomFields.data[0][key],\n\t\t\tcolor: Color.getRandomColor( '#00dab4' )\n    }));\n\t\t}},\n    \"chart\": {\n      \"caption\": \"Plugin Popularity - CPT & Custom Fields\",\n\t\t\t\"labelFontSize\": \"14px\",\n\t\t\t\"showLegend\": \"0\",\n\t\t\t\"startingAngle\": 15,\n\t\t\t\"yAxisMinValue\": \"0.2\",\n\t\t\t\"theme\": \"fusion\",\n\t\t\t\"paletteColors\": \"#17a2b8\",\n\t\t\t\"baseFont\": \"Roboto, sans-serif\",\n\t\t\t\"baseFontSize\": \"14\",\n\t\t\t\"baseFontColor\": \"#4d4d4d\",\n\t\t\t\"captionFont\": \"Roboto, sans-serif\",\n\t\t\t\"captionFontSize\": \"24\",\n\t\t\t\"subCaptionFont\": \"Roboto, sans-serif\",\n\t\t\t\"subCaptionFontSize\": \"18\",\n\t\t\t\"subCaptionFontColor\": \"#868e96\"\n\t\t}\n  }\n}",
     "customEChartConfig": {
         "yAxis": [{"type": "value"}],
         "xAxis": [{"type": "category"}],
@@ -135,12 +124,12 @@
             ]
         ]}
     },
-    "key": "erojcv0dmb",
+    "key": "gp5sr0liiy",
     "showDataPointLabel": false,
     "flexVerticalAlignment": "end",
     "isDeprecated": false,
     "rightColumn": 64,
-    "widgetId": "fxfhuzpoq2",
+    "widgetId": "le36t81i31",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
     "minWidth": 450,
     "isVisible": true,
@@ -149,11 +138,13 @@
     "labelOrientation": "auto",
     "renderMode": "CANVAS",
     "isLoading": false,
-    "yAxisName": "Revenue($)",
+    "yAxisName": "",
+    "originalTopRow": 467,
     "responsiveBehavior": "fill",
-    "chartName": "Sales Report",
+    "chartName": "",
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "xAxisName": "Product Line",
+    "xAxisName": "",
+    "originalBottomRow": 524,
     "chartType": "CUSTOM_FUSION_CHART",
     "alignment": "center"
 }

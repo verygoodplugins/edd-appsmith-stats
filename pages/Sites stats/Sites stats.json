@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 5647.593749999998,
+          "bottomRow": 6229.593749999999,
           "containerStyle": "none",
           "snapRows": 120,
           "parentRowSpace": 1,
@@ -123,6 +123,14 @@
                   "align": "center"
                 }
               ]
+            },
+            {
+              "children": [
+                {
+                  "id": "le36t81i31",
+                  "align": "center"
+                }
+              ]
             }
           ]
         },
@@ -165,6 +173,14 @@
             {
               "id": "Sites stats_TopPluginsAffiliates",
               "name": "TopPluginsAffiliates",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Sites stats_TopPluginsCustomFields",
+              "name": "TopPluginsCustomFields",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
