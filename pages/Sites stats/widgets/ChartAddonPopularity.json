@@ -1,5 +1,6 @@
 {
     "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+    "mobileBottomRow": 322.40000000000003,
     "widgetName": "ChartAddonPopularity",
     "allowScroll": false,
     "displayName": "Chart",
@@ -14,6 +15,7 @@
     "parentRowSpace": 10,
     "type": "CHART_WIDGET",
     "hideCard": false,
+    "mobileRightColumn": 64,
     "chartData": {"x70cv18ozf": {
         "data": "[\n  {\n    \"x\": \"Product1\",\n    \"y\": 20000\n  },\n  {\n    \"x\": \"Product2\",\n    \"y\": 22000\n  },\n  {\n    \"x\": \"Product3\",\n    \"y\": 32000\n  }\n]",
         "seriesName": "Sales"
@@ -136,11 +138,13 @@
     "labelOrientation": "auto",
     "renderMode": "CANVAS",
     "isLoading": false,
+    "mobileTopRow": 280.40000000000003,
     "yAxisName": "Revenue($)",
     "originalTopRow": 141,
     "responsiveBehavior": "fill",
     "chartName": "Sales Report",
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "mobileLeftColumn": 0,
     "xAxisName": "Product Line",
     "originalBottomRow": 183,
     "chartType": "CUSTOM_FUSION_CHART",

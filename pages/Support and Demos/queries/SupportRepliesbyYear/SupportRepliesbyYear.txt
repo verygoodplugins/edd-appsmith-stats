@@ -1,0 +1,14 @@
+SELECT
+  YEAR(created_at) AS year,
+  SUM(LENGTH(body) - LENGTH(REPLACE(body, ' ', '')) + 1) AS totalWordCount,
+  COUNT(*) AS totalReplies
+FROM
+  threads
+WHERE
+  type = 2
+  AND user_id = 1
+  AND YEAR(created_at) BETWEEN 2015 AND 2023
+GROUP BY
+  YEAR(created_at)
+ORDER BY
+  year DESC;

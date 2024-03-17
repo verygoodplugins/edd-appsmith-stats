@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Support",
-    "slug": "support",
+    "name": "Support and Demos",
+    "slug": "support-and-demos",
     "layouts": [
       {
         "viewMode": false,
@@ -13,13 +13,13 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 722,
+          "bottomRow": 1878,
           "containerStyle": "none",
           "snapRows": 86,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 87,
+          "version": 89,
           "minHeight": 880,
           "useAutoLayout": true,
           "parentColumnSpace": 1,
@@ -39,7 +39,31 @@
             {
               "children": [
                 {
+                  "id": "o5arwzrrhp",
+                  "align": "start"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "id": "c3ewv9h2t0",
+                  "align": "start"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
                   "id": "js3s3q25f2",
+                  "align": "start"
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "id": "6gytp5hiqz",
                   "align": "start"
                 }
               ]
@@ -49,8 +73,34 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Support_CustomerSupportRequestRates",
+              "id": "Support and Demos_CustomerSupportRequestRates",
               "name": "CustomerSupportRequestRates",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Support and Demos_DemoConversionRate",
+              "name": "DemoConversionRate",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Support and Demos_FeatureRequestsSubmittedbyYear",
+              "name": "FeatureRequestsSubmittedbyYear",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Support and Demos_SupportRepliesbyYear",
+              "name": "SupportRepliesbyYear",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
@@ -60,7 +110,7 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Support",
+        "id": "Support and Demos",
         "deleted": false,
         "policies": [],
         "userPermissions": []

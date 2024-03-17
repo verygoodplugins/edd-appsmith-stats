@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Support",
+    "pageId": "Support and Demos",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT \n    YEAR(post_date) AS year,\n    COUNT(*) AS number_of_posts,\n    SUM(CASE \n            WHEN pm.meta_value = 'completed' AND YEAR(wp_posts.post_modified) = YEAR(wp_posts.post_date) \n            THEN 1 \n            ELSE 0 \n        END) AS completed_posts\nFROM \n    wp_posts\nLEFT JOIN \n    wp_postmeta pm ON wp_posts.ID = pm.post_id AND pm.meta_key = 'jck_sfr_status'\nWHERE \n    wp_posts.post_type = 'cpt_feature_requests'\n    AND wp_posts.post_date < DATE_FORMAT(NOW(),'%Y-%m-01')\nGROUP BY \n    YEAR(wp_posts.post_date)\nORDER BY \n    year;",
+      "body": "SELECT \n    YEAR(post_date) AS year,\n    COUNT(*) AS total_posts,\n    (\n        SELECT COUNT(*)\n        FROM wp_posts AS inner_wp_posts\n        JOIN wp_postmeta AS inner_pm ON inner_wp_posts.ID = inner_pm.post_id\n        WHERE inner_pm.meta_key = 'jck_sfr_status'\n        AND inner_pm.meta_value = 'completed'\n        AND YEAR(inner_wp_posts.post_modified) = YEAR(wp_posts.post_date)\n        AND YEAR(inner_wp_posts.post_modified) < YEAR(CURDATE())\n    ) AS completed_posts\nFROM \n    wp_posts\nJOIN \n    wp_postmeta pm ON wp_posts.ID = pm.post_id\nWHERE \n    wp_posts.post_type = 'cpt_feature_requests'\n    AND pm.meta_key = 'jck_sfr_status'\n    AND pm.meta_value != 'declined'\n    AND YEAR(wp_posts.post_date) < YEAR(CURDATE())\n    AND YEAR(wp_posts.post_modified) < YEAR(CURDATE())\nGROUP BY \n    YEAR(wp_posts.post_date)\nORDER BY \n    year;\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -26,7 +26,7 @@
         }
       ]
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
@@ -38,7 +38,7 @@
     "userPermissions": [],
     "createdAt": "2024-01-24T18:54:21Z"
   },
-  "id": "Support_FeatureRequestsSubmittedbyYear",
+  "id": "Support and Demos_FeatureRequestsSubmittedbyYear",
   "deleted": false,
   "gitSyncId": "63e8d02d1e242279f5911ffe_65b15cdda31e5508b434af38"
 }

@@ -13,8 +13,8 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Support",
-    "collectionId": "Support_Color",
+    "pageId": "Support and Demos",
+    "collectionId": "Support and Demos_Color",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -42,7 +42,7 @@
     "userPermissions": [],
     "createdAt": "2023-02-25T19:15:38Z"
   },
-  "id": "Support_Color.getRandomColor",
+  "id": "Support and Demos_Color.getRandomColor",
   "deleted": false,
   "gitSyncId": "63e8d02d1e242279f5911ffe_63fa5e5a52683f50771119fb"
 }

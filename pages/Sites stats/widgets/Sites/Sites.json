@@ -1,5 +1,6 @@
 {
     "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+    "mobileBottomRow": 69,
     "widgetName": "Sites",
     "borderColor": "#E0DEDE",
     "isCanvas": true,
@@ -11,6 +12,7 @@
     "type": "STATBOX_WIDGET",
     "hideCard": false,
     "shouldScrollContents": true,
+    "mobileRightColumn": 64,
     "animateLoading": true,
     "parentColumnSpace": 18.03125,
     "leftColumn": 0,
@@ -19,6 +21,7 @@
         {"key": "boxShadow"}
     ],
     "children": [{
+        "mobileBottomRow": 690,
         "widgetName": "Canvas1",
         "displayName": "Canvas",
         "topRow": 0,
@@ -44,6 +47,7 @@
         "parentId": "hslia0nxyd",
         "renderMode": "CANVAS",
         "isLoading": false,
+        "mobileTopRow": 0,
         "responsiveBehavior": "fill",
         "flexLayers": [
             {"children": [{
@@ -68,9 +72,11 @@
     "parentId": "0",
     "renderMode": "CANVAS",
     "isLoading": false,
+    "mobileTopRow": 0,
     "originalTopRow": 4,
     "responsiveBehavior": "fill",
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "mobileLeftColumn": 0,
     "maxDynamicHeight": 9000,
     "originalBottomRow": 18,
     "alignment": "center",

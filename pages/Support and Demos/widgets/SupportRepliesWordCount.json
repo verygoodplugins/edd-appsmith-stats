@@ -1,0 +1,111 @@
+{
+    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+    "setAdaptiveYMin": false,
+    "mobileBottomRow": 115,
+    "widgetName": "SupportRepliesWordCount",
+    "allowScroll": false,
+    "dynamicPropertyPathList": [],
+    "iconSVG": "https://appcdn.appsmith.com/static/media/icon.8eea39845729f7f4bfadeecd3810a09d.svg",
+    "displayName": "Chart",
+    "topRow": 155.8,
+    "searchTags": [
+        "graph",
+        "visuals",
+        "visualisations"
+    ],
+    "bottomRow": 187.8,
+    "parentRowSpace": 10,
+    "type": "CHART_WIDGET",
+    "hideCard": false,
+    "mobileRightColumn": 64,
+    "chartData": {"jy60p3rp7d": {
+        "data": "{{SupportRepliesbyYear.data.map( p => ({x: p.year, y: p.totalWordCount}))}}",
+        "color": "#e55b10",
+        "seriesName": "Word count"
+    }},
+    "animateLoading": true,
+    "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+    "parentColumnSpace": 21.734375,
+    "dynamicTriggerPathList": [],
+    "dynamicBindingPathList": [
+        {"key": "customEChartConfig"},
+        {"key": "borderRadius"},
+        {"key": "boxShadow"},
+        {"key": "accentColor"},
+        {"key": "fontFamily"},
+        {"key": "chartData.jy60p3rp7d.data"}
+    ],
+    "leftColumn": 0,
+    "customFusionChartConfig": {
+        "type": "column2d",
+        "dataSource": {
+            "data": [
+                {
+                    "label": "Product1",
+                    "value": 20000
+                },
+                {
+                    "label": "Product2",
+                    "value": 22000
+                },
+                {
+                    "label": "Product3",
+                    "value": 32000
+                }
+            ],
+            "chart": {
+                "legendIconSides": "4",
+                "canvasPadding": "0",
+                "captionAlignment": "center",
+                "yAxisNameFontSize": "14",
+                "caption": "Sales Report",
+                "labelFontColor": "#716e6e",
+                "chartLeftMargin": "20",
+                "captionFontSize": "24",
+                "chartTopMargin": "10",
+                "theme": "fusion",
+                "legendIconAlpha": "100",
+                "chartBottomMargin": "10",
+                "labelFontSize": "12",
+                "xAxisNameFontColor": "#716e6e",
+                "yAxisNameFontColor": "#716e6e",
+                "captionFontColor": "#231F20",
+                "yAxisValueFontColor": "#716e6e",
+                "captionPadding": "20",
+                "yAxisName": "Revenue($)",
+                "legendIconBgAlpha": "100",
+                "xAxisName": "Product Line",
+                "alignCaptionWithCanvas": 1,
+                "chartRightMargin": "40",
+                "legendPosition": "top",
+                "xAxisNameFontSize": "14",
+                "yAxisValueFontSize": "12"
+            }
+        }
+    },
+    "customEChartConfig": "{{\n{\n  \"dataset\": {\n    \"source\": [\n      [\n        \"Day\",\n        \"Baidu\",\n        \"Google\",\n        \"Bing\"\n      ],\n      [\n        \"Mon\",\n        620,\n        120,\n        60\n      ],\n      [\n        \"Tue\",\n        732,\n        132,\n        72\n      ],\n      [\n        \"Wed\",\n        701,\n        101,\n        71\n      ],\n      [\n        \"Thu\",\n        734,\n        134,\n        74\n      ],\n      [\n        \"Fri\",\n        1090,\n        290,\n        190\n      ],\n      [\n        \"Sat\",\n        1130,\n        230,\n        130\n      ],\n      [\n        \"Sun\",\n        1120,\n        220,\n        110\n      ]\n    ]\n  },\n  \"tooltip\": {\n    \"trigger\": \"axis\",\n    \"axisPointer\": {\n      \"type\": \"shadow\"\n    }\n  },\n  \"title\": {\n    \"text\": \"Search Engine Usage\",\n    \"left\": \"center\",\n    \"textStyle\": {\n      \"width\": 200,\n      \"overflow\": \"truncate\"\n    }\n  },\n  \"legend\": {\n    \"top\": 40,\n    \"type\": \"scroll\"\n  },\n  \"grid\": {\n    \"left\": 15,\n    \"right\": 15,\n    \"bottom\": 30,\n    \"top\": 100,\n    \"containLabel\": true\n  },\n  \"xAxis\": [\n    {\n      \"type\": \"category\"\n    }\n  ],\n  \"yAxis\": [\n    {\n      \"type\": \"value\"\n    }\n  ],\n  \"series\": [\n    {\n      \"type\": \"bar\",\n      \"stack\": \"Search Engine\"\n    },\n    {\n      \"type\": \"bar\",\n      \"stack\": \"Search Engine\"\n    },\n    {\n      \"type\": \"bar\",\n      \"stack\": \"Search Engine\"\n    }\n  ]\n}\n}}",
+    "flexVerticalAlignment": "start",
+    "showDataPointLabel": false,
+    "key": "ekvod3pmbi",
+    "isDeprecated": false,
+    "rightColumn": 64,
+    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+    "widgetId": "6gytp5hiqz",
+    "minWidth": 450,
+    "isVisible": true,
+    "version": 1,
+    "parentId": "0",
+    "tags": ["Display"],
+    "labelOrientation": "auto",
+    "isLoading": false,
+    "renderMode": "CANVAS",
+    "mobileTopRow": 83,
+    "responsiveBehavior": "fill",
+    "yAxisName": "Word Count",
+    "chartName": "Support Replies (Jack)",
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "mobileLeftColumn": 0,
+    "xAxisName": "Year",
+    "chartType": "LINE_CHART",
+    "alignment": "start"
+}

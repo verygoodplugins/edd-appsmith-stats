@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Support",
+    "pageId": "Support and Demos",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -38,7 +38,7 @@
     "userPermissions": [],
     "createdAt": "2023-02-25T19:00:09Z"
   },
-  "id": "Support_CustomerSupportRequestRates",
+  "id": "Support and Demos_CustomerSupportRequestRates",
   "deleted": false,
   "gitSyncId": "63e8d02d1e242279f5911ffe_63fa5ab913cf946f38a470c4"
 }

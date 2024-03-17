@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 87,
+          "version": 89,
           "minHeight": 1210,
           "useAutoLayout": true,
           "parentColumnSpace": 1,
