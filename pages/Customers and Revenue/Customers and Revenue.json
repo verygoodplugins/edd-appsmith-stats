@@ -10,7 +10,7 @@
           "mobileBottomRow": 3946.000000000001,
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 2232,
+          "bottomRow": 2820,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -107,6 +107,16 @@
               "timeoutInMillisecond": 10000
             },
             {
+              "id": "Customers and Revenue_GetSitesByLicenseID",
+              "name": "GetSitesByLicenseID",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                " ChartTopUsedLicenses.selectedDataPoint.x "
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
               "id": "Customers and Revenue_NewRevenuebyMonth",
               "name": "NewRevenuebyMonth",
               "confirmBeforeExecute": false,
@@ -146,18 +156,6 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Customers and Revenue_GetSitesByLicenseID",
-              "name": "GetSitesByLicenseID",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                " ChartTopUsedLicenses.selectedDataPoint.x "
-              ],
               "timeoutInMillisecond": 10000
             }
           ]
