@@ -10,12 +10,12 @@
         "submit"
     ],
     "topRow": 0,
-    "bottomRow": 8,
+    "bottomRow": 4,
     "type": "ICON_BUTTON_WIDGET",
     "hideCard": false,
     "animateLoading": true,
     "dynamicTriggerPathList": [],
-    "leftColumn": 48,
+    "leftColumn": 58.31111111111111,
     "dynamicBindingPathList": [
         {"key": "borderRadius"},
         {"key": "iconName"}

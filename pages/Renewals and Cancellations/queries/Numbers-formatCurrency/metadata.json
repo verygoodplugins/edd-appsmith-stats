@@ -20,7 +20,11 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
-      "jsArguments": [],
+      "jsArguments": [
+        {
+          "name": "num"
+        }
+      ],
       "isAsync": false
     },
     "executeOnLoad": false,

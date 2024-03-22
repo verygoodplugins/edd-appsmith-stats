@@ -4,10 +4,10 @@ FROM (
   SELECT version, COUNT(site_id) AS site_count,
          ROW_NUMBER() OVER (ORDER BY COUNT(site_id) DESC) AS RANK
   FROM wp_wpf_all_sites
-  WHERE check_date >= DATE_SUB(NOW(), INTERVAL 1 YEAR) AND crm NOT IN ('', '0')
+  WHERE check_date >= DATE_SUB(NOW(), INTERVAL 1 MONTH) AND crm NOT IN ('', '0')
   GROUP BY version
 ) grouped_versions
 CROSS JOIN (SELECT COUNT(site_id) AS total_count FROM wp_wpf_all_sites
-            WHERE check_date >= DATE_SUB(NOW(), INTERVAL 1 YEAR) AND crm NOT IN ('', '0')) t
+            WHERE check_date >= DATE_SUB(NOW(), INTERVAL 1 MONTH) AND crm NOT IN ('', '0')) t
 GROUP BY version_group
 ORDER BY percentage DESC;

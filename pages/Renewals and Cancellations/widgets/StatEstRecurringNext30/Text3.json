@@ -7,8 +7,8 @@
         "paragraph",
         "label"
     ],
-    "topRow": 10.4,
-    "bottomRow": 14.4,
+    "topRow": 10.8,
+    "bottomRow": 14.8,
     "type": "TEXT_WIDGET",
     "hideCard": false,
     "animateLoading": true,
