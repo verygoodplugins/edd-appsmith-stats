@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1958,
+          "bottomRow": 1546.0000000000002,
           "containerStyle": "none",
           "snapRows": 86,
           "parentRowSpace": 1,
@@ -33,6 +33,10 @@
                 {
                   "id": "fxfhuzpoq2",
                   "align": "center"
+                },
+                {
+                  "id": "js3s3q25f2",
+                  "align": "center"
                 }
               ]
             },
@@ -41,11 +45,7 @@
                 {
                   "id": "o5arwzrrhp",
                   "align": "start"
-                }
-              ]
-            },
-            {
-              "children": [
+                },
                 {
                   "id": "c3ewv9h2t0",
                   "align": "start"
@@ -55,7 +55,11 @@
             {
               "children": [
                 {
-                  "id": "js3s3q25f2",
+                  "id": "kiguck7cvo",
+                  "align": "start"
+                },
+                {
+                  "id": "jm1tjhhi86",
                   "align": "start"
                 }
               ]
@@ -93,6 +97,14 @@
             {
               "id": "Support and Demos_FeatureRequestsSubmittedbyYear",
               "name": "FeatureRequestsSubmittedbyYear",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Support and Demos_FreeDownloads",
+              "name": "FreeDownloads",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],

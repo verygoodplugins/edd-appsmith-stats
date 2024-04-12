@@ -11,15 +11,15 @@
         "visuals",
         "visualisations"
     ],
-    "topRow": 81.4,
-    "bottomRow": 121.4,
+    "topRow": 40.2,
+    "bottomRow": 80.20000000000002,
     "parentRowSpace": 10,
     "type": "CHART_WIDGET",
     "hideCard": false,
     "mobileRightColumn": 64,
     "chartData": {"p9t05b4p5v": {
         "data": "{{DemoConversionRate.data.map((row) => { return { x: row.entry_month, y: row.conversion_rate } });}}",
-        "color": "#8a2fc6",
+        "color": "#ef4444",
         "seriesName": ""
     }},
     "animateLoading": true,
@@ -34,7 +34,7 @@
         {"key": "fontFamily"},
         {"key": "chartData.p9t05b4p5v.data"}
     ],
-    "leftColumn": 0,
+    "leftColumn": 32,
     "customFusionChartConfig": {
         "type": "column2d",
         "dataSource": {

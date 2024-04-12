@@ -1,7 +1,7 @@
 {
     "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
     "mobileBottomRow": 69,
-    "widgetName": "DemoSignups",
+    "widgetName": "DemoConversionsCopy",
     "allowScroll": false,
     "widthInPercentage": 0.9910714285714286,
     "displayName": "Chart",
@@ -11,15 +11,15 @@
         "visuals",
         "visualisations"
     ],
-    "topRow": 40.2,
-    "bottomRow": 80.2,
+    "topRow": 81.40000000000002,
+    "bottomRow": 121.40000000000002,
     "parentRowSpace": 10,
     "type": "CHART_WIDGET",
     "hideCard": false,
     "mobileRightColumn": 64,
     "chartData": {"p9t05b4p5v": {
-        "data": "{{DemoConversionRate.data.map((row) => { return { x: row.entry_month, y: row.total_entries } });}}",
-        "color": "#ef4444",
+        "data": "{{FreeDownloads.data.map((row) => { return { x: row.entry_month, y: row.conversion_rate } });}}",
+        "color": "#3b82f6",
         "seriesName": ""
     }},
     "animateLoading": true,
@@ -34,7 +34,7 @@
         {"key": "fontFamily"},
         {"key": "chartData.p9t05b4p5v.data"}
     ],
-    "leftColumn": 0,
+    "leftColumn": 32,
     "customFusionChartConfig": {
         "type": "column2d",
         "dataSource": {
@@ -87,8 +87,8 @@
     "showDataPointLabel": false,
     "key": "repkm845vn",
     "isDeprecated": false,
-    "rightColumn": 32,
-    "widgetId": "o5arwzrrhp",
+    "rightColumn": 64,
+    "widgetId": "jm1tjhhi86",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
     "minWidth": 450,
     "isVisible": true,
@@ -100,8 +100,8 @@
     "isLoading": false,
     "mobileTopRow": 37,
     "responsiveBehavior": "fill",
-    "yAxisName": "Signups",
-    "chartName": "Demo Signups by Month",
+    "yAxisName": "% Converted",
+    "chartName": "Free Download Conversion Rate by Month",
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 0,
     "xAxisName": "",

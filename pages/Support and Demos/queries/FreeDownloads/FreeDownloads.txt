@@ -1,0 +1,17 @@
+SELECT 
+  DATE_FORMAT(e.date_created, '%Y-%m') AS entry_month,
+  COUNT(DISTINCT e.id) AS total_entries,
+  COUNT(DISTINCT c.email) AS converted_customers,
+  (COUNT(DISTINCT c.email) / COUNT(DISTINCT e.id)) * 100 AS conversion_rate
+FROM 
+  wp_gf_entry e
+LEFT JOIN 
+  wp_gf_entry_meta em ON e.id = em.entry_id AND em.form_id = 9 AND em.meta_key = '4'
+LEFT JOIN 
+  wp_edd_customers c ON c.email = em.meta_value
+WHERE 
+  e.form_id = 9
+GROUP BY 
+  entry_month
+ORDER BY 
+  entry_month;

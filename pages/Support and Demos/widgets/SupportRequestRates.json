@@ -139,7 +139,7 @@
     "showDataPointLabel": false,
     "flexVerticalAlignment": "end",
     "isDeprecated": false,
-    "rightColumn": 64,
+    "rightColumn": 32,
     "widgetId": "fxfhuzpoq2",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
     "minWidth": 450,

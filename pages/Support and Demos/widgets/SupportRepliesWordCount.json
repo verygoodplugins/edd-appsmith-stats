@@ -7,13 +7,13 @@
     "dynamicPropertyPathList": [],
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.8eea39845729f7f4bfadeecd3810a09d.svg",
     "displayName": "Chart",
-    "topRow": 155.8,
+    "topRow": 122.60000000000002,
     "searchTags": [
         "graph",
         "visuals",
         "visualisations"
     ],
-    "bottomRow": 187.8,
+    "bottomRow": 154.60000000000002,
     "parentRowSpace": 10,
     "type": "CHART_WIDGET",
     "hideCard": false,
