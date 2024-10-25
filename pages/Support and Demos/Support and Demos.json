@@ -1,137 +1,81 @@
 {
+  "gitSyncId": "63e8d02d1e242279f5911ffe_63fa5aa402d27175e02b6f9e",
   "unpublishedPage": {
-    "name": "Support and Demos",
-    "slug": "support-and-demos",
+    "isHidden": false,
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1224,
-          "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "topRow": 0,
           "bottomRow": 1546.0000000000002,
-          "containerStyle": "none",
-          "snapRows": 86,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 89,
-          "minHeight": 880,
-          "useAutoLayout": true,
-          "parentColumnSpace": 1,
-          "responsiveBehavior": "fill",
+          "containerStyle": "none",
+          "detachFromLayout": true,
           "dynamicBindingPathList": [],
-          "leftColumn": 0,
-          "positioning": "vertical",
           "flexLayers": [
             {
               "children": [
                 {
-                  "id": "fxfhuzpoq2",
-                  "align": "center"
+                  "align": "center",
+                  "id": "fxfhuzpoq2"
                 },
                 {
-                  "id": "js3s3q25f2",
-                  "align": "center"
+                  "align": "center",
+                  "id": "js3s3q25f2"
                 }
               ]
             },
             {
               "children": [
                 {
-                  "id": "o5arwzrrhp",
-                  "align": "start"
+                  "align": "start",
+                  "id": "o5arwzrrhp"
                 },
                 {
-                  "id": "c3ewv9h2t0",
-                  "align": "start"
+                  "align": "start",
+                  "id": "c3ewv9h2t0"
                 }
               ]
             },
             {
               "children": [
                 {
-                  "id": "kiguck7cvo",
-                  "align": "start"
+                  "align": "start",
+                  "id": "kiguck7cvo"
                 },
                 {
-                  "id": "jm1tjhhi86",
-                  "align": "start"
+                  "align": "start",
+                  "id": "jm1tjhhi86"
                 }
               ]
             },
             {
               "children": [
                 {
-                  "id": "6gytp5hiqz",
-                  "align": "start"
+                  "align": "start",
+                  "id": "6gytp5hiqz"
                 }
               ]
-            }
-          ]
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Support and Demos_CustomerSupportRequestRates",
-              "name": "CustomerSupportRequestRates",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
             }
           ],
-          [
-            {
-              "id": "Support and Demos_DemoConversionRate",
-              "name": "DemoConversionRate",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Support and Demos_FeatureRequestsSubmittedbyYear",
-              "name": "FeatureRequestsSubmittedbyYear",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Support and Demos_FreeDownloads",
-              "name": "FreeDownloads",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Support and Demos_SupportRepliesbyYear",
-              "name": "SupportRepliesbyYear",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "Support and Demos",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "leftColumn": 0,
+          "minHeight": 880,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
+          "positioning": "vertical",
+          "responsiveBehavior": "fill",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "snapRows": 86,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "useAutoLayout": true,
+          "version": 90,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": false
-  },
-  "deleted": false,
-  "gitSyncId": "63e8d02d1e242279f5911ffe_63fa5aa402d27175e02b6f9e"
+    "name": "Support and Demos",
+    "slug": "support-and-demos"
+  }
 }

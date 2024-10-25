@@ -1,154 +1,180 @@
 {
-    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-    "setAdaptiveYMin": true,
-    "mobileBottomRow": 432.00000000000006,
-    "widgetName": "ChartTopLMS",
-    "allowScroll": false,
-    "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
-    "displayName": "Chart",
-    "topRow": 231.75937499999998,
-    "searchTags": [
-        "graph",
-        "visuals",
-        "visualisations"
-    ],
-    "bottomRow": 285.759375,
-    "parentRowSpace": 10,
-    "type": "CHART_WIDGET",
-    "hideCard": false,
-    "mobileRightColumn": 64,
-    "chartData": {"n3fuot1hwl": {
-        "data": "{{TopCRMs12Mos.data.map((row) => {\n      return { x: row.x, y: row.y, 'color': '#ff0000' };\n  });\n}}",
-        "seriesName": "Sales"
-    }},
-    "animateLoading": true,
-    "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-    "parentColumnSpace": 19.015625,
-    "dynamicTriggerPathList": [],
-    "leftColumn": 0,
-    "dynamicBindingPathList": [
-        {"key": "borderRadius"},
-        {"key": "boxShadow"},
-        {"key": "accentColor"},
-        {"key": "fontFamily"},
-        {"key": "chartData.n3fuot1hwl.data"},
-        {"key": "customFusionChartConfig"}
-    ],
-    "customFusionChartConfig": "{\n  \"type\": \"pie2d\",\n  \"dataSource\": {\n    \"data\": {{ Object.keys(TopPluginsLMS.data[0]).map(key => ({\n      label: key,\n      value: TopPluginsLMS.data[0][key],\n\t\t\tcolor: Color.getRandomColor( '#76a75b' )\n    }));\n\t\t}},\n    \"chart\": {\n      \"caption\": \"Plugin Popularity - LMS\",\n\t\t\t\"labelFontSize\": \"14px\",\n\t\t\t\"showLegend\": \"0\",\n\t\t\t\"startingAngle\": 15,\n\t\t\t\"yAxisMinValue\": \"0.2\",\n\t\t\t\"theme\": \"fusion\",\n\t\t\t\"paletteColors\": \"#17a2b8\",\n\t\t\t\"baseFont\": \"Roboto, sans-serif\",\n\t\t\t\"baseFontSize\": \"14\",\n\t\t\t\"baseFontColor\": \"#4d4d4d\",\n\t\t\t\"captionFont\": \"Roboto, sans-serif\",\n\t\t\t\"captionFontSize\": \"24\",\n\t\t\t\"subCaptionFont\": \"Roboto, sans-serif\",\n\t\t\t\"subCaptionFontSize\": \"18\",\n\t\t\t\"subCaptionFontColor\": \"#868e96\"\n\t\t}\n  }\n}",
-    "customEChartConfig": {
-        "yAxis": [{"type": "value"}],
-        "xAxis": [{"type": "category"}],
-        "legend": {
-            "top": 40,
-            "type": "scroll"
-        },
-        "grid": {
-            "top": 100,
-            "left": 15,
-            "bottom": 30,
-            "right": 15,
-            "containLabel": true
-        },
-        "series": [
-            {
-                "stack": "Search Engine",
-                "type": "bar"
-            },
-            {
-                "stack": "Search Engine",
-                "type": "bar"
-            },
-            {
-                "stack": "Search Engine",
-                "type": "bar"
-            }
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignment": "center",
+  "allowScroll": false,
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 285.759375,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "chartData": {
+    "n3fuot1hwl": {
+      "data": "{{TopCRMs12Mos.data.map((row) => {\n      return { x: row.x, y: row.y, 'color': '#ff0000' };\n  });\n}}",
+      "seriesName": "Sales"
+    }
+  },
+  "chartName": "",
+  "chartType": "CUSTOM_FUSION_CHART",
+  "customEChartConfig": {
+    "dataset": {
+      "source": [
+        [
+          "Day",
+          "Baidu",
+          "Google",
+          "Bing"
         ],
-        "tooltip": {
-            "axisPointer": {"type": "shadow"},
-            "trigger": "axis"
-        },
-        "title": {
-            "left": "center",
-            "text": "Search Engine Usage",
-            "textStyle": {
-                "overflow": "truncate",
-                "width": 200
-            }
-        },
-        "dataset": {"source": [
-            [
-                "Day",
-                "Baidu",
-                "Google",
-                "Bing"
-            ],
-            [
-                "Mon",
-                620,
-                120,
-                60
-            ],
-            [
-                "Tue",
-                732,
-                132,
-                72
-            ],
-            [
-                "Wed",
-                701,
-                101,
-                71
-            ],
-            [
-                "Thu",
-                734,
-                134,
-                74
-            ],
-            [
-                "Fri",
-                1090,
-                290,
-                190
-            ],
-            [
-                "Sat",
-                1130,
-                230,
-                130
-            ],
-            [
-                "Sun",
-                1120,
-                220,
-                110
-            ]
-        ]}
+        [
+          "Mon",
+          620,
+          120,
+          60
+        ],
+        [
+          "Tue",
+          732,
+          132,
+          72
+        ],
+        [
+          "Wed",
+          701,
+          101,
+          71
+        ],
+        [
+          "Thu",
+          734,
+          134,
+          74
+        ],
+        [
+          "Fri",
+          1090,
+          290,
+          190
+        ],
+        [
+          "Sat",
+          1130,
+          230,
+          130
+        ],
+        [
+          "Sun",
+          1120,
+          220,
+          110
+        ]
+      ]
     },
-    "flexVerticalAlignment": "end",
-    "key": "gp5sr0liiy",
-    "showDataPointLabel": false,
-    "isDeprecated": false,
-    "rightColumn": 64,
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "widgetId": "anwkc0z3ao",
-    "minWidth": 450,
-    "isVisible": true,
-    "version": 1,
-    "parentId": "0",
-    "labelOrientation": "auto",
-    "isLoading": false,
-    "renderMode": "CANVAS",
-    "mobileTopRow": 378.00000000000006,
-    "yAxisName": "",
-    "originalTopRow": 243,
-    "responsiveBehavior": "fill",
-    "chartName": "",
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileLeftColumn": 0,
-    "xAxisName": "",
-    "originalBottomRow": 297,
-    "chartType": "CUSTOM_FUSION_CHART",
-    "alignment": "center"
+    "grid": {
+      "bottom": 30,
+      "containLabel": true,
+      "left": 15,
+      "right": 15,
+      "top": 100
+    },
+    "legend": {
+      "top": 40,
+      "type": "scroll"
+    },
+    "series": [
+      {
+        "stack": "Search Engine",
+        "type": "bar"
+      },
+      {
+        "stack": "Search Engine",
+        "type": "bar"
+      },
+      {
+        "stack": "Search Engine",
+        "type": "bar"
+      }
+    ],
+    "title": {
+      "left": "center",
+      "text": "Search Engine Usage",
+      "textStyle": {
+        "overflow": "truncate",
+        "width": 200
+      }
+    },
+    "tooltip": {
+      "axisPointer": {
+        "type": "shadow"
+      },
+      "trigger": "axis"
+    },
+    "xAxis": [
+      {
+        "type": "category"
+      }
+    ],
+    "yAxis": [
+      {
+        "type": "value"
+      }
+    ]
+  },
+  "customFusionChartConfig": "{\n  \"type\": \"pie2d\",\n  \"dataSource\": {\n    \"data\": {{ Object.keys(TopPluginsLMS.data[0]).map(key => ({\n      label: key,\n      value: TopPluginsLMS.data[0][key],\n\t\t\tcolor: Color.getRandomColor( '#76a75b' )\n    }));\n\t\t}},\n    \"chart\": {\n      \"caption\": \"Plugin Popularity - LMS\",\n\t\t\t\"labelFontSize\": \"14px\",\n\t\t\t\"showLegend\": \"0\",\n\t\t\t\"startingAngle\": 15,\n\t\t\t\"yAxisMinValue\": \"0.2\",\n\t\t\t\"theme\": \"fusion\",\n\t\t\t\"paletteColors\": \"#17a2b8\",\n\t\t\t\"baseFont\": \"Roboto, sans-serif\",\n\t\t\t\"baseFontSize\": \"14\",\n\t\t\t\"baseFontColor\": \"#4d4d4d\",\n\t\t\t\"captionFont\": \"Roboto, sans-serif\",\n\t\t\t\"captionFontSize\": \"24\",\n\t\t\t\"subCaptionFont\": \"Roboto, sans-serif\",\n\t\t\t\"subCaptionFontSize\": \"18\",\n\t\t\t\"subCaptionFontColor\": \"#868e96\"\n\t\t}\n  }\n}",
+  "displayName": "Chart",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "chartData.n3fuot1hwl.data"
+    },
+    {
+      "key": "customFusionChartConfig"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "end",
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "gp5sr0liiy",
+  "labelOrientation": "auto",
+  "leftColumn": 0,
+  "minWidth": 450,
+  "mobileBottomRow": 432.00000000000006,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 378.00000000000006,
+  "originalBottomRow": 297,
+  "originalTopRow": 243,
+  "parentColumnSpace": 19.015625,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "searchTags": [
+    "graph",
+    "visuals",
+    "visualisations"
+  ],
+  "setAdaptiveYMin": true,
+  "showDataPointLabel": false,
+  "topRow": 231.75937499999998,
+  "type": "CHART_WIDGET",
+  "version": 1,
+  "widgetId": "anwkc0z3ao",
+  "widgetName": "ChartTopLMS",
+  "xAxisName": "",
+  "yAxisName": ""
 }

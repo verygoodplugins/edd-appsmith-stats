@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "63e8d02d1e242279f5911ffe_63ef603f295431490fd8ad66",
+  "id": "MRR and Growth_Color",
   "unpublishedCollection": {
     "name": "Color",
     "pageId": "MRR and Growth",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "MRR and Growth_Color",
-  "deleted": false,
-  "gitSyncId": "63e8d02d1e242279f5911ffe_63ef603f295431490fd8ad66"
+    "variables": []
+  }
 }

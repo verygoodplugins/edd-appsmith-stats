@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "63e8d02d1e242279f5911ffe_63ef7e93295431490fd8b006",
+  "id": "Renewals and Cancellations_RenewalRatesbyMonthofYear",
   "unpublishedCollection": {
     "name": "RenewalRatesbyMonthofYear",
     "pageId": "Renewals and Cancellations",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Renewals and Cancellations_RenewalRatesbyMonthofYear",
-  "deleted": false,
-  "gitSyncId": "63e8d02d1e242279f5911ffe_63ef7e93295431490fd8b006"
+    "variables": []
+  }
 }

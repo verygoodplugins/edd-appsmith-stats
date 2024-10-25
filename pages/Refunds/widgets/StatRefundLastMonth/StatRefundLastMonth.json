@@ -1,76 +1,90 @@
 {
-    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-    "widgetName": "StatRefundLastMonth",
-    "borderColor": "#E0DEDE",
-    "isCanvas": true,
-    "displayName": "Stats Box",
-    "iconSVG": "/static/media/icon.382a7c7bc55323fbbd8edd79208c5324.svg",
-    "topRow": 42.800000000000004,
-    "bottomRow": 54.400000000000006,
-    "parentRowSpace": 10,
-    "type": "STATBOX_WIDGET",
-    "hideCard": false,
-    "shouldScrollContents": true,
-    "animateLoading": true,
-    "parentColumnSpace": 16.546875,
-    "dynamicTriggerPathList": [],
-    "leftColumn": 0,
-    "dynamicBindingPathList": [{"key": "boxShadow"}],
-    "children": [{
-        "widgetName": "Canvas1Copy1",
-        "displayName": "Canvas",
-        "topRow": 0,
-        "bottomRow": 116.00000000000001,
-        "parentRowSpace": 1,
-        "type": "CANVAS_WIDGET",
-        "canExtend": false,
-        "hideCard": true,
-        "minHeight": 120,
-        "useAutoLayout": true,
-        "parentColumnSpace": 1,
-        "leftColumn": 0,
-        "dynamicBindingPathList": [],
-        "positioning": "vertical",
-        "key": "dieduwxvap",
-        "isDeprecated": false,
-        "rightColumn": 198.5625,
-        "detachFromLayout": true,
-        "widgetId": "s0qqwomrjm",
-        "containerStyle": "none",
-        "isVisible": true,
-        "version": 1,
-        "parentId": "58zhgx1sbx",
-        "renderMode": "CANVAS",
-        "isLoading": false,
-        "responsiveBehavior": "fill",
-        "flexLayers": [
-            {"children": [{
-                "id": "fn0akh5pq6",
-                "align": "start"
-            }]},
-            {"children": [{
-                "id": "6b3l1yyh9c",
-                "align": "start"
-            }]}
-        ]
-    }],
-    "borderWidth": "1",
-    "key": "gsbsi84itj",
-    "flexVerticalAlignment": "end",
-    "backgroundColor": "white",
-    "isDeprecated": false,
-    "rightColumn": 64,
-    "dynamicHeight": "AUTO_HEIGHT",
-    "widgetId": "58zhgx1sbx",
-    "isVisible": true,
-    "parentId": "0",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "originalTopRow": 26,
-    "responsiveBehavior": "fill",
-    "borderRadius": "0.375rem",
-    "maxDynamicHeight": 9000,
-    "originalBottomRow": 40,
-    "alignment": "start",
-    "minDynamicHeight": 14
+  "alignment": "start",
+  "animateLoading": true,
+  "backgroundColor": "white",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "0.375rem",
+  "borderWidth": "1",
+  "bottomRow": 54.400000000000006,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "children": [
+    {
+      "bottomRow": 116.00000000000001,
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "displayName": "Canvas",
+      "dynamicBindingPathList": [],
+      "flexLayers": [
+        {
+          "children": [
+            {
+              "align": "start",
+              "id": "fn0akh5pq6"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "align": "start",
+              "id": "6b3l1yyh9c"
+            }
+          ]
+        }
+      ],
+      "hideCard": true,
+      "isDeprecated": false,
+      "isLoading": false,
+      "isVisible": true,
+      "key": "dieduwxvap",
+      "leftColumn": 0,
+      "minHeight": 120,
+      "parentColumnSpace": 1,
+      "parentId": "58zhgx1sbx",
+      "parentRowSpace": 1,
+      "positioning": "vertical",
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 198.5625,
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "useAutoLayout": true,
+      "version": 1,
+      "widgetId": "s0qqwomrjm",
+      "widgetName": "Canvas1Copy1"
+    }
+  ],
+  "displayName": "Stats Box",
+  "dynamicBindingPathList": [
+    {
+      "key": "boxShadow"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "end",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.382a7c7bc55323fbbd8edd79208c5324.svg",
+  "isCanvas": true,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "gsbsi84itj",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 14,
+  "originalBottomRow": 40,
+  "originalTopRow": 26,
+  "parentColumnSpace": 16.546875,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "shouldScrollContents": true,
+  "topRow": 42.800000000000004,
+  "type": "STATBOX_WIDGET",
+  "widgetId": "58zhgx1sbx",
+  "widgetName": "StatRefundLastMonth"
 }

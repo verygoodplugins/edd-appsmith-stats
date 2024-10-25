@@ -1,263 +1,143 @@
 {
+  "gitSyncId": "63e8d02d1e242279f5911ffe_63e9152f5bf3193e55330ca2",
   "unpublishedPage": {
-    "name": "Sites stats",
-    "slug": "sites-stats",
+    "isHidden": false,
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "mobileBottomRow": 7748.000000000001,
-          "widgetName": "MainContainer",
-          "topRow": 0,
-          "bottomRow": 6229.593749999999,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
-          "canExtend": true,
-          "minHeight": 4980,
-          "useAutoLayout": true,
-          "parentColumnSpace": 1,
-          "dynamicBindingPathList": [],
-          "leftColumn": 0,
-          "positioning": "vertical",
           "backgroundColor": "none",
-          "rightColumn": 1224,
-          "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
+          "bottomRow": 6229.593749999999,
+          "canExtend": true,
           "containerStyle": "none",
-          "snapRows": 120,
-          "version": 89,
-          "mobileTopRow": 0,
-          "responsiveBehavior": "fill",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
           "flexLayers": [
             {
               "children": [
                 {
-                  "id": "hslia0nxyd",
-                  "align": "center"
+                  "align": "center",
+                  "id": "hslia0nxyd"
                 },
                 {
-                  "id": "4hae6ajfcg",
-                  "align": "center"
+                  "align": "center",
+                  "id": "4hae6ajfcg"
                 }
               ]
             },
             {
               "children": [
                 {
-                  "id": "ze5kozwmb4",
-                  "align": "center"
+                  "align": "center",
+                  "id": "ze5kozwmb4"
                 },
                 {
-                  "id": "6oacf3iyso",
-                  "align": "center"
+                  "align": "center",
+                  "id": "6oacf3iyso"
                 }
               ]
             },
             {
               "children": [
                 {
-                  "id": "y4lzrsoptt",
-                  "align": "center"
+                  "align": "center",
+                  "id": "y4lzrsoptt"
                 }
               ]
             },
             {
               "children": [
                 {
-                  "id": "sdzhg614ae",
-                  "align": "center"
+                  "align": "center",
+                  "id": "sdzhg614ae"
                 }
               ]
             },
             {
               "children": [
                 {
-                  "id": "29x7e5obv5",
-                  "align": "center"
+                  "align": "center",
+                  "id": "29x7e5obv5"
                 }
               ]
             },
             {
               "children": [
                 {
-                  "id": "anwkc0z3ao",
-                  "align": "center"
+                  "align": "center",
+                  "id": "anwkc0z3ao"
                 }
               ]
             },
             {
               "children": [
                 {
-                  "id": "h1ntjavod1",
-                  "align": "center"
+                  "align": "center",
+                  "id": "h1ntjavod1"
                 }
               ]
             },
             {
               "children": [
                 {
-                  "id": "776s5psmn4",
-                  "align": "center"
+                  "align": "center",
+                  "id": "776s5psmn4"
                 }
               ]
             },
             {
               "children": [
                 {
-                  "id": "4xxo94wx6q",
-                  "align": "center"
+                  "align": "center",
+                  "id": "4xxo94wx6q"
                 }
               ]
             },
             {
               "children": [
                 {
-                  "id": "qwln6iq5wj",
-                  "align": "center"
+                  "align": "center",
+                  "id": "qwln6iq5wj"
                 }
               ]
             },
             {
               "children": [
                 {
-                  "id": "ronyms1h1p",
-                  "align": "center"
+                  "align": "center",
+                  "id": "ronyms1h1p"
                 }
               ]
             },
             {
               "children": [
                 {
-                  "id": "le36t81i31",
-                  "align": "center"
+                  "align": "center",
+                  "id": "le36t81i31"
                 }
               ]
-            }
-          ]
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Sites stats_ActiveSites12Mos",
-              "name": "ActiveSites12Mos",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
             }
           ],
-          [
-            {
-              "id": "Sites stats_LicenseStatusesPercent",
-              "name": "LicenseStatusesPercent",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Sites stats_PluginVersionsPercent",
-              "name": "PluginVersionsPercent",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Sites stats_TopCRMs12Mos",
-              "name": "TopCRMs12Mos",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Sites stats_TopPluginsAffiliates",
-              "name": "TopPluginsAffiliates",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Sites stats_TopPluginsCustomFields",
-              "name": "TopPluginsCustomFields",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Sites stats_TopPluginsEcommerce",
-              "name": "TopPluginsEcommerce",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Sites stats_TopPluginsEvents",
-              "name": "TopPluginsEvents",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Sites stats_TopPluginsForms",
-              "name": "TopPluginsForms",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Sites stats_TopPluginsLMS",
-              "name": "TopPluginsLMS",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Sites stats_TopPluginsMembership",
-              "name": "TopPluginsMembership",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Sites stats_TopPluginsPageBuilders",
-              "name": "TopPluginsPageBuilders",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Sites stats_TopWPFAddons",
-              "name": "TopWPFAddons",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "Sites stats",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "leftColumn": 0,
+          "minHeight": 4980,
+          "mobileBottomRow": 7748.000000000001,
+          "mobileTopRow": 0,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
+          "positioning": "vertical",
+          "responsiveBehavior": "fill",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "snapRows": 120,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "useAutoLayout": true,
+          "version": 90,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": false
-  },
-  "deleted": false,
-  "gitSyncId": "63e8d02d1e242279f5911ffe_63e9152f5bf3193e55330ca2"
+    "name": "Sites stats",
+    "slug": "sites-stats"
+  }
 }

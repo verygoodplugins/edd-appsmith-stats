@@ -1,62 +1,76 @@
 {
-    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-    "mobileBottomRow": 78,
-    "widgetName": "FeatureRequestsbyYear",
-    "allowScroll": false,
-    "widthInPercentage": 0.49721254355400696,
-    "displayName": "Chart",
-    "iconSVG": "https://appcdn.appsmith.com/static/media/icon.8eea39845729f7f4bfadeecd3810a09d.svg",
-    "searchTags": [
-        "graph",
-        "visuals",
-        "visualisations"
-    ],
-    "topRow": 0,
-    "bottomRow": 39,
-    "parentRowSpace": 10,
-    "type": "CHART_WIDGET",
-    "hideCard": false,
-    "mobileRightColumn": 64,
-    "chartData": {"kwjsfvhfnj": {
-        "data": "{{FeatureRequestsSubmittedbyYear.data",
-        "seriesName": "2023"
-    }},
-    "animateLoading": true,
-    "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-    "parentColumnSpace": 20.046875,
-    "dynamicTriggerPathList": [],
-    "dynamicBindingPathList": [
-        {"key": "borderRadius"},
-        {"key": "boxShadow"},
-        {"key": "accentColor"},
-        {"key": "fontFamily"},
-        {"key": "customFusionChartConfig"}
-    ],
-    "leftColumn": 32,
-    "customFusionChartConfig": "{\n  \"type\": \"overlappedcolumn2d\",\n  \"dataSource\": {\n    \"dataset\": [\n\t\t\t{\n\t\t\t\t\"seriesname\": \"Submitted Requests\",\n\t\t\t\t\"color\": \"#3d73af\",\n\t\t\t\t\"data\": {{ FeatureRequestsSubmittedbyYear.data.map((row) => { return { value: row.total_posts, color: Color.getRandomColor( '#3d73af' ) } }); }}\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"seriesname\": \"Completed Requests\",\n\t\t\t\t\"color\": \"#63a1e5\",\n\t\t\t\t\"data\": {{ FeatureRequestsSubmittedbyYear.data.map((row) => { return { value: row.completed_posts, color: Color.getRandomColor( '#63a1e5' ) } }); }}\n\t\t\t}\n\t\t],\n\t\t\"categories\": [\n\t\t\t{\n\t\t\t\t\"category\": {{ FeatureRequestsSubmittedbyYear.data.map((row) => { return { label: row.year + '' } }); }}\n\t\t\t}\n\t\t],\n    \"chart\": {\n        \"caption\": \"Feature Requests\",\n        \"xAxisName\": \"Year\",\n        \"theme\": \"fusion\",\n        \"paletteColors\": \"#17a2b8\",\n        \"baseFont\": \"Roboto, sans-serif\",\n        \"baseFontSize\": \"14\",\n        \"baseFontColor\": \"#4d4d4d\",\n        \"captionFont\": \"Roboto, sans-serif\",\n        \"captionFontSize\": \"24\",\n        \"subCaptionFont\": \"Roboto, sans-serif\",\n        \"subCaptionFontSize\": \"18\",\n        \"subCaptionFontColor\": \"#868e96\",\n        \"anchorBgColor\": \"#1B2E43\",\n        \"anchorBgHoverColor\": \"#1B2E43\",\n        \"anchorHoverRadius\": \"7\",\n\t\t\t\t\"snumbersuffix\": \"%\"\n    }\n  }\n}",
-    "customEChartConfig": "",
-    "flexVerticalAlignment": "start",
-    "showDataPointLabel": false,
-    "key": "3gotqxnb4d",
-    "isDeprecated": false,
-    "rightColumn": 64,
-    "widgetId": "js3s3q25f2",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "minWidth": 450,
-    "isVisible": true,
-    "version": 1,
-    "parentId": "0",
-    "labelOrientation": "auto",
-    "tags": ["Display"],
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 46,
-    "responsiveBehavior": "fill",
-    "yAxisName": "Revenue($)",
-    "chartName": "Sales Report",
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileLeftColumn": 0,
-    "xAxisName": "Product Line",
-    "chartType": "CUSTOM_FUSION_CHART",
-    "alignment": "center"
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignment": "center",
+  "allowScroll": false,
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 39,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "chartData": {
+    "kwjsfvhfnj": {
+      "data": "{{FeatureRequestsSubmittedbyYear.data",
+      "seriesName": "2023"
+    }
+  },
+  "chartName": "Sales Report",
+  "chartType": "CUSTOM_FUSION_CHART",
+  "customEChartConfig": "",
+  "customFusionChartConfig": "{\n  \"type\": \"overlappedcolumn2d\",\n  \"dataSource\": {\n    \"dataset\": [\n\t\t\t{\n\t\t\t\t\"seriesname\": \"Submitted Requests\",\n\t\t\t\t\"color\": \"#3d73af\",\n\t\t\t\t\"data\": {{ FeatureRequestsSubmittedbyYear.data.map((row) => { return { value: row.total_posts, color: Color.getRandomColor( '#3d73af' ) } }); }}\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"seriesname\": \"Completed Requests\",\n\t\t\t\t\"color\": \"#63a1e5\",\n\t\t\t\t\"data\": {{ FeatureRequestsSubmittedbyYear.data.map((row) => { return { value: row.completed_posts, color: Color.getRandomColor( '#63a1e5' ) } }); }}\n\t\t\t}\n\t\t],\n\t\t\"categories\": [\n\t\t\t{\n\t\t\t\t\"category\": {{ FeatureRequestsSubmittedbyYear.data.map((row) => { return { label: row.year + '' } }); }}\n\t\t\t}\n\t\t],\n    \"chart\": {\n        \"caption\": \"Feature Requests\",\n        \"xAxisName\": \"Year\",\n        \"theme\": \"fusion\",\n        \"paletteColors\": \"#17a2b8\",\n        \"baseFont\": \"Roboto, sans-serif\",\n        \"baseFontSize\": \"14\",\n        \"baseFontColor\": \"#4d4d4d\",\n        \"captionFont\": \"Roboto, sans-serif\",\n        \"captionFontSize\": \"24\",\n        \"subCaptionFont\": \"Roboto, sans-serif\",\n        \"subCaptionFontSize\": \"18\",\n        \"subCaptionFontColor\": \"#868e96\",\n        \"anchorBgColor\": \"#1B2E43\",\n        \"anchorBgHoverColor\": \"#1B2E43\",\n        \"anchorHoverRadius\": \"7\",\n\t\t\t\t\"snumbersuffix\": \"%\"\n    }\n  }\n}",
+  "displayName": "Chart",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "customFusionChartConfig"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "hideCard": false,
+  "iconSVG": "https://appcdn.appsmith.com/static/media/icon.8eea39845729f7f4bfadeecd3810a09d.svg",
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "3gotqxnb4d",
+  "labelOrientation": "auto",
+  "leftColumn": 32,
+  "minWidth": 450,
+  "mobileBottomRow": 78,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 46,
+  "parentColumnSpace": 20.046875,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "searchTags": [
+    "graph",
+    "visuals",
+    "visualisations"
+  ],
+  "showDataPointLabel": false,
+  "tags": [
+    "Display"
+  ],
+  "topRow": 0,
+  "type": "CHART_WIDGET",
+  "version": 1,
+  "widgetId": "js3s3q25f2",
+  "widgetName": "FeatureRequestsbyYear",
+  "widthInPercentage": 0.49721254355400696,
+  "xAxisName": "Product Line",
+  "yAxisName": "Revenue($)"
 }

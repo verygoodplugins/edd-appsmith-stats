@@ -1,105 +1,73 @@
 {
+  "gitSyncId": "63e8d02d1e242279f5911ffe_63fdfddb14130d22285c01e4",
   "unpublishedPage": {
-    "name": "Refunds",
-    "slug": "refunds",
+    "isHidden": false,
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1224,
-          "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "topRow": 0,
           "bottomRow": 996.0000000000001,
-          "containerStyle": "none",
-          "snapRows": 86,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 89,
-          "minHeight": 930,
-          "useAutoLayout": true,
-          "parentColumnSpace": 1,
-          "responsiveBehavior": "fill",
+          "containerStyle": "none",
+          "detachFromLayout": true,
           "dynamicBindingPathList": [],
-          "leftColumn": 0,
-          "positioning": "vertical",
           "flexLayers": [
             {
               "children": [
                 {
-                  "id": "g0cjsflj4u",
-                  "align": "center"
+                  "align": "center",
+                  "id": "g0cjsflj4u"
                 }
               ]
             },
             {
               "children": [
                 {
-                  "id": "hnnium6jyt",
-                  "align": "center"
+                  "align": "center",
+                  "id": "hnnium6jyt"
                 },
                 {
-                  "id": "rhvf749fht",
-                  "align": "center"
+                  "align": "center",
+                  "id": "rhvf749fht"
                 }
               ]
             },
             {
               "children": [
                 {
-                  "id": "58zhgx1sbx",
-                  "align": "start"
+                  "align": "start",
+                  "id": "58zhgx1sbx"
                 }
               ]
             },
             {
               "children": [
                 {
-                  "id": "d1spd6vboy",
-                  "align": "center"
+                  "align": "center",
+                  "id": "d1spd6vboy"
                 }
               ]
-            }
-          ]
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Refunds_PercentOrdersRefundedbyMonth",
-              "name": "PercentOrdersRefundedbyMonth",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
             }
           ],
-          [
-            {
-              "id": "Refunds_NewCustomerRefundRates",
-              "name": "NewCustomerRefundRates",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "Refunds",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "leftColumn": 0,
+          "minHeight": 930,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
+          "positioning": "vertical",
+          "responsiveBehavior": "fill",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "snapRows": 86,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "useAutoLayout": true,
+          "version": 90,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": false
-  },
-  "deleted": false,
-  "gitSyncId": "63e8d02d1e242279f5911ffe_63fdfddb14130d22285c01e4"
+    "name": "Refunds",
+    "slug": "refunds"
+  }
 }

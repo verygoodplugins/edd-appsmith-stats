@@ -1,82 +1,94 @@
 {
-    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-    "widgetName": "StatRenewalRateLastMo",
-    "borderColor": "#E0DEDE",
-    "isCanvas": true,
-    "displayName": "Stats Box",
-    "iconSVG": "/static/media/icon.382a7c7bc55323fbbd8edd79208c5324.svg",
-    "topRow": 5.6000000000000005,
-    "bottomRow": 17.200000000000003,
-    "parentRowSpace": 10,
-    "type": "STATBOX_WIDGET",
-    "hideCard": false,
-    "shouldScrollContents": true,
-    "animateLoading": true,
-    "parentColumnSpace": 16.546875,
-    "dynamicTriggerPathList": [],
-    "leftColumn": 32,
-    "dynamicBindingPathList": [{"key": "boxShadow"}],
-    "children": [{
-        "widgetName": "Canvas1Copy",
-        "displayName": "Canvas",
-        "topRow": 0,
-        "bottomRow": 116.00000000000001,
-        "parentRowSpace": 1,
-        "type": "CANVAS_WIDGET",
-        "canExtend": false,
-        "hideCard": true,
-        "minHeight": 150,
-        "useAutoLayout": true,
-        "parentColumnSpace": 1,
-        "leftColumn": 0,
-        "dynamicBindingPathList": [],
-        "positioning": "vertical",
-        "key": "dieduwxvap",
-        "isDeprecated": false,
-        "rightColumn": 198.5625,
-        "detachFromLayout": true,
-        "widgetId": "ara6d5pj4b",
-        "containerStyle": "none",
-        "isVisible": true,
-        "version": 1,
-        "parentId": "eoikm5cgwr",
-        "renderMode": "CANVAS",
-        "isLoading": false,
-        "responsiveBehavior": "fill",
-        "flexLayers": [
-            {"children": [
-                {
-                    "id": "ox306bbxjg",
-                    "align": "start"
-                },
-                {
-                    "id": "i8m03btsno",
-                    "align": "end"
-                }
-            ]},
-            {"children": [{
-                "id": "gz90ly0o6h",
-                "align": "start"
-            }]}
-        ]
-    }],
-    "borderWidth": "1",
-    "key": "gsbsi84itj",
-    "flexVerticalAlignment": "end",
-    "backgroundColor": "white",
-    "isDeprecated": false,
-    "rightColumn": 64,
-    "dynamicHeight": "AUTO_HEIGHT",
-    "widgetId": "eoikm5cgwr",
-    "isVisible": true,
-    "parentId": "0",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "originalTopRow": 14,
-    "responsiveBehavior": "fill",
-    "borderRadius": "0.375rem",
-    "maxDynamicHeight": 9000,
-    "originalBottomRow": 25,
-    "alignment": "center",
-    "minDynamicHeight": 14
+  "alignment": "center",
+  "animateLoading": true,
+  "backgroundColor": "white",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "0.375rem",
+  "borderWidth": "1",
+  "bottomRow": 17.200000000000003,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "children": [
+    {
+      "bottomRow": 116.00000000000001,
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "displayName": "Canvas",
+      "dynamicBindingPathList": [],
+      "flexLayers": [
+        {
+          "children": [
+            {
+              "align": "start",
+              "id": "ox306bbxjg"
+            },
+            {
+              "align": "end",
+              "id": "i8m03btsno"
+            }
+          ]
+        },
+        {
+          "children": [
+            {
+              "align": "start",
+              "id": "gz90ly0o6h"
+            }
+          ]
+        }
+      ],
+      "hideCard": true,
+      "isDeprecated": false,
+      "isLoading": false,
+      "isVisible": true,
+      "key": "dieduwxvap",
+      "leftColumn": 0,
+      "minHeight": 150,
+      "parentColumnSpace": 1,
+      "parentId": "eoikm5cgwr",
+      "parentRowSpace": 1,
+      "positioning": "vertical",
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 198.5625,
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "useAutoLayout": true,
+      "version": 1,
+      "widgetId": "ara6d5pj4b",
+      "widgetName": "Canvas1Copy"
+    }
+  ],
+  "displayName": "Stats Box",
+  "dynamicBindingPathList": [
+    {
+      "key": "boxShadow"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "end",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.382a7c7bc55323fbbd8edd79208c5324.svg",
+  "isCanvas": true,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "gsbsi84itj",
+  "leftColumn": 32,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 14,
+  "originalBottomRow": 25,
+  "originalTopRow": 14,
+  "parentColumnSpace": 16.546875,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "shouldScrollContents": true,
+  "topRow": 5.6000000000000005,
+  "type": "STATBOX_WIDGET",
+  "widgetId": "eoikm5cgwr",
+  "widgetName": "StatRenewalRateLastMo"
 }

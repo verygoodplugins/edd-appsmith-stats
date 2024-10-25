@@ -1,151 +1,177 @@
 {
-    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-    "setAdaptiveYMin": true,
-    "widgetName": "ChartRenewalRatebyMonth",
-    "allowScroll": false,
-    "displayName": "Chart",
-    "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
-    "searchTags": [
-        "graph",
-        "visuals",
-        "visualisations"
-    ],
-    "topRow": 67.60000000000001,
-    "bottomRow": 97.60000000000001,
-    "parentRowSpace": 10,
-    "type": "CHART_WIDGET",
-    "hideCard": false,
-    "chartData": {"omnlezx0nn": {
-        "data": "{{RenewalRatesbyMonth.data.map( (row) => {\n      return { x: row.month_of_purchase, y: row.average_renewal_rate }});}}\n                        ",
-        "color": "#6cbf83",
-        "seriesName": "Sales"
-    }},
-    "animateLoading": true,
-    "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-    "parentColumnSpace": 20.484375,
-    "dynamicTriggerPathList": [],
-    "leftColumn": 0,
-    "dynamicBindingPathList": [
-        {"key": "borderRadius"},
-        {"key": "boxShadow"},
-        {"key": "accentColor"},
-        {"key": "fontFamily"},
-        {"key": "chartData.omnlezx0nn.data"},
-        {"key": "customFusionChartConfig"}
-    ],
-    "customFusionChartConfig": "{\n  \"type\": \"line\",\n  \"dataSource\": {\n    \"data\": {{RenewalRatesbyMonth.data.map( (row) => {\n      return { label: row.month_of_purchase, value: row.average_renewal_rate }});}},\n    \"chart\": {\n      \"caption\": \"Renewal Rate by Month\",\n      \"yAxisName\": \"Renewed(%)\",\n\t\t\t\"theme\": \"fusion\",\n\t\t\t\"paletteColors\": \"#6cbf83\",\n\t\t\t\"baseFont\": \"Roboto, sans-serif\",\n\t\t\t\"baseFontSize\": \"12\",\n\t\t\t\"baseFontColor\": \"#4d4d4d\",\n\t\t\t\"captionFont\": \"Roboto, sans-serif\",\n\t\t\t\"captionFontSize\": \"24\",\n\t\t\t\"subCaptionFont\": \"Roboto, sans-serif\",\n\t\t\t\"subCaptionFontSize\": \"18\",\n\t\t\t\"subCaptionFontColor\": \"#868e96\",\n\t\t\t\"labelDisplay\": \"auto\",\n      \"slantLabel\": \"1\",\n\t\t\t\"labelFontSize\": \"12\",\n\t\t\t\"labelFontColor\": \"#888\",\n\t\t\t\"numbersuffix\": \"%\",\n\t\t\t\"anchorBgColor\": \"#6cbf83\",\n\t\t\t\"anchorBgHoverColor\": \"#6cbf83\",\n\t\t\t\"anchorHoverRadius\": \"7\"\n    }\n  }\n}",
-    "customEChartConfig": {
-        "yAxis": [{"type": "value"}],
-        "xAxis": [{"type": "category"}],
-        "legend": {
-            "top": 40,
-            "type": "scroll"
-        },
-        "grid": {
-            "top": 100,
-            "left": 15,
-            "bottom": 30,
-            "right": 15,
-            "containLabel": true
-        },
-        "series": [
-            {
-                "stack": "Search Engine",
-                "type": "bar"
-            },
-            {
-                "stack": "Search Engine",
-                "type": "bar"
-            },
-            {
-                "stack": "Search Engine",
-                "type": "bar"
-            }
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignment": "center",
+  "allowScroll": false,
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 97.60000000000001,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "chartData": {
+    "omnlezx0nn": {
+      "color": "#6cbf83",
+      "data": "{{RenewalRatesbyMonth.data.map( (row) => {\n      return { x: row.month_of_purchase, y: row.average_renewal_rate }});}}\n                        ",
+      "seriesName": "Sales"
+    }
+  },
+  "chartName": "Renewal Rates by Month",
+  "chartType": "CUSTOM_FUSION_CHART",
+  "customEChartConfig": {
+    "dataset": {
+      "source": [
+        [
+          "Day",
+          "Baidu",
+          "Google",
+          "Bing"
         ],
-        "tooltip": {
-            "axisPointer": {"type": "shadow"},
-            "trigger": "axis"
-        },
-        "title": {
-            "left": "center",
-            "text": "Search Engine Usage",
-            "textStyle": {
-                "overflow": "truncate",
-                "width": 200
-            }
-        },
-        "dataset": {"source": [
-            [
-                "Day",
-                "Baidu",
-                "Google",
-                "Bing"
-            ],
-            [
-                "Mon",
-                620,
-                120,
-                60
-            ],
-            [
-                "Tue",
-                732,
-                132,
-                72
-            ],
-            [
-                "Wed",
-                701,
-                101,
-                71
-            ],
-            [
-                "Thu",
-                734,
-                134,
-                74
-            ],
-            [
-                "Fri",
-                1090,
-                290,
-                190
-            ],
-            [
-                "Sat",
-                1130,
-                230,
-                130
-            ],
-            [
-                "Sun",
-                1120,
-                220,
-                110
-            ]
-        ]}
+        [
+          "Mon",
+          620,
+          120,
+          60
+        ],
+        [
+          "Tue",
+          732,
+          132,
+          72
+        ],
+        [
+          "Wed",
+          701,
+          101,
+          71
+        ],
+        [
+          "Thu",
+          734,
+          134,
+          74
+        ],
+        [
+          "Fri",
+          1090,
+          290,
+          190
+        ],
+        [
+          "Sat",
+          1130,
+          230,
+          130
+        ],
+        [
+          "Sun",
+          1120,
+          220,
+          110
+        ]
+      ]
     },
-    "key": "h0ttxkeez6",
-    "showDataPointLabel": false,
-    "flexVerticalAlignment": "end",
-    "isDeprecated": false,
-    "rightColumn": 64,
-    "widgetId": "nb287dqjar",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "minWidth": 450,
-    "isVisible": true,
-    "version": 1,
-    "parentId": "0",
-    "labelOrientation": "slant",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "yAxisName": "Renewal Percent",
-    "originalTopRow": 77,
-    "responsiveBehavior": "fill",
-    "chartName": "Renewal Rates by Month",
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "xAxisName": "Month of purchase",
-    "originalBottomRow": 107,
-    "chartType": "CUSTOM_FUSION_CHART",
-    "alignment": "center"
+    "grid": {
+      "bottom": 30,
+      "containLabel": true,
+      "left": 15,
+      "right": 15,
+      "top": 100
+    },
+    "legend": {
+      "top": 40,
+      "type": "scroll"
+    },
+    "series": [
+      {
+        "stack": "Search Engine",
+        "type": "bar"
+      },
+      {
+        "stack": "Search Engine",
+        "type": "bar"
+      },
+      {
+        "stack": "Search Engine",
+        "type": "bar"
+      }
+    ],
+    "title": {
+      "left": "center",
+      "text": "Search Engine Usage",
+      "textStyle": {
+        "overflow": "truncate",
+        "width": 200
+      }
+    },
+    "tooltip": {
+      "axisPointer": {
+        "type": "shadow"
+      },
+      "trigger": "axis"
+    },
+    "xAxis": [
+      {
+        "type": "category"
+      }
+    ],
+    "yAxis": [
+      {
+        "type": "value"
+      }
+    ]
+  },
+  "customFusionChartConfig": "{\n  \"type\": \"line\",\n  \"dataSource\": {\n    \"data\": {{RenewalRatesbyMonth.data.map( (row) => {\n      return { label: row.month_of_purchase, value: row.average_renewal_rate }});}},\n    \"chart\": {\n      \"caption\": \"Renewal Rate by Month\",\n      \"yAxisName\": \"Renewed(%)\",\n\t\t\t\"theme\": \"fusion\",\n\t\t\t\"paletteColors\": \"#6cbf83\",\n\t\t\t\"baseFont\": \"Roboto, sans-serif\",\n\t\t\t\"baseFontSize\": \"12\",\n\t\t\t\"baseFontColor\": \"#4d4d4d\",\n\t\t\t\"captionFont\": \"Roboto, sans-serif\",\n\t\t\t\"captionFontSize\": \"24\",\n\t\t\t\"subCaptionFont\": \"Roboto, sans-serif\",\n\t\t\t\"subCaptionFontSize\": \"18\",\n\t\t\t\"subCaptionFontColor\": \"#868e96\",\n\t\t\t\"labelDisplay\": \"auto\",\n      \"slantLabel\": \"1\",\n\t\t\t\"labelFontSize\": \"12\",\n\t\t\t\"labelFontColor\": \"#888\",\n\t\t\t\"numbersuffix\": \"%\",\n\t\t\t\"anchorBgColor\": \"#6cbf83\",\n\t\t\t\"anchorBgHoverColor\": \"#6cbf83\",\n\t\t\t\"anchorHoverRadius\": \"7\"\n    }\n  }\n}",
+  "displayName": "Chart",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "chartData.omnlezx0nn.data"
+    },
+    {
+      "key": "customFusionChartConfig"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "end",
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "h0ttxkeez6",
+  "labelOrientation": "slant",
+  "leftColumn": 0,
+  "minWidth": 450,
+  "originalBottomRow": 107,
+  "originalTopRow": 77,
+  "parentColumnSpace": 20.484375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "searchTags": [
+    "graph",
+    "visuals",
+    "visualisations"
+  ],
+  "setAdaptiveYMin": true,
+  "showDataPointLabel": false,
+  "topRow": 67.60000000000001,
+  "type": "CHART_WIDGET",
+  "version": 1,
+  "widgetId": "nb287dqjar",
+  "widgetName": "ChartRenewalRatebyMonth",
+  "xAxisName": "Month of purchase",
+  "yAxisName": "Renewal Percent"
 }

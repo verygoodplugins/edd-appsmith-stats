@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "63e8d02d1e242279f5911ffe_63ef6264a01b764626f2a908",
+  "id": "Software Licensing_Color",
   "unpublishedCollection": {
     "name": "Color",
     "pageId": "Software Licensing",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Software Licensing_Color",
-  "deleted": false,
-  "gitSyncId": "63e8d02d1e242279f5911ffe_63ef6264a01b764626f2a908"
+    "variables": []
+  }
 }

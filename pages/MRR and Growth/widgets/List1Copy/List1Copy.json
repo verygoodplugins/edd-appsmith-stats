@@ -1,98 +1,120 @@
 {
-    "boxShadow": "none",
-    "widthInPercentage": 0.49588477366255146,
-    "requiresFlatWidgetChildren": true,
-    "isCanvas": true,
-    "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
-    "topRow": 5.6000000000000005,
-    "pageSize": 4,
-    "type": "LIST_WIDGET_V2",
-    "itemSpacing": 8,
-    "animateLoading": true,
-    "dynamicBindingPathList": [
-        {"key": "currentItemsView"},
-        {"key": "selectedItemView"},
-        {"key": "triggeredItemView"},
-        {"key": "primaryKeys"},
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "listData"}
-    ],
-    "leftColumn": 0,
-    "enhancements": true,
-    "children": [{
-        "widgetName": "Canvas1Copy",
-        "displayName": "Canvas",
-        "topRow": 0,
-        "bottomRow": 300,
-        "parentRowSpace": 1,
-        "type": "CANVAS_WIDGET",
-        "canExtend": false,
-        "hideCard": true,
-        "dropDisabled": true,
-        "openParentPropertyPane": true,
-        "minHeight": 400,
-        "noPad": true,
-        "parentColumnSpace": 1,
-        "leftColumn": 0,
-        "dynamicBindingPathList": [],
-        "positioning": "vertical",
-        "key": "7s4wqduic4",
-        "isDeprecated": false,
-        "rightColumn": 475.5,
-        "detachFromLayout": true,
-        "widgetId": "jt2gl8davw",
-        "containerStyle": "none",
-        "isVisible": true,
-        "version": 1,
-        "parentId": "xhulx8l3r8",
-        "renderMode": "CANVAS",
-        "isLoading": false,
-        "responsiveBehavior": "fill",
-        "flexLayers": [{"children": [{
-            "id": "02yzu13daw",
-            "align": "center"
-        }]}]
-    }],
-    "flexVerticalAlignment": "end",
-    "itemBackgroundColor": "#FFFFFF",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisible": true,
-    "hasMetaWidgets": true,
-    "isLoading": false,
-    "mainCanvasId": "jt2gl8davw",
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 37,
-    "additionalStaticProps": [
-        "level",
-        "levelData",
-        "prefixMetaWidgetId",
-        "metaWidgetId"
-    ],
-    "alignment": "start",
-    "currentItemsView": "{{[]}}",
-    "triggeredItemView": "{{{}}}",
-    "widgetName": "List1Copy",
-    "listData": "[\n  {\n    \"name\": \"NET NEW MRR\",\n\t\t\"val\": {{ CalcGrowthRate.netNewMRR().val }},\n\t\t\"color\": {{ CalcGrowthRate.netNewMRR().color }}\n  },\n  {\n    \"name\": \"New\",\n\t\t\"val\": {{ \"+ $\" + NewMRRbyMo.data[ NewMRRbyMo.data.length -1 ].mrr }},\n\t\t\"color\": \"#16b8a0\"\n  },\n  {\n    \"name\": \"Voluntary Churn\",\n\t\t\"val\": {{ \"- $\" + VoluntaryChurnbyMo.data[ VoluntaryChurnbyMo.data.length -1 ].mrr }},\n\t\t\"color\": \"#e65a5b\"\n  },\n  {\n    \"name\": \"Delinquent Churn\",\n\t\t\"val\": {{ \"- $\" + DelinquentChurnbyMo.data[ DelinquentChurnbyMo.data.length -1 ].mrr }},\n\t\t\"color\": \"#fc9479\"\n  }\n]",
-    "displayName": "List",
-    "bottomRow": 35.6,
-    "parentRowSpace": 10,
-    "hideCard": false,
-    "templateBottomRow": 16,
-    "mainContainerId": "02yzu13daw",
-    "primaryKeys": "{{List1Copy.listData.map((currentItem, currentIndex) => currentItem[\"name\"] )}}",
-    "parentColumnSpace": 19.8125,
-    "dynamicTriggerPathList": [],
-    "gridType": "vertical",
-    "key": "tq2tb9jwly",
-    "backgroundColor": "transparent",
-    "isDeprecated": false,
-    "rightColumn": 32,
-    "widgetId": "xhulx8l3r8",
-    "minWidth": 450,
-    "parentId": "0",
-    "renderMode": "CANVAS",
-    "originalTopRow": 12,
-    "responsiveBehavior": "fill",
-    "selectedItemView": "{{{}}}"
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "additionalStaticProps": [
+    "level",
+    "levelData",
+    "prefixMetaWidgetId",
+    "metaWidgetId"
+  ],
+  "alignment": "start",
+  "animateLoading": true,
+  "backgroundColor": "transparent",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 35.6,
+  "boxShadow": "none",
+  "children": [
+    {
+      "bottomRow": 300,
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "displayName": "Canvas",
+      "dropDisabled": true,
+      "dynamicBindingPathList": [],
+      "flexLayers": [
+        {
+          "children": [
+            {
+              "align": "center",
+              "id": "02yzu13daw"
+            }
+          ]
+        }
+      ],
+      "hideCard": true,
+      "isDeprecated": false,
+      "isLoading": false,
+      "isVisible": true,
+      "key": "7s4wqduic4",
+      "leftColumn": 0,
+      "minHeight": 400,
+      "noPad": true,
+      "openParentPropertyPane": true,
+      "parentColumnSpace": 1,
+      "parentId": "xhulx8l3r8",
+      "parentRowSpace": 1,
+      "positioning": "vertical",
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 475.5,
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "jt2gl8davw",
+      "widgetName": "Canvas1Copy"
+    }
+  ],
+  "currentItemsView": "{{[]}}",
+  "displayName": "List",
+  "dynamicBindingPathList": [
+    {
+      "key": "currentItemsView"
+    },
+    {
+      "key": "selectedItemView"
+    },
+    {
+      "key": "triggeredItemView"
+    },
+    {
+      "key": "primaryKeys"
+    },
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "listData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "enhancements": true,
+  "flexVerticalAlignment": "end",
+  "gridType": "vertical",
+  "hasMetaWidgets": true,
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
+  "isCanvas": true,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "itemBackgroundColor": "#FFFFFF",
+  "itemSpacing": 8,
+  "key": "tq2tb9jwly",
+  "leftColumn": 0,
+  "listData": "[\n  {\n    \"name\": \"NET NEW MRR\",\n\t\t\"val\": {{ CalcGrowthRate.netNewMRR().val }},\n\t\t\"color\": {{ CalcGrowthRate.netNewMRR().color }}\n  },\n  {\n    \"name\": \"New\",\n\t\t\"val\": {{ \"+ $\" + NewMRRbyMo.data[ NewMRRbyMo.data.length -1 ].mrr }},\n\t\t\"color\": \"#16b8a0\"\n  },\n  {\n    \"name\": \"Voluntary Churn\",\n\t\t\"val\": {{ \"- $\" + VoluntaryChurnbyMo.data[ VoluntaryChurnbyMo.data.length -1 ].mrr }},\n\t\t\"color\": \"#e65a5b\"\n  },\n  {\n    \"name\": \"Delinquent Churn\",\n\t\t\"val\": {{ \"- $\" + DelinquentChurnbyMo.data[ DelinquentChurnbyMo.data.length -1 ].mrr }},\n\t\t\"color\": \"#fc9479\"\n  }\n]",
+  "mainCanvasId": "jt2gl8davw",
+  "mainContainerId": "02yzu13daw",
+  "minWidth": 450,
+  "originalBottomRow": 37,
+  "originalTopRow": 12,
+  "pageSize": 4,
+  "parentColumnSpace": 19.8125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "primaryKeys": "{{List1Copy.listData.map((currentItem, currentIndex) => currentItem[\"name\"] )}}",
+  "renderMode": "CANVAS",
+  "requiresFlatWidgetChildren": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 32,
+  "selectedItemView": "{{{}}}",
+  "templateBottomRow": 16,
+  "topRow": 5.6000000000000005,
+  "triggeredItemView": "{{{}}}",
+  "type": "LIST_WIDGET_V2",
+  "widgetId": "xhulx8l3r8",
+  "widgetName": "List1Copy",
+  "widthInPercentage": 0.49588477366255146
 }

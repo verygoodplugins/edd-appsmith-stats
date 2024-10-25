@@ -1,41 +1,49 @@
 {
-    "boxShadow": "none",
-    "widgetName": "IconButton1Copy",
-    "buttonColor": "#6cbf83",
-    "dynamicPropertyPathList": [{"key": "iconName"}],
-    "displayName": "Icon Button",
-    "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "topRow": 0,
-    "bottomRow": 4,
-    "type": "ICON_BUTTON_WIDGET",
-    "hideCard": false,
-    "animateLoading": true,
-    "dynamicTriggerPathList": [],
-    "leftColumn": 58.31111111111111,
-    "dynamicBindingPathList": [
-        {"key": "borderRadius"},
-        {"key": "iconName"}
-    ],
-    "isDisabled": false,
-    "key": "novfj5qjk3",
-    "flexVerticalAlignment": "end",
-    "isDeprecated": false,
-    "rightColumn": 64,
-    "iconName": "{{ (( parseFloat(TextRenewalRateLast12.text.slice(0, -1)) > parseFloat(TextRenewalRateLastMo.text.slice(0, -1)) ) ? 'circle-arrow-down' : 'circle-arrow-up' );\n}}",
-    "widgetId": "i8m03btsno",
-    "buttonStyle": "PRIMARY",
-    "minWidth": 50,
-    "isVisible": true,
-    "version": 1,
-    "parentId": "ara6d5pj4b",
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "responsiveBehavior": "hug",
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "buttonVariant": "TERTIARY",
-    "alignment": "end"
+  "alignment": "end",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "boxShadow": "none",
+  "buttonColor": "#6cbf83",
+  "buttonStyle": "PRIMARY",
+  "buttonVariant": "TERTIARY",
+  "displayName": "Icon Button",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "iconName"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "iconName"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "end",
+  "hideCard": false,
+  "iconName": "{{ (( parseFloat(TextRenewalRateLast12.text.slice(0, -1)) > parseFloat(TextRenewalRateLastMo.text.slice(0, -1)) ) ? 'circle-arrow-down' : 'circle-arrow-up' );\n}}",
+  "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "novfj5qjk3",
+  "leftColumn": 58.31111111111111,
+  "minWidth": 50,
+  "parentId": "ara6d5pj4b",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 64,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "topRow": 0,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "i8m03btsno",
+  "widgetName": "IconButton1Copy"
 }

@@ -1,177 +1,93 @@
 {
+  "gitSyncId": "63e8d02d1e242279f5911ffe_63e8d02d1e242279f5912000",
   "unpublishedPage": {
-    "name": "Customers and Revenue",
-    "slug": "customers-and-revenue",
     "customSlug": "",
+    "isHidden": false,
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "mobileBottomRow": 3946.000000000001,
-          "widgetName": "MainContainer",
-          "topRow": 0,
-          "bottomRow": 2820,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
-          "canExtend": true,
-          "minHeight": 2820,
-          "useAutoLayout": true,
-          "dynamicTriggerPathList": [],
-          "parentColumnSpace": 1,
-          "dynamicBindingPathList": [],
-          "leftColumn": 0,
-          "positioning": "vertical",
           "backgroundColor": "none",
-          "rightColumn": 4896,
-          "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
+          "bottomRow": 2820,
+          "canExtend": true,
           "containerStyle": "none",
-          "snapRows": 125,
-          "version": 89,
-          "mobileTopRow": 0,
-          "responsiveBehavior": "fill",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
+          "dynamicTriggerPathList": [],
           "flexLayers": [
             {
               "children": [
                 {
-                  "id": "cbbkq9ay7h",
-                  "align": "center"
+                  "align": "center",
+                  "id": "cbbkq9ay7h"
                 }
               ]
             },
             {
               "children": [
                 {
-                  "id": "xtkadyw3u8",
-                  "align": "center"
+                  "align": "center",
+                  "id": "xtkadyw3u8"
                 }
               ]
             },
             {
               "children": [
                 {
-                  "id": "dkqn3usxpx",
-                  "align": "center"
+                  "align": "center",
+                  "id": "dkqn3usxpx"
                 }
               ]
             },
             {
               "children": [
                 {
-                  "id": "p5u0pshdf8",
-                  "align": "center"
+                  "align": "center",
+                  "id": "p5u0pshdf8"
                 }
               ]
             },
             {
               "children": [
                 {
-                  "id": "oynse02f4d",
-                  "align": "center"
+                  "align": "center",
+                  "id": "oynse02f4d"
                 },
                 {
-                  "id": "05nlm8h935",
-                  "align": "center"
+                  "align": "center",
+                  "id": "05nlm8h935"
                 }
               ]
             },
             {
               "children": [
                 {
-                  "id": "1wf8autlzn",
-                  "align": "center"
+                  "align": "center",
+                  "id": "1wf8autlzn"
                 }
               ]
             }
-          ]
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Customers and Revenue_NewCustomersbyMonth",
-              "name": "NewCustomersbyMonth",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
           ],
-          [
-            {
-              "id": "Customers and Revenue_AllRevenuebyMonth",
-              "name": "AllRevenuebyMonth",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Customers and Revenue_GetSitesByLicenseID",
-              "name": "GetSitesByLicenseID",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                " ChartTopUsedLicenses.selectedDataPoint.x "
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Customers and Revenue_NewRevenuebyMonth",
-              "name": "NewRevenuebyMonth",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Customers and Revenue_RecurringRevenuebyMonth",
-              "name": "RecurringRevenuebyMonth",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Customers and Revenue_RefundedRevenuebyMonth",
-              "name": "RefundedRevenuebyMonth",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Customers and Revenue_NewCustomersChangeYoY",
-              "name": "NewCustomersChangeYoY",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Customers and Revenue_OrderItemsbyIDandPriceID",
-              "name": "OrderItemsbyIDandPriceID",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "Customers and Revenue",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "leftColumn": 0,
+          "minHeight": 2820,
+          "mobileBottomRow": 3946.000000000001,
+          "mobileTopRow": 0,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
+          "positioning": "vertical",
+          "responsiveBehavior": "fill",
+          "rightColumn": 4896,
+          "snapColumns": 64,
+          "snapRows": 125,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "useAutoLayout": true,
+          "version": 90,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": false
-  },
-  "deleted": false,
-  "gitSyncId": "63e8d02d1e242279f5911ffe_63e8d02d1e242279f5912000"
+    "name": "Customers and Revenue",
+    "slug": "customers-and-revenue"
+  }
 }

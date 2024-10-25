@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "63e8d02d1e242279f5911ffe_63ef8655295431490fd8b0fc",
+  "id": "Renewals and Cancellations_RenewalRatesAvgLast12",
   "unpublishedCollection": {
     "name": "RenewalRatesAvgLast12",
     "pageId": "Renewals and Cancellations",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Renewals and Cancellations_RenewalRatesAvgLast12",
-  "deleted": false,
-  "gitSyncId": "63e8d02d1e242279f5911ffe_63ef8655295431490fd8b0fc"
+    "variables": []
+  }
 }
