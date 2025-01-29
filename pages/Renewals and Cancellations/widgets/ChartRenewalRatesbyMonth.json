@@ -4,7 +4,7 @@
   "allowScroll": false,
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 148.79999999999995,
+  "bottomRow": 148.7999999999999,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "chartData": {
     "oqga03u554": {
@@ -151,6 +151,10 @@
   "labelOrientation": "slant",
   "leftColumn": 0,
   "minWidth": 450,
+  "mobileBottomRow": 179.19999999999987,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 129.2,
   "originalBottomRow": 160,
   "originalTopRow": 110,
   "parentColumnSpace": 23.75,

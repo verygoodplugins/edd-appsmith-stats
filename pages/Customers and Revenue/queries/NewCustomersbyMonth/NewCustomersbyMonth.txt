@@ -4,7 +4,7 @@ SELECT
 FROM 
   wp_edd_customers
 WHERE
-	date_created >= DATE_SUB(NOW(), INTERVAL 5 YEAR)
+	date_created >= DATE_SUB(NOW(), INTERVAL 10 YEAR)
 GROUP BY 
   MONTH(date_created), 
   YEAR(date_created)
