@@ -81,7 +81,7 @@
           "topRow": 0,
           "type": "CANVAS_WIDGET",
           "useAutoLayout": true,
-          "version": 90,
+          "version": 91,
           "widgetId": "0",
           "widgetName": "MainContainer"
         }
