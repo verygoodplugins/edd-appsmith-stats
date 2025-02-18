@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT \n  DATE_FORMAT(e.date_created, '%Y-%m') AS entry_month,\n  COUNT(DISTINCT e.id) AS total_entries,\n  COUNT(DISTINCT c.email) AS converted_customers,\n  (COUNT(DISTINCT c.email) / COUNT(DISTINCT e.id)) * 100 AS conversion_rate\nFROM \n  wp_gf_entry e\nLEFT JOIN \n  wp_gf_entry_meta em ON e.id = em.entry_id AND em.form_id = 9 AND em.meta_key = '4'\nLEFT JOIN \n  wp_edd_customers c ON c.email = em.meta_value\nWHERE \n  e.form_id = 9\nGROUP BY \n  entry_month\nORDER BY \n  entry_month;\n",
+      "body": "SELECT \n  DATE_FORMAT(e.date_created, '%Y-%m') AS entry_month,\n  COUNT(DISTINCT e.id) AS total_entries,\n  COUNT(DISTINCT c.email) AS converted_customers,\n  (COUNT(DISTINCT c.email) / COUNT(DISTINCT e.id)) * 100 AS conversion_rate\nFROM \n  wp_gf_entry e\nLEFT JOIN \n  wp_gf_entry_meta em ON e.id = em.entry_id AND em.form_id = 9 AND em.meta_key = '4'\nLEFT JOIN \n  wp_edd_customers c ON c.email = em.meta_value\nWHERE \n  e.form_id = 9\n  AND e.date_created >= '2022-10-01' -- Ensures only entries from October 2022 onwards\nGROUP BY \n  entry_month\nORDER BY \n  entry_month;\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

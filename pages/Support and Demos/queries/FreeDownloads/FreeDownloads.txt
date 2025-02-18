@@ -11,6 +11,7 @@ LEFT JOIN
   wp_edd_customers c ON c.email = em.meta_value
 WHERE 
   e.form_id = 9
+  AND e.date_created >= '2022-10-01' -- Ensures only entries from October 2022 onwards
 GROUP BY 
   entry_month
 ORDER BY 

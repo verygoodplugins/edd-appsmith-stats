@@ -7,5 +7,6 @@ SELECT YEAR(l.date_created) AS year,
 FROM wp_edd_licenses l
 LEFT JOIN wp_gf_entry_meta m ON m.meta_value = l.license_key AND m.meta_key = 4
 LEFT JOIN wp_gf_entry s ON s.id = m.entry_id
-WHERE l.date_created BETWEEN '2018-01-01' AND '2023-12-31' -- replace with the appropriate date range
+WHERE l.date_created BETWEEN '2018-01-01' 
+AND STR_TO_DATE(CONCAT(YEAR(CURDATE()) - 1, '-12-31'), '%Y-%m-%d')
 GROUP BY YEAR(l.date_created)
