@@ -1,6 +1,6 @@
 SELECT 
   CASE 
-    WHEN crm_group_rank <= 24 THEN crm_group
+    WHEN crm_group_rank <= 30 THEN crm_group
     ELSE 'Other Platforms'
   END AS crm_group_combined,
   SUM(site_count) as total_count

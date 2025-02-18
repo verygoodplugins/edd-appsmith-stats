@@ -59,6 +59,8 @@
           ],
           "leftColumn": 0,
           "minHeight": 880,
+          "mobileBottomRow": 2438,
+          "mobileTopRow": 0,
           "parentColumnSpace": 1,
           "parentRowSpace": 1,
           "positioning": "vertical",

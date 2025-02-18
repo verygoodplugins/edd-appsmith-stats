@@ -2,7 +2,7 @@
   "alignment": "center",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 5.6,
+  "bottomRow": 8,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -31,10 +31,10 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 116.2,
+  "mobileBottomRow": 18.159375000000004,
   "mobileLeftColumn": 0,
   "mobileRightColumn": 64,
-  "mobileTopRow": 69.8,
+  "mobileTopRow": 14.159375000000004,
   "originalBottomRow": 15,
   "originalTopRow": 7,
   "overflow": "NONE",

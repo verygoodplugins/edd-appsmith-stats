@@ -5,11 +5,11 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 35.2,
+  "bottomRow": 34.8,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
-      "bottomRow": 168,
+      "bottomRow": 163.99999999999994,
       "canExtend": false,
       "containerStyle": "none",
       "detachFromLayout": true,

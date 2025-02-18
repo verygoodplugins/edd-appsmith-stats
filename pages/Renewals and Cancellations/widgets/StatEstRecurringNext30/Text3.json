@@ -2,7 +2,7 @@
   "alignment": "start",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 14.8,
+  "bottomRow": 14.399999999999999,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -54,7 +54,7 @@
   "text": "( ${{ UpcomingRenewals30Days.data[0].total_recurring_amount.toLocaleString(\"en-US\") }} upcoming at {{ RenewalRatesAvgLast12.rates() }}% avg renewal)",
   "textAlign": "LEFT",
   "textColor": "#6cbf83",
-  "topRow": 10.8,
+  "topRow": 10.399999999999999,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

@@ -5,7 +5,7 @@ SELECT
         SELECT COUNT(*)
         FROM wp_posts AS inner_wp_posts
         JOIN wp_postmeta AS inner_pm ON inner_wp_posts.ID = inner_pm.post_id
-        WHERE inner_pm.meta_key = 'jck_sfr_status'
+        WHERE inner_pm.meta_key = 'sfr_status'
         AND inner_pm.meta_value = 'completed'
         AND YEAR(inner_wp_posts.post_modified) = YEAR(wp_posts.post_date)
         AND YEAR(inner_wp_posts.post_modified) < YEAR(CURDATE())
@@ -16,7 +16,7 @@ JOIN
     wp_postmeta pm ON wp_posts.ID = pm.post_id
 WHERE 
     wp_posts.post_type = 'cpt_feature_requests'
-    AND pm.meta_key = 'jck_sfr_status'
+    AND pm.meta_key = 'sfr_status'
     AND pm.meta_value != 'declined'
     AND YEAR(wp_posts.post_date) < YEAR(CURDATE())
     AND YEAR(wp_posts.post_modified) < YEAR(CURDATE())

@@ -4,7 +4,7 @@
   "allowScroll": false,
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 97.60000000000001,
+  "bottomRow": 97.2,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "chartData": {
     "omnlezx0nn": {
@@ -152,7 +152,7 @@
   "labelOrientation": "slant",
   "leftColumn": 0,
   "minWidth": 450,
-  "mobileBottomRow": 128.39999999999998,
+  "mobileBottomRow": 128.4,
   "mobileLeftColumn": 0,
   "mobileRightColumn": 64,
   "mobileTopRow": 98.4,
@@ -171,7 +171,7 @@
   ],
   "setAdaptiveYMin": true,
   "showDataPointLabel": false,
-  "topRow": 67.60000000000001,
+  "topRow": 67.2,
   "type": "CHART_WIDGET",
   "version": 1,
   "widgetId": "nb287dqjar",
