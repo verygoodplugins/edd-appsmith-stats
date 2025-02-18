@@ -7,8 +7,8 @@ FROM
 WHERE
   type = 2
   AND user_id = 1
-  AND YEAR(created_at) BETWEEN 2015 AND 2023
+  AND YEAR(created_at) BETWEEN 2015 AND YEAR(CURDATE()) - 1
 GROUP BY
   YEAR(created_at)
 ORDER BY
-  year DESC;
+  year ASC;

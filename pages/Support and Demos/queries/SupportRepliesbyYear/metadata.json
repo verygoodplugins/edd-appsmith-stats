@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT\n  YEAR(created_at) AS year,\n  SUM(LENGTH(body) - LENGTH(REPLACE(body, ' ', '')) + 1) AS totalWordCount,\n  COUNT(*) AS totalReplies\nFROM\n  threads\nWHERE\n  type = 2\n  AND user_id = 1\n  AND YEAR(created_at) BETWEEN 2015 AND 2023\nGROUP BY\n  YEAR(created_at)\nORDER BY\n  year DESC;\n",
+      "body": "SELECT\n  YEAR(created_at) AS year,\n  SUM(LENGTH(body) - LENGTH(REPLACE(body, ' ', '')) + 1) AS totalWordCount,\n  COUNT(*) AS totalReplies\nFROM\n  threads\nWHERE\n  type = 2\n  AND user_id = 1\n  AND YEAR(created_at) BETWEEN 2015 AND YEAR(CURDATE()) - 1\nGROUP BY\n  YEAR(created_at)\nORDER BY\n  year ASC;\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

@@ -4,18 +4,22 @@
   "allowScroll": false,
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 154.60000000000002,
+  "bottomRow": 158.60000000000002,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "chartData": {
     "jy60p3rp7d": {
       "color": "#e55b10",
       "data": "{{SupportRepliesbyYear.data.map( p => ({x: p.year, y: p.totalWordCount}))}}",
       "seriesName": "Word count"
+    },
+    "z7wa50gar6": {
+      "data": "{{SupportRepliesbyYear.data.map( p => ({x: p.year, y: p.totalReplies}))}}",
+      "seriesName": "Total Replies"
     }
   },
   "chartName": "Support Replies (Jack)",
-  "chartType": "LINE_CHART",
-  "customEChartConfig": "{{\n{\n  \"dataset\": {\n    \"source\": [\n      [\n        \"Day\",\n        \"Baidu\",\n        \"Google\",\n        \"Bing\"\n      ],\n      [\n        \"Mon\",\n        620,\n        120,\n        60\n      ],\n      [\n        \"Tue\",\n        732,\n        132,\n        72\n      ],\n      [\n        \"Wed\",\n        701,\n        101,\n        71\n      ],\n      [\n        \"Thu\",\n        734,\n        134,\n        74\n      ],\n      [\n        \"Fri\",\n        1090,\n        290,\n        190\n      ],\n      [\n        \"Sat\",\n        1130,\n        230,\n        130\n      ],\n      [\n        \"Sun\",\n        1120,\n        220,\n        110\n      ]\n    ]\n  },\n  \"tooltip\": {\n    \"trigger\": \"axis\",\n    \"axisPointer\": {\n      \"type\": \"shadow\"\n    }\n  },\n  \"title\": {\n    \"text\": \"Search Engine Usage\",\n    \"left\": \"center\",\n    \"textStyle\": {\n      \"width\": 200,\n      \"overflow\": \"truncate\"\n    }\n  },\n  \"legend\": {\n    \"top\": 40,\n    \"type\": \"scroll\"\n  },\n  \"grid\": {\n    \"left\": 15,\n    \"right\": 15,\n    \"bottom\": 30,\n    \"top\": 100,\n    \"containLabel\": true\n  },\n  \"xAxis\": [\n    {\n      \"type\": \"category\"\n    }\n  ],\n  \"yAxis\": [\n    {\n      \"type\": \"value\"\n    }\n  ],\n  \"series\": [\n    {\n      \"type\": \"bar\",\n      \"stack\": \"Search Engine\"\n    },\n    {\n      \"type\": \"bar\",\n      \"stack\": \"Search Engine\"\n    },\n    {\n      \"type\": \"bar\",\n      \"stack\": \"Search Engine\"\n    }\n  ]\n}\n}}",
+  "chartType": "CUSTOM_ECHART",
+  "customEChartConfig": "{{ ((chartType) => ( \n  {\n    title: {\n      text: \"Support Replies (Jack)\",\n      left: \"center\",\n\t\t\ttop: 10,\n      textStyle: {\n        fontFamily: \"Roboto, sans-serif\",\n        fontSize: 24,\n        color: \"#4d4d4d\"\n      }\n    },\n    tooltip: {\n      trigger: \"axis\"\n    },\n    legend: {\n      data: [\"Word Count\", \"Total Replies\"],\n\t\t\tbottom: 20\n    },\n    xAxis: {\n      type: \"category\",\n      data: SupportRepliesbyYear.data.map(p => p.year),\n      axisLabel: {\n        fontFamily: \"Roboto, sans-serif\",\n        fontSize: 12,\n        color: \"#4d4d4d\"\n      }\n    },\n    yAxis: [\n      {\n        type: \"value\",\n        name: \"Word Count\",\n        position: \"left\",\n        axisLabel: {\n          formatter: \"{value}\",\n          fontFamily: \"Roboto, sans-serif\",\n          fontSize: 12,\n          color: \"#4d4d4d\"\n        }\n      },\n      {\n        type: \"value\",\n        name: \"Total Replies\",\n        position: \"right\",\n        max: 7000,  \n        axisLabel: {\n          formatter: \"{value}\",\n          fontFamily: \"Roboto, sans-serif\",\n          fontSize: 12,\n          color: \"#4d4d4d\"\n        }\n      }\n    ],\n    series: [\n      {\n        name: \"Word Count\",\n        type: \"line\",\n        yAxisIndex: 0,\n        smooth: true,\n        itemStyle: {\n          color: \"#e55b10\"\n        },\n        data: SupportRepliesbyYear.data.map(p => p.totalWordCount)\n      },\n      {\n        name: \"Total Replies\",\n        type: \"bar\",\n        yAxisIndex: 1,\n        itemStyle: {\n          color: \"#3b82f6\"\n        },\n        data: SupportRepliesbyYear.data.map(p => p.totalReplies)\n      }\n    ],\n    grid: {\n      top: 80,\n      left: \"5%\",\n      right: \"5%\",\n      bottom: 60,  // Adds extra space below the chart\n      containLabel: true\n    }\n  }\n))(SupportRepliesWordCount.chartType) }}",
   "customFusionChartConfig": {
     "dataSource": {
       "chart": {
@@ -66,9 +70,6 @@
   "displayName": "Chart",
   "dynamicBindingPathList": [
     {
-      "key": "customEChartConfig"
-    },
-    {
       "key": "borderRadius"
     },
     {
@@ -82,6 +83,12 @@
     },
     {
       "key": "chartData.jy60p3rp7d.data"
+    },
+    {
+      "key": "chartData.z7wa50gar6.data"
+    },
+    {
+      "key": "customEChartConfig"
     }
   ],
   "dynamicPropertyPathList": [],
@@ -122,6 +129,7 @@
   "version": 1,
   "widgetId": "6gytp5hiqz",
   "widgetName": "SupportRepliesWordCount",
+  "widthInPercentage": 0.9914802981895634,
   "xAxisName": "Year",
   "yAxisName": "Word Count"
 }
