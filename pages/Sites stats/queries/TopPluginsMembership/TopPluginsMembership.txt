@@ -5,9 +5,12 @@ SELECT
     SUM(CASE WHEN integrations LIKE '%\"lifterlms\"%' THEN 1 ELSE 0 END) AS "LifterLMS",
     SUM(CASE WHEN integrations LIKE '%\"ultimate-member\"%' THEN 1 ELSE 0 END) AS "Ultimate Member",
     SUM(CASE WHEN integrations LIKE '%\"members\"%' THEN 1 ELSE 0 END) AS "Members",
+		SUM(CASE WHEN integrations LIKE '%\"memberdash\"%' THEN 1 ELSE 0 END) AS "MemberDash",
     SUM(CASE WHEN integrations LIKE '%\"wishlist-member\"%' THEN 1 ELSE 0 END) AS "WishList Member",
 		SUM(CASE WHEN integrations LIKE '%\"profile-builder\"%' THEN 1 ELSE 0 END) AS "Profile Builder Pro",
-		SUM(CASE WHEN integrations LIKE '%\"restrict-content-pro\"%' THEN 1 ELSE 0 END) AS "Restrict Content Pro"
+		SUM(CASE WHEN integrations LIKE '%\"restrict-content-pro\"%' THEN 1 ELSE 0 END) AS "Restrict Content Pro",
+		SUM(CASE WHEN integrations LIKE '%\"suremembers\"%' THEN 1 ELSE 0 END) AS "SureMembers",
+		SUM(CASE WHEN integrations LIKE '%\"fluent-community\"%' THEN 1 ELSE 0 END) AS "FluentCommunity"
 FROM wp_wpf_all_sites
 WHERE crm NOT IN ('', '0')
     AND check_date >= DATE_SUB(NOW(), INTERVAL 1 YEAR)

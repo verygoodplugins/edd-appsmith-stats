@@ -9,7 +9,9 @@ SELECT
 		SUM(CASE WHEN integrations LIKE '%\"event-espresso\"%' THEN 1 ELSE 0 END) AS "Event Espresso",
 		SUM(CASE WHEN integrations LIKE '%\"wp-event-manager\"%' THEN 1 ELSE 0 END) AS "WP Event Manager",
 		SUM(CASE WHEN integrations LIKE '%\"eventon\"%' THEN 1 ELSE 0 END) AS "EventON",
-		SUM(CASE WHEN integrations LIKE '%\"tickera\"%' THEN 1 ELSE 0 END) AS "Tickera"
+		SUM(CASE WHEN integrations LIKE '%\"tickera\"%' THEN 1 ELSE 0 END) AS "Tickera",
+		SUM(CASE WHEN integrations LIKE '%\"ameliabooking\"%' THEN 1 ELSE 0 END) AS "Amelia",
+		SUM(CASE WHEN integrations LIKE '%\"latepoint\"%' THEN 1 ELSE 0 END) AS "LatePoint"
 FROM wp_wpf_all_sites
 WHERE crm NOT IN ('', '0')
     AND check_date >= DATE_SUB(NOW(), INTERVAL 1 YEAR)
